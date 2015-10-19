@@ -1,0 +1,56 @@
+
+.skin-blue .main-header .logo,
+.skin-blue .main-header .navbar {
+    background-color: #FFF !important;
+    color: #000 !important;
+    border-bottom: 2px solid red !important;
+}
+
+.skin-blue .main-header .navbar a,
+.skin-blue .main-header .navbar a:hover,
+.skin-blue .main-header .navbar a:active,
+.skin-blue .main-header .navbar a:visited{
+	color: inherit !important;
+}
+
+.main-header > .navbar {
+    max-height: 50px !important;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+    color: #000;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+	background-color: #DD4B39;
+}
+
+.fa{
+	color: #000;
+	font-size: 15px;
+}
+
+.skin-blue .main-header li.user-header {
+    background-color: #963d31;
+}
+
+.index-image {
+    line-height: 0px;
+    background: none;
+}
+
+.sidebar-menu > li > a > .fa, .sidebar-menu > li > a > .glyphicon, .sidebar-menu > li > a > .ion {
+    color: #FFF;
+}
+
+.bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body {
+    background-color: #FFF !important;
+    color: #000 !important;
+}
+
+.site-login .form-horizontal .form-group,
+.site-login .row{
+    margin-bottom: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
