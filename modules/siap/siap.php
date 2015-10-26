@@ -43,10 +43,6 @@ class siap extends \yii\base\Module
                 ]
             ],
             [
-                'label' => 'Bienes', 'url' => ['/bienes/bienes'],
-                'icon' => 'table',
-            ],
-            [
                 'label' => 'Tesoreria', 'url' => '#',
                 'icon' => 'btc',
                 'visible' => Usuario::hasAccess($this->id, "tesoreria"),
@@ -60,6 +56,17 @@ class siap extends \yii\base\Module
                 'label' => 'Requisiciones', 'url' => 'http://siap.anz/OpenSiap/',
                 'icon' => 'table',
             ],
+                //label de bienes
+            [
+                'label' => 'Bienes', 'url' => ['/bienes/'],
+                'icon' => 'table'
+                //'visible' => Usuario::hasAccess($this->id, "bienes"),
+                
+                
+            ],
+
+
+
         ];
 
         // custom initialization code goes here

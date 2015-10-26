@@ -8,11 +8,8 @@ use Yii;
  * This is the model class for table "bienes.sede".
  *
  * @property integer $id_sede
- * @property string $descripcion
+ * @property string $nombre
  * @property integer $id_localidad
- *
- * @property BienesNCodigoBien[] $bienesNCodigoBiens
- * @property Localidad $idLocalidad
  */
 class BienesSede extends \yii\db\ActiveRecord
 {
@@ -30,8 +27,9 @@ class BienesSede extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_localidad'], 'integer'],
-            [['descripcion'], 'string', 'max' => 255]
+            [['id_sede'], 'required'],
+            [['id_sede', 'id_localidad'], 'integer'],
+            [['nombre'], 'string']
         ];
     }
 
@@ -42,24 +40,8 @@ class BienesSede extends \yii\db\ActiveRecord
     {
         return [
             'id_sede' => Yii::t('app', 'Id Sede'),
-            'descripcion' => Yii::t('app', 'Descripcion'),
+            'nombre' => Yii::t('app', 'Nombre'),
             'id_localidad' => Yii::t('app', 'Id Localidad'),
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBienesNCodigoBiens()
-    {
-        return $this->hasMany(BienesNCodigoBien::className(), ['id_sede' => 'id_sede']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIdLocalidad()
-    {
-        return $this->hasOne(Localidad::className(), ['id_localidad' => 'id_localidad']);
     }
 }

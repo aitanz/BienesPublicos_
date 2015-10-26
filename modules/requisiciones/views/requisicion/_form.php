@@ -41,17 +41,9 @@ $unidadmedida = new Unidadmedida();
 $tipoproducto = new Tipoproducto();
 $coordinacion = new Coordinacion();
 
+var_dump($model);
+var_dump($reqDeta);
 
-
-/*echo print_r($model);
-echo'<br>';
-echo print_r($reqDeta);
-echo'<br><br>';
-echo print_r($tipoproducto);
-echo'<br><br>';
-echo print_r($unidadmedida);
-echo'<br><br>';
-echo print_r($cp);*/
 ?>
 
 
@@ -71,15 +63,16 @@ echo print_r($cp);*/
     'showSeparator' => true,
     'delay' => 4000
      ]); ?>
-
+     
     <?php
-    $form = ActiveForm::begin([ 'id' => 'formulario']);
-   
-    $fecha = date('d-m-Y');
-    echo $form->field($model, 'fechacreacion')->textInput(array('value' => $fecha, 'readonly' => 'readonly'))->label('FECHA DE CREACIÓN');?>
-
- 
-    
+    $form = ActiveForm::begin([ 'id' => 'formulario',
+                                'enableClientValidation' => true,
+                                'enableAjaxValidation' => false,
+                                 'validateOnSubmit' => true,
+                                'validateOnChange' => true,
+                                'validateOnType' => true]);?>
+    <?$fecha = date('d-m-Y');?>
+    <?= $form->field($model, 'fecha')->textInput(array('value' => $fecha, 'readonly' => 'readonly'))->label('FECHA DE CREACIÓN');?>
     <?= $form->field($model, 'tipo')->dropDownList(['Bienes y Suministros', 'Servicios', 'Administracion'], ['prompt' => '-- Seleccione un tipo de Requisicion --',
         'onchange' => "$.ajax({
 			type: 'POST',
@@ -111,22 +104,24 @@ echo print_r($cp);*/
 				    }
 		        }
 
-		    });"]);?> <br>
-                    
-                    
-                
-
+		    });"]);?> 
+    <?= $form->field($model, 'puc')->hiddenInput(['id'=>'pucoculto'])->label(false);?>
+    <?= $form->field($model, 'categoriaprogramatica')->hiddenInput(['id'=>'categoriaoculto'])->label(false);?>
+    <?= $form->field($model, 'concepto')->hiddenInput(['id'=>'conceptooculto'])->label(false);?>
+    <?= $form->field($reqDeta, 'cantidad')->hiddenInput(['id'=>'cantidadoculto'])->label(false);?>
     <div id="capa_dinamica">
 
     </div>
-
+   
+    
     <div class="form-group">
-    <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), [ 'id' => 'submitButton', 'class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+    <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), [ 'id' => 'submitButton', 'class' => $model->isNewRecord ? 'btn btn-info' : 'btn btn-primary']) ?>
     </div>
 
 <?php ActiveForm::end(); ?>
-
-</div><!--requisicion-form-->
+    
+   </div><!--requisicion-form-->
+  
 
 
 <script type="text/javascript">
@@ -276,7 +271,7 @@ echo print_r($cp);*/
       }
 
   .requisicion-form{
-     width:800px
+     width:850px
      }
   #capa2{
     display:block;

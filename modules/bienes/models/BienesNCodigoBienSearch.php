@@ -6,13 +6,14 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\modules\bienes\models\BienesNCodigoBien;
+use app\modules\bienes\models\BienesLocalidad;
 
 /**
  * BienesNCodigoBienSearch represents the model behind the search form about `app\modules\bienes\models\BienesNCodigoBien`.
  */
 class BienesNCodigoBienSearch extends BienesNCodigoBien
 {
-  //  public $localidad;
+   public $id_localidad;
 
     /**
      * @inheritdoc
@@ -20,10 +21,10 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
     public function rules()
     {
         return [
-            [['id_codigo', 'id_localidad', 'identificacion'], 'integer'],
-            [['nombre', 'descripcion', 'ano_adquisicion', 'ubicacion', 'tipo_adquisicion', 'n_documento'], 'safe'],
+            [['id_codigo',  'identificacion'], 'integer'],
+            [['nombre', 'descripcion', 'ano_adquisicion', 'ubicacion', 'tipo_adquisicion', 'n_documento', 'id_localidad'], 'safe'],
             [['valor_unidad', 'justiprecio'], 'number'],
-          //  [['localidad'], 'safe'],
+          //  [['id_localidad'], 'safe'],
         ];
     }
 
@@ -48,21 +49,10 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
         $query = BienesNCodigoBien::find();
 
 
-      //  $query->joinWith(['localidad']);
-
-
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
 
-
-      /*  $dataProvider->sort->attributes['localidad'] = [
-        'asc' => ['BienesLocalidad.nombre' => SORT_ASC],
-        'desc' => ['BienesLocalidad.nombre' => SORT_DESC],
-    ];
-
-
-*/
 
         $this->load($params);
 
@@ -76,7 +66,6 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
 
             'id_codigo' => $this->id_codigo,
             'id_localidad' => $this->id_localidad,
-          //  'id_localidad' => $this->id_localidad,
             'identificacion' => $this->identificacion,
             'valor_unidad' => $this->valor_unidad,
             'justiprecio' => $this->justiprecio,
@@ -88,7 +77,6 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
             ->andFilterWhere(['like', 'ubicacion', $this->ubicacion])
             ->andFilterWhere(['like', 'tipo_adquisicion', $this->tipo_adquisicion])
             ->andFilterWhere(['like', 'n_documento', $this->n_documento]);
-          //  ->andFilterWhere(['like', 'BienesLocalidad.id_localidad', $this->nombre])
 
         return $dataProvider;
     }

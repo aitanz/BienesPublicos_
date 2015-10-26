@@ -7,6 +7,7 @@ use yii\jui\AutoComplete;
 use yii\bootstrap\Modal;
 use yii\bootstrap\Button;//use yii\grid\GridView;
 use app\modules\requisiciones\models\RequisiciondetaSearch;
+use app\modules\requisiciones\models\Requisicion;
 use app\modules\requisiciones\models\Requisiciondeta;
 use app\modules\requisiciones\models\Puc;
 use app\modules\requisiciones\models\Cuentapresupuestaria;
@@ -16,14 +17,23 @@ use app\modules\requisiciones\models\Tipopagos;
 use app\modules\requisiciones\models\Producto;
 use app\modules\requisiciones\models\Categoriaprogramatica;
 use app\modules\requisiciones\models\Coordinacion;
-
+//instanciar los modelos
 
 $producto = new Producto();
-$tipoproducto = new Tipoproducto();
 $coordinacion = new Coordinacion();
-
+$puc = new Puc();
+$model = new Requisicion();
+$tipoproducto = new Tipoproducto();
+$reqDeta = new Requisiciondeta();
+$unidadmedida = new Unidadmedida();
+$cp = new Cuentapresupuestaria();
+$tioproducto = new Tipoproducto;
+$capro = new categoriaprogramatica();
+//variables de usuarios logueado
 $direction = \yii::$app->user->Identity->iddireccion;
 $coordination = \yii::$app->user->Identity->idcoordinacion;
+
+
 
 
 
@@ -40,14 +50,14 @@ echo $coordination.' idcoordinacion del usuario del usuario <br>';*/
             <!--aqui va el cuerpo del formulario-->
         
         <?php
-            $form2 = ActiveForm::begin([ 'id' => 'form_bienesysuministros',
+            $form = ActiveForm::begin([ 'id' => 'form_bienesysuministros',
                                         'enableClientValidation' => true,
                                         'enableAjaxValidation' => false,
                                         'validateOnSubmit' => true,
                                         'validateOnChange' => true,
                                         'validateOnType' => true]);?> 
-            
-        <?= $form2->field($tipoproducto, 'descripcion')->dropDownlist(ArrayHelper::map(Tipoproducto::find()->where(['not', ['puc' => null]])->orderBy('descripcion')->all(), 'idtipoproducto', 'descripcion'), ['prompt' => '--seleccion un producto--',
+         
+        <?= $form->field($tipoproducto, 'descripcion')->dropDownlist(ArrayHelper::map(Tipoproducto::find()->where(['not', ['puc' => null]])->orderBy('descripcion')->all(), 'idtipoproducto', 'descripcion'), ['prompt' => '--seleccion un producto--',
           'onchange' => "$.ajax({
 			  sync: false,
 			  type: 'POST',
@@ -75,6 +85,9 @@ echo $coordination.' idcoordinacion del usuario del usuario <br>';*/
 			               $('#pucproducto').val(response.llamada);
                                        $('#pucd').val(response.categoria);
                                        $('#oculto1').val(response.idpuc);
+                                       $('#oculto2').val(response.llamada);
+                                       $('#pucoculto').val(response.llamada);
+                                       
 				   }
 					 else{
 					      alert(response.mensaje);
@@ -113,31 +126,7 @@ echo $coordination.' idcoordinacion del usuario del usuario <br>';*/
 </div><br><br>
 
 
-<!--tabla unidad ejecutora-->
-<div class="form-group">
-<label>UNIDAD EJECUTORA</label>
-<table id="tablauebs" class="table table-hover table-condensed table-striped ">
-    <thead>
-       <tr bgcolor="#CED8F6">
-            <th>#</th>
-            <th>Unidad Ejecutora</th>
-            <th>Actividad</th>
-            <th>Opciones</th>
-       </tr>
-    </thead>
-    <tbody>
-         <tr id="unidade" class="uebs" data-key="0">
-             <td style="visibility:hidden;">0</td>
-             <td></td>
-             <td></td>
-             <td></td>
-        </tr>
-   </tbody>
-</table>
-<button type="button" id="dialogo" class="btn btn-primary" data-toggle="modal" data-target="#modalunidadEjecutora"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>UNIDAD EJECUTORA</button>
-</div><br><br>
 
-  <!--tabla inputacion presupuestaria bs-->
 
   <label>IMPUTACIÓN PRESUPUESTARIA</label>
   <table id="tablaip" class="table table-hover table-condensed table-striped ">
@@ -169,15 +158,16 @@ echo $coordination.' idcoordinacion del usuario del usuario <br>';*/
 
   <br><br>
   
-  <?= $form2->field($model, 'concepto')->textarea()->label('CONCEPTO'); ?>
-  <input type="hidden" name="oculto" id="oculto1" > <br>
-  <input type="hidden" name="sitio" id="oculto2"value="oculto2">
+  <?= $form->field($model, 'concepto')->textarea()->label('CONCEPTO'); ?>
+  <input type="hidden" name="ocultoidpuc" id="oculto1" > <br>
+  <input type="hidden" name="ocultopuc" id="oculto2" >
+   <input type="hidden" name="ocultocategoria" id="oculto3" >
   
   <div class="form-group">
       <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-alert']) ?>
   </div>
 
-            <input type="submit" name="enviar" value="serialize"id="enviar" class="btn btn-danger">
+          
        </div> <!--panel body-->
     </div> <!--panel primary-->
 </div> <!--requisicion-form-->
@@ -186,7 +176,6 @@ echo $coordination.' idcoordinacion del usuario del usuario <br>';*/
 
 <?php /* * *********************************** MODALS ******************************** */ ?>
 
-<!--modal Productos-->
 
 <?php
 $this->beginPage();
@@ -194,56 +183,7 @@ $this->beginBody();
 ?>
 
 
-<!-- modal Unidad Ejecutora -->
-
-<?php
-Modal::begin(['header' => '<h3><center>Agregar Unidad Ejecutora</center></h3>', 'id' => 'modalunidadEjecutora']);
-
-$form = ActiveForm::begin(['id' => 'form_agregar_categoria',]);
-echo $form->field($capro, 'idcategoriaprogramatica')->dropDownlist(ArrayHelper::map(Categoriaprogramatica::find()->orderBy('descripcion')->all(), 'idcategoriaprogramatica', 'descripcion'), ['prompt' => 'unidad-ejecutora', 'id' => 'modaluebs',
-    'onchange' => "$.ajax({
-			sync: false,
-			type: 'POST',
-			cache: false,
-			url: '" . yii\helpers\Url::to(['requisicion/get-actividad']) . "',
-			beforeSend: function(xhr){
-			  /*$('#pcont').block({css:{
-					border: 'none',
-					padding: '15px',
-					backgroundColor: '#000',
-					'-webkit-border-radius': '10px',
-					'-moz-border-radius': '10px',
-					opacity: .5,
-					color: '#fff'
-				}});*/
-			 },
-			data: {idcategoriaprogramatica: $('#modaluebs').val()},
-			error: function(error){
-			  error(error);
-			  //$('#pcont').unblock();
-			},
-			success: function(response){
-			   response = JSON.parse(response);
-				  if( response.success){
-					$('#categoriaprogramatica-bs').val(response.categoria);
-				   }
-					 else{
-						  alert(response.mensaje);
-						  //$('#pcont').unblock();
-					 }
-			}
-	   });"])->label('Unidad Ejecutora');
-        echo $form->field($capro, 'categoriaprogramatica')->textinput(['readonly' => 'readonly', 'id' => 'categoriaprogramatica-bs'])->label('Actividad');
-        echo '<button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
-	     <button id="salvarbs" type="button" class="btn btn-primary "  data-dismiss="modal" >Salvar</button>
-	     <button type="reset" class="btn btn-danger" value="reset"> Reset</button>';
-
-ActiveForm::end();
-Modal::end();
-?>
-
-
-<!--modal imputacion-->
+                                         <!--modal imputacion-->
 <?php
 Modal::begin(['header' => '<h3><center>IMPUTACIÓN PRESUPUESTARIA</center></h3>', 'id' => 'modalImputacion',
  "class" => "modal fade bs-example-modal-lg"] );
@@ -253,22 +193,31 @@ $form = ActiveForm::begin(['id' => 'form_agregar_imputacion',]);
 <div class="container">
     <div class="main row">
         <div class="col-md-5 column">
-            <?= $form->field($coordinacion, 'nombre')->dropDownlist(Arrayhelper::map(Coordinacion::find()
-                     ->where(['iddireccion' => $direction, 'esdireccion'=>'false'])
-                     ->all(), 'idcoordinacion', 'nombre'), ['prompt' => '--Seleccione--', 'id' => 'ueip',
-                'onchange' => " $.ajax({
-				  type: 'POST',
-				  cache: false,
-				  url: '" . yii\helpers\Url::to(['requisicion/get-unidad']) . "',
-				  data: {idcoordinacion: $('#ueip').val(), idpuc : $('#puc').val(),idpuccoordinacion:$('#oculto1').val()},
-				  success: function(response){
-				  response = JSON.parse(response);
-					   if(response.success){
-                                                    var puc= $('#pucproducto').val();
-						    $('#cuentaip').val(response.categoria+puc);
-                                                    $('#disponibilidad').val(response.idpuccoordinacion);
-                                                    $('#cuentaip').val();
-                                                    console.log(response);
+            <?=
+            $form->field($coordinacion, 'nombre')->dropDownlist(Arrayhelper::map(Coordinacion::find()
+                                    ->where(['iddireccion' => $direction, 'esdireccion' => 'false'])
+                                    ->all(), 'idcoordinacion', 'nombre'), ['prompt' => '--Seleccione--', 'id' => 'ueip',
+                                    'onchange' => "$.ajax({
+                                                    type: 'POST',
+                                                    cache: false,
+				                    url: '" . yii\helpers\Url::to(['requisicion/get-unidad']) . "',
+				                    data:{idcoordinacion: $('#ueip').val(), 
+                                                          idpuc:$('#puc').val(),
+                                                          idpuccoordinacion:$('#oculto1').val(),
+                                                          puccoordinacion:$('#oculto2').val()},
+				                    success: function(response){
+				                            response = JSON.parse(response);
+					                    if(response.success){
+                                                                var puc= $('#pucproducto').val();
+                                                                $('#cuentaip').val(response.categoria+puc);
+                                                                $('#disponibilidad').val(response.idpuccoordinacion);
+                                                                $('#cuentaip').val();
+                                                                $('#disponibilidad').val(response.disponible);
+                                                                $('#oculto3').val(response.categoria);
+                                                                $('#categoriaoculto').val(response.categoria);
+                                                                var categoriaoculto = $('#oculto3').val();
+                                                                alert(categoriaoculto);
+                                                                 console.log(response);
 						    //$('#disponibilidad').val(response.disponibilidad);
 						  }
 						    else{
@@ -277,7 +226,8 @@ $form = ActiveForm::begin(['id' => 'form_agregar_imputacion',]);
 							//$('#pcont').unblock();
 						       }
 					}
-			});"])->label('Unidad Ejecutora');?>
+			});"])->label('Unidad Ejecutora');
+            ?>
             
             <label class="label-control">CUENTA</label>
             <input type="text" class="form-control" name="cuenta" id="cuentaip" readonly="true">
@@ -289,12 +239,12 @@ $form = ActiveForm::begin(['id' => 'form_agregar_imputacion',]);
        </div>
 
         <div class ="col-md-4 column">
-
-        <?= $form->field($puc, 'descripcion')->textinput(['id' => 'pucd', 'readonly' => 'readonly'])->label('Descripcion de cuenta'); ?>
+            
+        <label>Descripcion de la Cuenta</label>
+        <input type="text" id="pucd" class="form-control" readonly="true">
 	<?= $form->field($model, 'monto')->textinput(['id' => 'montoip', 'onkeypress' => 'return acceptNum(event)', 'onblur' => 'formateadora();'])->label('monto'); ?>
-	<?= $form->field($cp, 'auxiliar')->dropDownlist(Arrayhelper::map(Cuentapresupuestaria::find()
-                
-                 ->all(), 'auxiliar', 'auxiliar'), ['prompt' => 'ord']);?>
+        <?= $form->field($cp, 'auxiliar')->dropDownlist(Arrayhelper::map(Cuentapresupuestaria::find()->all(), 'auxiliar', 'auxiliar'), ['prompt' => 'ord']);?>
+      
 
         </div>
     </div>
@@ -303,6 +253,7 @@ $form = ActiveForm::begin(['id' => 'form_agregar_imputacion',]);
 ActiveForm::end();
 Modal::end(); ?>
 
+                                           <!modal productos-->
 <?php
 Modal::begin([ 'id' => 'modalAgregarProducto', 'header' => '<h3 align="center">AGREGAR PRODUCTOS</h3>']);
 
@@ -330,6 +281,7 @@ Modal::end(); ?>
 </script>-->
 
 
+<!--
 <script type="text/javascript">
 $(document).ready(function() {
 $('#enviar').click(function(event){
@@ -349,7 +301,7 @@ $('#enviar').click(function(event){
 
   });
 });
-</script>
+</script>-->
 
 <?php
 $this->endBody();
@@ -362,8 +314,9 @@ $this->endPage();
 	});
 	</script>
         
+     
+  
         
-       
 
 
 

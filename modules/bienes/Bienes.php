@@ -12,12 +12,9 @@ class Bienes extends \yii\base\Module
 
         // custom initialization code goes here
          \Yii::$app->params['menuItems'] = [
+          
             [
-                'label' => 'Dashboard', 'url' => \Yii::$app->homeUrl,
-                'icon' => 'dashboard',
-            ],
-            [
-                'label' => 'Bienes', 'url' => ['/bienes/bienes'],
+                'label' => 'Bienes', 'url' => ['/bienes'],
                 'icon' => 'table',
             ],
         ];

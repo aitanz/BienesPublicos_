@@ -40,7 +40,7 @@ class BienesNCodigoBien extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_codigo', 'id_localidad', 'identificacion', 'nombre', 'descripcion', 'valor_unidad', 'justiprecio', 'ano_adquisicion', 'ubicacion', 'tipo_adquisicion', 'n_documento'], 'required'],
+            [['id_codigo', 'id_localidad', 'identificacion', 'nombre', 'descripcion', 'valor_unidad', 'justiprecio', 'ubicacion', 'tipo_adquisicion', 'n_documento'], 'required'],
             [['id_codigo', 'id_localidad', 'identificacion'], 'integer'],
             [['nombre', 'descripcion', 'ubicacion', 'tipo_adquisicion', 'n_documento'], 'string'],
             [['valor_unidad', 'justiprecio'], 'number'],

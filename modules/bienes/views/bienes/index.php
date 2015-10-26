@@ -2,6 +2,12 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\ArrayHelper;
+use app\modules\bienes\models\BienesLocalidad;
+use app\modules\bienes\models\BienesCodigo;
+
+$BienesLocalidad =  new BienesLocalidad;
+$BienesCodigo =  new BienesCodigo;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\modules\bienes\models\BienesNCodigoBienSearch */
@@ -22,11 +28,25 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id_codigo',
-            'id_localidad',
+            [
+              'attribute' => 'id_codigo',
+              'value' => function($BienesCodigo){
+              $Codigo = BienesCodigo::findOne($BienesCodigo->id_codigo);
+              return $Codigo->descripcion;
+                },
+            ],
+            [
+              'attribute' => 'id_localidad',
+              'value' => function($BienesLocalidad){
+              $Localidad = BienesLocalidad::findOne($BienesLocalidad->id_localidad);
+              return $Localidad->nombre;
+            },
+
+            ],
             'identificacion',
             'nombre',
             'descripcion',

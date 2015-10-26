@@ -1,20 +1,19 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\DetailView;
+
 use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $model app\modules\bienes\models\BienesCodigo */
 
 $this->title = 'Codigo de los Bienes';
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Bienes Codigos'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bienes-codigo-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    
+   
   
 
 <?= GridView::widget([
@@ -29,7 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'descripcion',
             'padre',
             'codigo_completo',
-//'vAlign'=>'middle',
+
+           // ['class' => 'yii\grid\ActionColumn'],// acciones de la columna 
             ], //fin de la columna
 
     ]); 

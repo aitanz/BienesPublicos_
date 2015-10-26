@@ -18,20 +18,20 @@ $this->title = Yii::t('app', 'Bienes Codigos');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bienes-codigo-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+   <h1 align="center">Codigo de los Bienes<h1>
+    <!--<h1><?= Html::encode($this->title) ?></h1>-->
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    
+    <br><br>
 
 
         <div class='container'>
-        <div class='main row'>
-        <div class='col-md-6 column'>
-             <span align='left'><?= Html::a(Yii::t('app', 'Crear codigo del Bien'), ['create'], ['class' => 'btn btn-success']) ?></span>
+        <div class='row'>
+        <div class='col-md-3 column'>
+           <span ><?= Html::a(Yii::t('app', 'Crear'), ['create'], ['class' => 'btn btn-success btn-lg']) ?></span>
         </div>
-        <div class='col-md-6 column'>
-             <span align='rigth'><?= Html::a(Yii::t('app', 'Ver'), ['view'], ['class' => 'btn btn-info']) ?></span>
+        <div class='col-md-3 column'>
+             <span><?= Html::a(Yii::t('app', 'Ver'), ['view'], ['class' => 'btn btn-info btn-lg']) ?></span>
         </div>
         </div>
         </div>

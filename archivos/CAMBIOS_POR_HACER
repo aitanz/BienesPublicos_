@@ -1,0 +1,2 @@
+MODULOS:
+-Verificar los registros guardados en BDD con los existentes y borrar los modulos, controaldores y acciones que no existen.

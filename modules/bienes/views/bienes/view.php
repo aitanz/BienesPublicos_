@@ -2,8 +2,12 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\helpers\ArrayHelper;
+use app\modules\bienes\models\BienesSede;
+use app\modules\bienes\models\BienesCodigo;
 
-$BienesLocalidad =  new app\modules\bienes\models\BienesLocalidad;
+$BienesSede =  new BienesSede;
+$BienesCodigo =  new BienesCodigo;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\bienes\models\BienesNCodigoBien */
@@ -30,18 +34,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id_codigo',
-            'id_localidad',
-          //  [
-          //  'attribute'=>'localidad',
-            //'value'=>'$BienesLocalidad->nombre',
-            //],
-
-          //  'prompt'=>'Seleccione',
-          /*[
-            'attribute' => 'localidad',
-            'value' => 'BienesLocalidad.nombre'
-          ],*/
+            [
+              'attribute' => 'id_codigo',
+              'value' =>  BienesCodigo::findOne($model->id_codigo)->descripcion
+            ],
+            [
+              'attribute' => 'id_sede',
+              'value' =>  BienesSede::findOne($model->id_sede)->nombre
+            ],
             'identificacion',
             'nombre',
             'descripcion',

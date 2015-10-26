@@ -1,0 +1,92 @@
+- Tabla persona: CONSTRAINT pk_persona PRIMARY KEY (cedula )
+
+- Tabla Usuario: CONSTRAINT fk_usuario FOREIGN KEY (persona)
+      REFERENCES persona (cedula) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+
+- Esquema seguridad
+
+- CREATE TABLE seguridad.modulo
+(
+  id_modulo serial NOT NULL,
+  descripcion character varying(50) NOT NULL,
+  UNIQUE(descripcion),
+  CONSTRAINT modulo_pkey PRIMARY KEY (id_modulo ),
+  CONSTRAINT modulo_descripcion_key UNIQUE (descripcion )
+);
+ALTER TABLE seguridad.modulo OWNER TO JBOSS;
+
+
+CREATE TABLE seguridad.controlador
+(
+  id_controlador serial NOT NULL,
+  id_modulo integer NOT NULL,
+  descripcion character varying(50) NOT NULL,
+  CONSTRAINT controlador_pkey PRIMARY KEY (id_controlador ),
+  UNIQUE(id_modulo, descripcion),
+  CONSTRAINT fkweb_controlador806476 FOREIGN KEY (id_modulo)
+      REFERENCES seguridad.modulo (id_modulo) MATCH SIMPLE
+      ON UPDATE CASCADE ON DELETE CASCADE
+);
+ALTER TABLE seguridad.controlador OWNER TO JBOSS;
+
+
+CREATE TABLE seguridad.acciones
+(
+  id_accion serial NOT NULL,
+  id_controlador integer NOT NULL,
+  descripcion character varying(25) NOT NULL,
+  CONSTRAINT acciones_pkey PRIMARY KEY (id_accion , id_controlador ),
+  UNIQUE(id_controlador, descripcion),
+  CONSTRAINT fkweb_accion806476 FOREIGN KEY (id_controlador)
+      REFERENCES seguridad.controlador (id_controlador) MATCH SIMPLE
+      ON UPDATE CASCADE ON DELETE CASCADE
+);
+ALTER TABLE seguridad.acciones OWNER TO JBOSS;
+
+
+CREATE TABLE seguridad.grupo
+(
+  id_grupo serial NOT NULL,
+  nombre character varying(25) NOT NULL,
+  descripcion character varying(255) NOT NULL,
+  administrador boolean NOT NULL default FALSE,
+  CONSTRAINT grupo_pkey PRIMARY KEY (id_grupo ),
+  CONSTRAINT grupo_nombre_key UNIQUE (nombre )
+);
+ALTER TABLE seguridad.grupo OWNER TO JBOSS;
+
+
+CREATE TABLE seguridad.accion_grupo
+(
+  id_accion integer NOT NULL,
+  id_controlador integer NOT NULL,
+  id_grupo integer NOT NULL,
+  CONSTRAINT accion_grupo_pkey PRIMARY KEY (id_accion , id_controlador , id_grupo ),
+  CONSTRAINT fkweb_accion273741 FOREIGN KEY (id_accion, id_controlador)
+      REFERENCES seguridad.acciones (id_accion, id_controlador) MATCH SIMPLE
+      ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fkweb_accion473202 FOREIGN KEY (id_grupo)
+      REFERENCES seguridad.grupo (id_grupo) MATCH SIMPLE
+      ON UPDATE CASCADE ON DELETE CASCADE
+);
+ALTER TABLE seguridad.accion_grupo OWNER TO JBOSS;
+
+
+CREATE TABLE seguridad.usuario_grupo
+(
+  id_grupo integer NOT NULL,
+  id_usuario integer NOT NULL,
+  CONSTRAINT usuario_grupo_pkey PRIMARY KEY (id_grupo , id_usuario ),
+  CONSTRAINT fkweb_usuari144847 FOREIGN KEY (id_grupo)
+      REFERENCES seguridad.grupo (id_grupo) MATCH SIMPLE
+      ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fkweb_usuari959099 FOREIGN KEY (id_usuario)
+      REFERENCES usuario (idusuario) MATCH SIMPLE
+      ON UPDATE CASCADE ON DELETE CASCADE
+);
+ALTER TABLE seguridad.usuario_grupo OWNER TO JBOSS;
+
+
+
+- Tabla persona: alter table add column "rememberMe" boolean not null default false;
