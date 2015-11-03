@@ -8,10 +8,10 @@ use app\modules\bienes\models\BienesNCodigoBienSearch;
 use app\components\AitController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use app\modules\bienes\models\BienesLocalidad;
 use app\modules\bienes\models\BienesCodigo;
+$direccion = \yii::$app->user->Identity->id_direccion;
+$idusuario = \yii::$app->user->Identity->id_usuario;
 
-$BienesLocalidad =  new BienesLocalidad;
 $BienesCodigo = new BienesCodigo;
 /**
  * BienesController implements the CRUD actions for BienesNCodigoBien model.
@@ -51,10 +51,10 @@ class BienesController extends AitController
      * @param integer $id_localidad
      * @return mixed
      */
-    public function actionView($id_codigo, $id_localidad)
+    public function actionView($id_codigo)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id_codigo, $id_localidad),
+            'model' => $this->findModel($id_codigo),
 
 
             //'model' => $this->findModel($id_codigo, find->where('$BienesLocalidad' = $id_localidad),
@@ -89,10 +89,8 @@ class BienesController extends AitController
         // $model->id_localidad = 2;
 
 
-
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id_codigo' => $model->id_codigo, 'id_localidad' => $model->id_localidad]);
+            return $this->redirect(['view', 'id_codigo' => $model->id_codigo]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -108,12 +106,12 @@ class BienesController extends AitController
      * @param integer $id_localidad
      * @return mixed
      */
-    public function actionUpdate($id_codigo, $id_localidad)
+    public function actionUpdate($id_codigo)
     {
-        $model = $this->findModel($id_codigo, $id_localidad);
+        $model = $this->findModel($id_codigo);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id_codigo' => $model->id_codigo, 'id_localidad' => $model->id_localidad]);
+            return $this->redirect(['view', 'id_codigo' => $model->id_codigo]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -128,9 +126,9 @@ class BienesController extends AitController
      * @param integer $id_localidad
      * @return mixed
      */
-    public function actionDelete($id_codigo, $id_localidad)
+    public function actionDelete($id_codigo)
     {
-        $this->findModel($id_codigo, $id_localidad)->delete();
+        $this->findModel($id_codigo)->delete();
 
         return $this->redirect(['index']);
     }
@@ -143,9 +141,9 @@ class BienesController extends AitController
      * @return BienesNCodigoBien the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id_codigo, $id_localidad)
+    protected function findModel($id_codigo)
     {
-        if (($model = BienesNCodigoBien::findOne(['id_codigo' => $id_codigo, 'id_localidad' => $id_localidad])) !== null) {
+        if (($model = BienesNCodigoBien::findOne(['id_codigo' => $id_codigo])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

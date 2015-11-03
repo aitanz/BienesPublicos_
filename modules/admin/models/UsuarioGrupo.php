@@ -3,7 +3,8 @@
 namespace app\modules\admin\models;
 
 use Yii;
-use app\models\Usuario;
+// use app\models\Usuario;
+use app\modules\admin\models\SeguridadUsuarios;
 
 /**
  * This is the model class for table "seguridad.usuario_grupo".
@@ -51,7 +52,7 @@ class UsuarioGrupo extends \yii\db\ActiveRecord
      */
     public function getIdUsuario()
     {
-        return $this->hasOne(Usuario::className(), ['idusuario' => 'id_usuario']);
+        return $this->hasOne(SeguridadUsuarios::className(), ['id_usuario' => 'id_usuario']);
     }
 
     /**

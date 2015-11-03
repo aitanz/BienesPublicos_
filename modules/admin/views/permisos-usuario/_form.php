@@ -39,11 +39,11 @@ use yii\helpers\Html;
         $(document).ready(function(){
             actualizarPermisos();
             $('#btn-assign').click(function () {
-                asignarPermisos(<?= $model->idusuario ?>, $("#list-available option:selected").val(), 1);
+                asignarPermisos(<?= $model->id_usuario ?>, $("#list-available option:selected").val(), 1);
                 return false;
             });
             $('#btn-revoke').click(function () {
-                asignarPermisos(<?= $model->idusuario ?>, $("#list-assigned option:selected").val(), -1);
+                asignarPermisos(<?= $model->id_usuario ?>, $("#list-assigned option:selected").val(), -1);
                 return false;
             });
             $('#btn-refresh').click(function () {
@@ -103,7 +103,7 @@ use yii\helpers\Html;
             cache: false,
             url: '<?= yii\helpers\Url::to(['/admin/permisos-usuario/buscar-permisos']) ?>',
             data: {
-                id: <?= $model->idusuario ?>
+                id: <?= $model->id_usuario ?>
             },
             beforeSend: function (xhr)
             {

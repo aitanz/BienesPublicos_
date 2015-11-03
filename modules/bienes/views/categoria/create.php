@@ -2,13 +2,11 @@
 
 use yii\helpers\Html;
 
-
 /* @var $this yii\web\View */
 /* @var $model app\modules\bienes\models\BienesCategoria */
 
-$this->title = Yii::t('app', 'Create Bienes Categoria');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Bienes Categorias'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', 'Crear Categoria');
+
 ?>
 <div class="bienes-categoria-create">
 

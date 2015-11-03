@@ -5,13 +5,12 @@ namespace app\modules\bienes\controllers;
 use Yii;
 use app\modules\bienes\models\BienesCodigo;
 use app\modules\bienes\models\BienesCodigoSearch;
-use app\modules\bienes\models\AjaxMensaje;
 use app\components\AitController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\widgets\ActiveForm;
-use yii\web\response;
-
+use yii\widgets\Pjax;
+use yii\web\Response;
 class CodigoController extends AitController
 {
    
@@ -31,19 +30,12 @@ class CodigoController extends AitController
      * Lists all BienesCodigo models.
      * @return mixed
      */
-    public function actionView()
+   public function actionView($id)
     {
-        
-    
-     
-        $searchModel = new BienesCodigoSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('view', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-           
-        ]);
+         $model = $this->findModel($id);
+    return $this->renderAjax('view', [
+        'model' => $model,
+    ]);
     }
 
     /**
@@ -52,11 +44,14 @@ class CodigoController extends AitController
      * @return mixed
      */
     public function actionIndex()
-    {  
-       
-        return $this->render('index');
+    {
+        $searchModel = new BienesCodigoSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     /**
@@ -64,25 +59,33 @@ class CodigoController extends AitController
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+ public function actionCreate($submit= false)
     {
-         
-       
         $model = new BienesCodigo();
-        $model->padre = 0;
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-         
-            return $this->redirect(['view', 'id' => $model->id_codigo //crear mensaje con parametro 
-            
-        
-               ]);
-                
+        $model->padre=0;
+
+       if (Yii::$app->request->isAjax && $model->load(Yii::$app->request->post()) && $submit == false) {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        return ActiveForm::validate($model);
+    }
+ 
+    if ($model->load(Yii::$app->request->post())) {
+        if ($model->save()) {
+            $model->refresh();
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return [
+                'message' => '¡Guardado Éxitosamente!',
+            ];
         } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($model);
         }
     }
+ 
+    return $this->renderAjax('create', [
+        'model' => $model,
+    ]);
+}
 /*
 public function actionAjaxMensaje()
 {
@@ -92,17 +95,31 @@ return $this->render('index',['model'=>$model
     ]);
 }*/
   
-    public function actionUpdate($id)
+ public function actionUpdate($id, $submit = false)
     {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_codigo]);
+         $model = $this->findModel($id);
+ 
+    if (Yii::$app->request->isAjax && $model->load(Yii::$app->request->post()) && $submit == false) {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        return ActiveForm::validate($model);
+    }
+ 
+    if ($model->load(Yii::$app->request->post())) {
+        if ($model->save()) {
+            $model->refresh();
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return [
+                'message' => '¡Guardado Éxitosamente!',
+            ];
         } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($model);
         }
+    }
+ 
+    return $this->renderAjax('update', [
+        'model' => $model,
+    ]);
     }
 
     /**

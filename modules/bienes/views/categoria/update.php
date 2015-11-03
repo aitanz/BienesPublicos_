@@ -1,16 +1,12 @@
 <?php
 
 use yii\helpers\Html;
-
+use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model app\modules\bienes\models\BienesCategoria */
 
-$this->title = Yii::t('app', 'Update {modelClass}: ', [
-    'modelClass' => 'Bienes Categoria',
-]) . ' ' . $model->id_categoria;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Bienes Categorias'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id_categoria, 'url' => ['view', 'id' => $model->id_categoria]];
-$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
+$this->title = Yii::t('app', 'Actualizar Bienes');
+
 ?>
 <div class="bienes-categoria-update">
 

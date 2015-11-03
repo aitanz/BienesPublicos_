@@ -49,6 +49,8 @@ echo $coordination.' idcoordinacion del usuario del usuario <br>';*/
         <div class='panel-body'>
             <!--aqui va el cuerpo del formulario-->
         
+           
+            
         <?php
             $form = ActiveForm::begin([ 'id' => 'form_bienesysuministros',
                                         'enableClientValidation' => true,
@@ -204,7 +206,8 @@ $form = ActiveForm::begin(['id' => 'form_agregar_imputacion',]);
 				                    data:{idcoordinacion: $('#ueip').val(), 
                                                           idpuc:$('#puc').val(),
                                                           idpuccoordinacion:$('#oculto1').val(),
-                                                          puccoordinacion:$('#oculto2').val()},
+                                                          puccoordinacion:$('#oculto2').val(),
+                                                          },
 				                    success: function(response){
 				                            response = JSON.parse(response);
 					                    if(response.success){
@@ -215,18 +218,18 @@ $form = ActiveForm::begin(['id' => 'form_agregar_imputacion',]);
                                                                 $('#disponibilidad').val(response.disponible);
                                                                 $('#oculto3').val(response.categoria);
                                                                 $('#categoriaoculto').val(response.categoria);
+                                                                
                                                                 var categoriaoculto = $('#oculto3').val();
-                                                                alert(categoriaoculto);
-                                                                 console.log(response);
-						    //$('#disponibilidad').val(response.disponibilidad);
-						  }
-						    else{
-                                                        console.log(response);
-							//alert(response.mensaje);
-							//$('#pcont').unblock();
-						       }
-					}
-			});"])->label('Unidad Ejecutora');
+                                                                console.log(response);
+						                //$('#disponibilidad').val(response.disponibilidad);
+						             }
+						                else{
+                                                                   console.log(response);
+							           //alert(response.mensaje);
+							            //$('#pcont').unblock();
+						                 }
+					                    }
+	});"])->label('Unidad Ejecutora');
             ?>
             
             <label class="label-control">CUENTA</label>
@@ -307,15 +310,24 @@ $('#enviar').click(function(event){
 $this->endBody();
 $this->endPage();
 ?>
-
-	<script type="text/javascript">
+    <script type="text/javascript">
 	$(document).ready(function(){
 		$("#modalImputacion .modal-dialog").addClass("modal-lg");
 	});
-	</script>
+    </script>
         
      
-  
+   <script>
+    $(document).ready(function(){
+        $("#requisiciondeta-descripcion").blur(function() {
+           
+            var cadena = $(this).val();
+            $("#descripcionoculto").val(cadena);
+            alert(cadena);
+            return false;
+        });
+    });
+</script>
         
 
 

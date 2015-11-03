@@ -49,6 +49,6 @@ class BienesBienCompuesto extends \yii\db\ActiveRecord
      */
     public function getIdCodigo()
     {
-        return $this->hasOne(BienesNCodigoBien::className(), ['id_codigo' => 'id_codigo', 'id_localidad' => 'id_localidad']);
+        return $this->hasOne(BienesNCodigoBien::className(), ['id_codigo' => 'id_codigo', 'id_direccion' => 'id_localidad']);
     }
 }

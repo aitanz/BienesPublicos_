@@ -1,13 +1,17 @@
 <?php
 
 namespace app\modules\bienes\controllers;
-
+use yii\widgets\Pjax;
 use Yii;
+use yii\helpers\Html;
+use yii\web\Response;
+use yii\widgets\ActiveForm;
 use app\modules\bienes\models\BienesCategoria;
 use app\modules\bienes\models\BienesCategoriaSearch;
 use app\components\AitController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\base\Model;
 
 /**
  * CategoriaController implements the CRUD actions for BienesCategoria model.
@@ -48,28 +52,43 @@ class CategoriaController extends AitController
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+         $model = $this->findModel($id);
+    return $this->renderAjax('view', [
+        'model' => $model,
+    ]);
     }
-
+                       
     /**
-     * Creates a new BienesCategoria model.
+     * Creates a new BienesCategoria model.s
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($submit= false)
     {
         $model = new BienesCategoria();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_categoria]);
+       if (Yii::$app->request->isAjax && $model->load(Yii::$app->request->post()) && $submit == false) {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        return ActiveForm::validate($model);
+    }
+ 
+    if ($model->load(Yii::$app->request->post())) {
+        if ($model->save()) {
+            $model->refresh();
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return [
+                'message' => '¡Guardado Éxitosamente!',
+            ];
         } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($model);
         }
     }
+ 
+    return $this->renderAjax('create', [
+        'model' => $model,
+    ]);
+}
 
     /**
      * Updates an existing BienesCategoria model.
@@ -77,17 +96,31 @@ class CategoriaController extends AitController
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate($id, $submit = false)
     {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_categoria]);
+         $model = $this->findModel($id);
+ 
+    if (Yii::$app->request->isAjax && $model->load(Yii::$app->request->post()) && $submit == false) {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        return ActiveForm::validate($model);
+    }
+ 
+    if ($model->load(Yii::$app->request->post())) {
+        if ($model->save()) {
+            $model->refresh();
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return [
+                'message' => '¡Guardado Éxitosamente!',
+            ];
         } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($model);
         }
+    }
+ 
+    return $this->renderAjax('update', [
+        'model' => $model,
+    ]);
     }
 
     /**

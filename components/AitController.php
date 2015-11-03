@@ -5,7 +5,7 @@ namespace app\components;
 use Yii;
 use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
-use app\models\Usuario;
+use app\modules\admin\models\SeguridadUsuarios;
 
 class AitController extends Controller
 {
@@ -14,7 +14,7 @@ class AitController extends Controller
         $accion = str_ireplace("action", "", $action->actionMethod);
         try
         {
-                if( !Usuario::hasAccess( $this->module->id, $this->id, $accion ) )
+                if( !SeguridadUsuarios::hasAccess( $this->module->id, $this->id, $accion ) )
                 {
                     throw new ForbiddenHttpException("No tiene permisos para ver esta pagina.");
                 }

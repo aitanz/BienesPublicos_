@@ -17,11 +17,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id_codigo') ?>
 
-    <?= $form->field($model, 'id_localidad') ?>
 
     <?= $form->field($model, 'identificacion') ?>
 
-    <?= $form->field($model, 'nombre') ?>
 
     <?= $form->field($model, 'descripcion') ?>
 

@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use kartik\widgets\AlertBlock;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\requisiciones\models\Requisicion */
@@ -10,6 +11,12 @@ $this->title = $model->idrequisicion;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Requisicions'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+ <?=  AlertBlock::widget([
+    'useSessionFlash' => true,
+    'type' => AlertBlock::TYPE_GROWL]);?>
+
+
 <div class="requisicion-view">
 
     <h1><?= Html::encode($this->title) ?></h1>

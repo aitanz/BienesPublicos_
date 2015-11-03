@@ -75,7 +75,7 @@ class Grupo extends \yii\db\ActiveRecord
      */
     public function getIdUsuarios()
     {
-        return $this->hasMany(Usuario::className(), ['idusuario' => 'id_usuario'])->viaTable('usuario_grupo', ['id_grupo' => 'id_grupo']);
+        return $this->hasMany(SeguridadUsuarios::className(), ['id_usuario' => 'id_usuario'])->viaTable('usuario_grupo', ['id_grupo' => 'id_grupo']);
     }
 
     /**

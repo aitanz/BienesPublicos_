@@ -22,9 +22,8 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
     {
         return [
             [['id_codigo',  'identificacion'], 'integer'],
-            [['nombre', 'descripcion', 'ano_adquisicion', 'ubicacion', 'tipo_adquisicion', 'n_documento', 'id_localidad'], 'safe'],
+            [['descripcion', 'ano_adquisicion', 'ubicacion', 'tipo_adquisicion', 'n_documento'], 'safe'],
             [['valor_unidad', 'justiprecio'], 'number'],
-          //  [['id_localidad'], 'safe'],
         ];
     }
 
@@ -65,15 +64,13 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
         $query->andFilterWhere([
 
             'id_codigo' => $this->id_codigo,
-            'id_localidad' => $this->id_localidad,
             'identificacion' => $this->identificacion,
             'valor_unidad' => $this->valor_unidad,
             'justiprecio' => $this->justiprecio,
             'ano_adquisicion' => $this->ano_adquisicion,
         ]);
 
-        $query->andFilterWhere(['like', 'nombre', $this->nombre])
-            ->andFilterWhere(['like', 'descripcion', $this->descripcion])
+        $query->andFilterWhere(['like', 'descripcion', $this->descripcion])
             ->andFilterWhere(['like', 'ubicacion', $this->ubicacion])
             ->andFilterWhere(['like', 'tipo_adquisicion', $this->tipo_adquisicion])
             ->andFilterWhere(['like', 'n_documento', $this->n_documento]);

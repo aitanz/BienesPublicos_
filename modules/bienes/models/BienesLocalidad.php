@@ -15,8 +15,6 @@ use Yii;
  * @property integer $id_tipo_localidad
  *
  * @property BienesTipoLocalidadBien $idTipoLocalidad
- * @property BienesNCodigoBien[] $bienesNCodigoBiens
- * @property BienesCodigo[] $idCodigos
  */
 class BienesLocalidad extends \yii\db\ActiveRecord
 {
@@ -61,21 +59,5 @@ class BienesLocalidad extends \yii\db\ActiveRecord
     public function getIdTipoLocalidad()
     {
         return $this->hasOne(BienesTipoLocalidadBien::className(), ['id_tipo_localidad' => 'id_tipo_localidad']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBienesNCodigoBiens()
-    {
-        return $this->hasMany(BienesNCodigoBien::className(), ['id_localidad' => 'id_localidad']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIdCodigos()
-    {
-        return $this->hasMany(BienesCodigo::className(), ['id_codigo' => 'id_codigo'])->viaTable('n_codigo_bien', ['id_localidad' => 'id_localidad']);
     }
 }

@@ -42,7 +42,7 @@ class RequisicionController extends AitController
 
         return $this->render('index', [
                     'searchModel' => $searchModel,
-                    'dataProvider' => $dataProvider,]);
+                    'dataProvider' => $dataProvider]);
     }
 
     /**
@@ -63,25 +63,18 @@ class RequisicionController extends AitController
 
        
         $model = new Requisicion();
-        $reqDeta = new Requisiciondeta();
-        $capro = new Categoriaprogramatica();
-        $puc = new Puc();
-        $cp = new Cuentapresupuestaria();
+        $reqDeta = new Requisiciondeta();    
         $unidadmedida = new Unidadmedida();
         $tipoproducto = new Tipoproducto();
         $tp = new Tipopagos();
-        $prove = new Proveedor();
         $coordinacion = new Coordinacion();
-        //modelo requisicione
-        $model->numcontrol= 23;
-        //modelo tipo producto
-        $tipoproducto->descripcion = "fuerza bruta";
-    
         
-        //modelo coordinacion
-        $coordinacion->nombre = "fgf";
-        $coordinacion->funciones = "amarrar la perra";
-         //modelo cuentapresupuestaria
+        /*modelo requisiciones
+        $model->numcontrol= 23;
+        $model->concepto='pruebas';
+        $tipoproducto->descripcion = "fuerza bruta";
+        $coordinacion->nombre = "analista";
+        $coordinacion->funciones = "nada";
         $cp->causado = "bull";
         $cp->comprometido = "bull";
         $cp->disponibilidad = "bull";
@@ -90,17 +83,18 @@ class RequisicionController extends AitController
         $cp->statusaprobacion = 1;
         $cp->tipopartida = 6;
         $cp->montoinicial = "bull";
-        $tp->descripcion = "bull";
-
-        if ($model->load(Yii::$app->request->post()) && $model->save() &&
-            $reqDeta->load(Yii::$app->request->post()) && $reqDeta->save()){
-              
-             return $this->redirect(['index','model'=>$model,'reqdeta'=>$reqDeta]);
-        } 
-        else {
-               return $this->render('create', ['model' => $model,
-                                               'requisiciondeta' => $reqDeta]);
-        }
+        $tp->descripcion = "bull";*/
+       
+        if ($model->load(Yii::$app->request->post()) && $model->save() && 
+            $reqDeta->load(Yii::$app->request->post()) && $reqDeta->save()) 
+             {
+           $mensaje =  Yii::$app->session->setFlash('success', 'Datos de Requisicion Guardados..');
+             //return $this->redirect(['index','model'=>$model,'mensaje'=>$mensaje]);
+             return $this->redirect(['view', 'id' => $model->idrequisicion]);
+         } 
+             else {
+                   return $this->render('create', ['model' => $model,'requisiciondeta'=>$reqDeta]);
+             }
     }
 
   
@@ -205,7 +199,7 @@ class RequisicionController extends AitController
             $categoria = Categoriaprogramatica::find()->where(['idcoordinacion' => \yii::$app->request->post('idcoordinacion')])->one();
             $cuentapre = $categoria->categoriaprogramatica; //guardo la cuentapresupuestaria en esta variable!
             $disponible = Cuentapresupuestaria::find()->where(['puc' => \yii::$app->request->post('puccoordinacion')])->one();
-            if ($categoria) {
+            if($categoria) {
                 $return = array('success' => 'true', 'categoria' => trim($categoria->categoriaprogramatica),
                     'disponible' => trim($disponible->disponibilidad));
                
@@ -300,11 +294,7 @@ class RequisicionController extends AitController
 	    $datos = yii::$app->request->POST('tipo');
             $response = ['success'=>false,'mensaje'=>''];
             if($datos == 0){
-              $bienes = $this->renderPartial("formulario_bienesysuministro",[
-		'model' => $model,
-		'tipoproducto' => $tipoproducto,
-		'reqDeta' => $reqDeta->cantidad,
-		'unidadmedida' => $unidadmedida ],false,true);
+              $bienes = $this->renderPartial("formulario_bienesysuministro",['requisiciondeta' => $reqDeta->cantidad],false,true);
 		$response = ['success'=>true,'mensaje'=>$bienes];
             }
 
@@ -339,28 +329,80 @@ class RequisicionController extends AitController
 			}
 
 
-    public function actionGetProductopuc(){
-        $return = array('success'=>'false', 'mensaje'=>'vacio');
-	if(\yii::$app->request->isAjax &&  isset($_POST['idtipoproducto'])){
-            $consulta= Tipoproducto::findOne(\yii::$app->request->post('idtipoproducto'));
+    public function actionGetProductopuc() {
+        $return = array('success' => 'false', 'mensaje' => 'vacio');
+        if (\yii::$app->request->isAjax && isset($_POST['idtipoproducto'])) {
+            $consulta = Tipoproducto::findOne(\yii::$app->request->post('idtipoproducto'));
             $setpuc = Cuentapresupuestaria::find(\yii::$app->request->post('idpuccoordinacion'));
-                if($consulta){
-		  $return = array('success'=> 'true', 'llamada'=>trim($consulta->puc),
-                      'categoria'=>trim($consulta->descripcion),
-                      'idpuc'=>trim($consulta->idpuc) ,
-                      );
-		    }
-		  else{
-		        $return = array('success'=>'false','mensaje'=>'no se encontro registro');
-			  }
-  		    echo json_encode($return);
-  	            return;
-                             
+            if ($consulta) {
+                $return = array('success' => 'true', 'llamada' => trim($consulta->puc),
+                    'categoria' => trim($consulta->descripcion),
+                    'idpuc' => trim($consulta->idpuc),
+                );
+            } else {
+                $return = array('success' => 'false', 'mensaje' => 'no se encontro registro');
+            }
+            echo json_encode($return);
+            return;
         }
     }
+
+    
+    
+    
+    
+      public function actionBienes() {
+        return $this->render('formbienesysuministros');
+    }                                               
+
+    
+    public function actionCreatebienes() {
+       
+          
+        $model = new Requisicion();
+        $reqDeta = new Requisiciondeta();
+        $capro = new Categoriaprogramatica();
+        $puc = new Puc();
+        $cp = new Cuentapresupuestaria();
+        $unidadmedida = new Unidadmedida();
+        $tipoproducto = new Tipoproducto();
+        $tp = new Tipopagos();
+        $prove = new Proveedor();
+        $coordinacion = new Coordinacion();
+        //modelo requisicione
+        $model->numcontrol= 23;
+        $model->concepto='pruebas';
+        //modelo tipo producto
+        $tipoproducto->descripcion = "fuerza bruta";
+        //modelo reqisiciondeta
+     
         
-  
+        //modelo coordinacion
+        $coordinacion->nombre = "analista";
+        $coordinacion->funciones = "nada";
+         //modelo cuentapresupuestaria
+        $cp->causado = "bull";
+        $cp->comprometido = "bull";
+        $cp->disponibilidad = "bull";
+        $cp->pagado = "bull";
+        $cp->precomprometido = "bull";
+        $cp->statusaprobacion = 1;
+        $cp->tipopartida = 6;
+        $cp->montoinicial = "bull";
+        $tp->descripcion = "bull";
         
-        
-        
-     }
+         
+
+        if ($model->load(Yii::$app->request->post()) && $model->save() &&
+            $reqDeta->load(Yii::$app->request->post()) && $reqDeta->save()){
+             
+             return $this->redirect(['index','model'=>$model,'requisiciondeta'=>$reqDeta]);
+        } 
+             else {
+             return $this->render('create', ['model' => $model,
+                                               'requisiciondeta' => $reqDeta]);
+        }
+    }
+    
+
+}

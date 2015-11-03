@@ -4,8 +4,8 @@ namespace app\modules\admin\controllers;
 
 use Yii;
 use app\components\AitController;
-use app\models\Usuario;
-use app\models\UsuarioSearch;
+use app\modules\admin\models\SeguridadUsuarios;
+use app\modules\admin\models\SeguridadUsuariosSearch;
 use app\modules\admin\models\UsuarioGrupo;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -36,7 +36,7 @@ class PermisosUsuarioController extends AitController
      */
     public function actionIndex()
     {
-        $searchModel = new UsuarioSearch();
+        $searchModel = new SeguridadUsuariosSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -57,18 +57,18 @@ class PermisosUsuarioController extends AitController
         $model = $this->findModel($id);
         try
         {
-            if(Yii::$app->request->post("Usuario"))
+            if(Yii::$app->request->post("SeguridadUsuarios"))
             {
                 foreach( $model->seguridadUsuarioGrupos as $usuarioGrupo)
                 {
                     $usuarioGrupo->delete();
                 }
-                foreach (Yii::$app->request->post("Usuario") as $grupos)
+                foreach (Yii::$app->request->post("SeguridadUsuarios") as $grupos)
                 {
                     foreach ($grupos as $grupo)
                     {
                         $usuarioGrupo = new UsuarioGrupo();
-                        $usuarioGrupo->id_usuario = $model->idusuario;
+                        $usuarioGrupo->id_usuario = $model->id_usuario;
                         $usuarioGrupo->id_grupo = $grupo;
                         $usuarioGrupo->save();
                     }
@@ -96,7 +96,7 @@ class PermisosUsuarioController extends AitController
      */
     protected function findModel($id_usuario)
     {
-        if( ($model = Usuario::findOne( $id_usuario )) !== null)
+        if( ($model = SeguridadUsuarios::findOne( $id_usuario )) !== null)
         {
             return $model;
         }
@@ -118,7 +118,7 @@ class PermisosUsuarioController extends AitController
             Yii::$app->response->format = 'json';
             if( Yii::$app->request->isAjax )
             {
-                $usuario = Usuario::findOne( Yii::$app->request->post('id') );
+                $usuario = SeguridadUsuarios::findOne( Yii::$app->request->post('id') );
                 if( $usuario )
                 {
                     $grupo = Grupo::findOne( Yii::$app->request->post('grupo') );
@@ -128,12 +128,12 @@ class PermisosUsuarioController extends AitController
                         if($tipo == 1) {
                             $model = new UsuarioGrupo();
                             $model->id_grupo = $grupo->id_grupo;
-                            $model->id_usuario = $usuario->idusuario;
+                            $model->id_usuario = $usuario->id_usuario;
                             $model->save();
                         }
                         else if( $tipo == -1 )
                         {
-                            $model = UsuarioGrupo::findOne( [ 'id_grupo'=>$grupo->id_grupo, 'id_usuario'=>$usuario->idusuario ] );
+                            $model = UsuarioGrupo::findOne( [ 'id_grupo'=>$grupo->id_grupo, 'id_usuario'=>$usuario->id_usuario ] );
                             if( $model )
                                 $model->delete();
                         }
@@ -167,7 +167,7 @@ class PermisosUsuarioController extends AitController
             if( \Yii::$app->request->isAjax )
             {
                 Yii::$app->response->format = 'json';
-                $usuario = Usuario::findOne( Yii::$app->request->post("id") );
+                $usuario = SeguridadUsuarios::findOne( Yii::$app->request->post("id") );
                 $available = Grupo::getGrupos();
                 $assigned = $usuario->getPermisos();
 //                $permisosGrupo = $grupo->getPermisos();

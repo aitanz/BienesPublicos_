@@ -12,7 +12,7 @@ $BienesCodigo =  new BienesCodigo;
 /* @var $this yii\web\View */
 /* @var $model app\modules\bienes\models\BienesNCodigoBien */
 
-$this->title = $model->id_codigo;
+$this->title = BienesCodigo::findOne($model->id_codigo)->codigo_completo;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Bienes Ncodigo Biens'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -21,8 +21,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id_codigo' => $model->id_codigo, 'id_localidad' => $model->id_localidad], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id_codigo' => $model->id_codigo, 'id_localidad' => $model->id_localidad], [
+        <?= Html::a(Yii::t('app', 'Update'), ['update', 'id_codigo' => $model->id_codigo], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id_codigo' => $model->id_codigo], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
@@ -35,15 +35,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             [
-              'attribute' => 'id_codigo',
+              'attribute' => 'nombre',
               'value' =>  BienesCodigo::findOne($model->id_codigo)->descripcion
             ],
             [
-              'attribute' => 'id_sede',
+              'attribute' => 'Sede',
               'value' =>  BienesSede::findOne($model->id_sede)->nombre
             ],
             'identificacion',
-            'nombre',
             'descripcion',
             'valor_unidad',
             'justiprecio',

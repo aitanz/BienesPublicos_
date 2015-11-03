@@ -39,16 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
               return $Codigo->descripcion;
                 },
             ],
-            [
-              'attribute' => 'id_localidad',
-              'value' => function($BienesLocalidad){
-              $Localidad = BienesLocalidad::findOne($BienesLocalidad->id_localidad);
-              return $Localidad->nombre;
-            },
-
-            ],
             'identificacion',
-            'nombre',
             'descripcion',
             // 'valor_unidad',
             // 'justiprecio',
