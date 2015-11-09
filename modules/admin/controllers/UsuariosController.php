@@ -4,11 +4,13 @@ namespace app\modules\admin\controllers;
 
 use Yii;
 use app\modules\admin\models\SeguridadUsuarios;
+use app\modules\admin\models\Persona;
 use app\modules\admin\models\SeguridadUsuariosSearch;
 use app\components\AitController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 $model = new SeguridadUsuarios();
+$person = new Persona();
 
 /**
  * UsuariosController implements the CRUD actions for SeguridadUsuarios model.
@@ -60,19 +62,29 @@ class UsuariosController extends AitController
      * @return mixed
      */
     public function actionCreate()
-    {
+    { 
+        try{
         $model = new SeguridadUsuarios();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_usuario]);
+          if($model->load(Yii::$app->request->post())) {
+                         $model->password = md5($model->password);
+                         if($model->save()){
+                          Yii::$app->session->setFlash('usuario Registrado');
+                         return $this->redirect(['view', 'id' => $model->id_usuario]); 
+                         }
+           
             
+        } 
+        
+        else {
+            return $this->render('create', ['model' => $model ]);
             
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
         }
-    }
+        
+        }//try
+        
+        catch(Exception $ex){}
+        return false;
+    }//create
 
     /**
      * Updates an existing SeguridadUsuarios model.
@@ -142,11 +154,14 @@ class UsuariosController extends AitController
         $return = array('success' => 'false', 'mensaje' =>'');
         if (\yii::$app->request->isAjax) {
             $personas = \app\modules\admin\models\Persona::find()->where(['cedula' => \yii::$app->request->post('cedula')])->one();
+            $validar = \app\modules\admin\models\SeguridadUsuarios::find()->where(['cedula' => \yii::$app->request->post('cedula')])->one();
             if($personas){
                 $return = array('success' => 'true', 'nombres' => trim($personas->nombres),
                                                      'cedula'=>trim($personas->cedula),
+                                                     //'cedulau'=>trim($validar->cedula),
                                                      'apellidos' => trim($personas->apellidos),
                                                      'direccion'=>trim($personas->direccion),
+                                                     'fnacimiento'=>trim($personas->fnacimiento),
                                                      'telefono'=>trim($personas->tlf1),
                                                      'correo'=>trim($personas->correoe),
                                                      'sexo'=>trim($personas->sexo));
@@ -164,7 +179,7 @@ class UsuariosController extends AitController
     
     
     
-          public function actionInsertapersona() {
+    public function actionInsertapersona() {
          
            Yii::$app->response->format = 'json';
               
@@ -180,8 +195,12 @@ class UsuariosController extends AitController
                        $person->apellidos = $apellidos;
                        $person->direccion = $direccion;
                        $person->save();
+                        Yii::$app->session->setFlash('success','datos insertados');
                        
-                       return['mensaje'=>'exito'];
+                       
+             return['mensaje'=>'exito'];
+            
+                      
            }
                 
                 else{
@@ -191,11 +210,36 @@ class UsuariosController extends AitController
                  
            }
                          
-                   
+          
+          
+       public function actionValidar() {
+           
+        $return = array('success' => 'false', 'mensaje' =>'');
+        if (\yii::$app->request->isAjax) {
+            
+            $validar = \app\modules\admin\models\SeguridadUsuarios::find()->where(['cedula' => \yii::$app->request->post('cedula')])->one();
+            if($validar){
+                $return = array('success' => 'true', 'cedulau' => trim($validar->cedula));
+                                                     
+            }    
+            
+                    else {
+                         $return = array('false' => 'true', 'mensaje' => 'no se encuentra cedula de usuario');
+                         
+                    }
+        }
+        echo json_encode($return);
+    
+        return;
+           
+           
+            }//acction validar
+           
+           
           
             
             
-        }//accion
+        }//controller
 
         
         

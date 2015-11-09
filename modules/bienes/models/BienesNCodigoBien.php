@@ -45,7 +45,7 @@ class BienesNCodigoBien extends \yii\db\ActiveRecord
             [['id_codigo', 'id_direccion', 'identificacion', 'descripcion', 'ano_adquisicion', 'ubicacion'], 'required'],
             [['id_codigo', 'id_direccion', 'identificacion', 'id_sede', 'id_usuario'], 'integer'],
             [['descripcion', 'ubicacion', 'tipo_adquisicion', 'n_documento'], 'string'],
-            [['valor_unidad', 'justiprecio'], 'number'],
+            [['valor_unidad', 'justiprecio'], 'number', 'numberPattern' => '/^\s*[-+]?[0-9]*[.,]?[0-9]+([eE][-+]?[0-9]+)?\s*$/'],
             [['ano_adquisicion'], 'safe']
         ];
     }
@@ -94,4 +94,22 @@ class BienesNCodigoBien extends \yii\db\ActiveRecord
     {
         return $this->hasOne(BienesCodigo::className(), ['id_codigo' => 'id_codigo']);
     }
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getIdDireccion()
+    {
+        return $this->hasOne(\app\modules\admin\models\SeguridadUsuarios::className(), ['id_direccion' => 'id_direccion']);
+    }
+
+    public function beforeSave($insert) {
+        if (parent::beforeSave($insert)) {
+            $this->valor_unidad = str_replace(",", ".", $this->valor_unidad);
+            $this->justiprecio = str_replace(",", ".", $this->justiprecio);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
+

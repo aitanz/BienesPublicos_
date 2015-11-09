@@ -1,101 +1,39 @@
-Yii 2 Basic Project Template
-============================
-
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
-
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
-
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
-
-DIRECTORY STRUCTURE
--------------------
-
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+Módulo de Registro del Sistema de Bienes Públicos
+=================================================
 
 
+* Para instalar este módulo debemos conocer lo siguiente:
+  - GIT (Control de versiones).
+  - PostgreSQL.
+  - Apache y administración web.
 
-REQUIREMENTS
-------------
+* Los requerimientos técnicos en el servidor o computador a instalar son:
+  - Apache configurado correctamente y con las librerias php5-pgsql, php5-pdo debidamente instaladas.
+  - PostgreSQL 9.1 o mayor instalado y configurado con un usuario administrador con clave asignada.
+  - PgAdmin 3 (si desea).
+  - Gedit.
+  - GIT (control de versiones).
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+INSTALACIÓN
+===========
 
+* Para instalar el modulo, lo mas conveniente es utilizar control de versiones ya que al ser una aplicación en desarrollo de nuevos módulos, freuentemente se tendrá que actualizar la version de nuestro sistema y para mayor facilidad y rapidez, se recomienda utilizar control de versiones GIT.
 
-INSTALLATION
-------------
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
-
-Set cookie validation key in `config/web.php` file to some random secret string:
-
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
-```
-
-You can then access the application through the following URL:
-
-~~~
-http://localhost/basic/web/
-~~~
+  - Nos ubicamos en una terminal LINUX y vamos a nuestro directorio de proyectos de APACHE (por defecto se encuentra en /var/www/ en debian).
+  - Inicializamos un repositorio GIT con el comando "git init" (sin las comillas).
+  - Vamos a nuestro navegador preferido y visitamos http://ait.anzoategui.gob.ve la cua nos direccionara al portal de version del proyecto.
+  - Copiamos el URL que esta en la parte inferior derecha que hace referencia a la clonación GIT y con el comando de clonación en nuestra terminal vamos a clonar el proyecto con dicha URL "git clone pegamos_el_url_que_hemos_copiado" (sin las comillas).
+  - Luego de clonado el proyecto exitosamente, crearemos una base de datos limpia en nuestro postgreSQL con pgAdmin si lo desea. de no ser así tambien se puede crear desde la terminal con el usuario postgres.
+  - Al crear nuestra base de datos limpia vamos a restaurar nuestra estructura de datos en dicha BDD con el SQL que se encuentra en archivos/diagramas  dentro del proyecto. revisamos que la estructura sea la correcta al finalizar la restauración (20 esquemas, el primer esquema se llama bienes y contiene 11 tablas)
+  - cambiamos los datos de conexion según nuestros datos en "config/db.php" y luego verificamos si todo esta correcto visitando en nuestro navegador http://localhost/BienesPublicos_/
 
 
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this project template using the following command:
-
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
-~~~
-
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
-
-~~~
-http://localhost/basic/web/
-~~~
 
 
-CONFIGURATION
--------------
+ERRORES DE CONFIGURACIÓN COMUNES
+================================
 
-### Database
+- Falta de permisos o inexistencia de fichero runtime/ (se soluciona con darle permisos al fichero o creando el fichero).
+- Falta de permisos o inexistencia de fichero assets/ dentro de web/ (se soluciona con darle permisos al fichero o creando el fichero)
+- Error de conexion (verificar librerias PHP5 o archivo de conexion config/db.php)
 
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
-
-Also check and edit the other files in the `config/` directory to customize your application.

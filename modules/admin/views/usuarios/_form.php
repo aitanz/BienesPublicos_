@@ -6,6 +6,7 @@ use yii\widgets\ActiveForm;
 use yii\jui\AutoComplete;
 use yii\bootstrap\Modal;
 use kartik\widgets\Select2;
+use kartik\widgets\AlertBlock;
 use yii\widgets\Pjax;
 use kartik\password\PasswordInput;
 use app\modules\admin\models\Persona;
@@ -15,11 +16,12 @@ use app\modules\admin\models\SeguridadUsuarios;
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\SeguridadUsuarios */
 /* @var $form yii\widgets\ActiveForm */
-  
+
 $person = new Persona();
 $direccion = new Direccion();
+
+      
 ?>
-<br>
 
 <div class="seguridad-usuarios-form">
     
@@ -30,46 +32,39 @@ $direccion = new Direccion();
                             <div class="panel panel-primary">
                                 <div class="panel-heading">DATOS DE USUARIO</div>
                                     <div class="panel-body">
-                                    <?php $form = ActiveForm::begin(['id'=>'usuario_form',
-                                                                     'enableClientValidation' => true,
-                                                                     'enableAjaxValidation' => true,
-                                                                     'validateOnSubmit' => true,
-                                                                     'validateOnChange' => true,
-                                                                     'validateOnType' => true]); ?>
+                                    <?php $form = ActiveForm::begin(['id'=>'form_usuario'])?>
                                         
-                                        <?= $form->field($model, 'cedula')->input('number') ?> 
-
+                                        <?= $form->field($model, 'cedula')->textInput(['placeholder'=>'introduzca cedula','maxlength'=>'8']) ?> 
+                                        <input type="hidden" name="cedulausuario" id="cedulausuario" >
+                                        <div id="div_validacedula"style="font-size:16px;color:red;display:none" ></div> <!--mensaje validar cedula usuario--><br>
+                                        
                                         <?= $form->field($model, 'id_direccion')->dropdownList(Arrayhelper::map(Direccion::find()->orderBy('nombre')->all(), 'iddireccion', 'nombre'), ['prompt' => 'unidad'])->label('Unidad Administrativa');?>
 
-                                        <?= $form->field($model, 'login')->textInput(['maxlength' => true]) ?>
-
-                                        <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
+                                        <?= $form->field($model, 'login')->textInput(['maxlength' => true,'placeholder'=>'Introduzca usuario']) ?>
+                                        
+                                        <?= $form->field($model, 'password')->passwordInput(['maxlength' => true,'placeholder'=>'introduzca password']) ?>
 
                                         <label for="confirmar">Confirmar</label>
-                                        <input type="password" name="confirmar" id="confirmar" class="form-control">
+                                        <input type="password" name="confirmar" id="confirmar" class="form-control" placeholder="confirmar">
                                         <div id="confirmar_pass"style="font-size:16px;color:red;display:none" ></div> <!--confirmar pass--><br><br>
                                         
                                         
                                        
                                             <div class="form-group">
-                                             <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+                                             <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary' ,'id'=>'validador']) ?>
                                              <button type="reset" class="btn btn-danger" value="reset" id="reset"> Cancel</button>
                                             </div>
                                         
-                                            <?ActiveForm::end()  ?>
+                                            <?php ActiveForm::end(); ?>
                                     </div><!--panel-body-->
                             </div> <!--panel-->
                             
                             
                             
-                            
-                            
-                            
-                  
-                        </div><!--col-md-5-->
+                           </div><!--col-md-5-->
 
-                        <div class ="col-md-5 column">
-                            <div class="panel panel-primary">
+                           <div class ="col-md-5 column">
+                              <div class="panel panel-primary">
                                 <div class="panel-heading">DATOS DE PERSONAS</div>
                                 <div class="panel-body">
                                     <div id="mensajero"style="font-size:16px;color:red;display:none"> 
@@ -77,15 +72,16 @@ $direccion = new Direccion();
                                     
                                     </div>
                                     
-                                     <?php $form = ActiveForm::begin(['id'=>'persona_form']); ?>
+                                  
+                                     <?php $form = ActiveForm::begin(['id'=>'form_personas'])?>
                                     
-                                    <?= $form->field($person, 'cedula')->textInput(); ?>
+                                    <?= $form->field($person, 'cedula')->textInput(['required'=>true,'placeholder'=>'introduzca cedula persona']); ?>
                                    
-                                    <?= $form->field($person, 'nombres')->textInput(); ?>
+                                    <?= $form->field($person, 'nombres')->textInput(['required'=>true,'placeholder'=>'introduzca nombre persona']); ?>
 
-                                    <?= $form->field($person, 'apellidos')->textInput(); ?>
+                                    <?= $form->field($person, 'apellidos')->textInput(['required'=>true,'placeholder'=>'introduzca apellido persona']); ?>
                                     
-                                    <?= $form->field($person, 'direccion')->textInput(); ?>
+                                    <?= $form->field($person, 'direccion')->textInput(['required'=>true,'placeholder'=>'introduzca direccion']); ?>
                                     
                                     <div class="form-group">
                                         <label>Fecha Nacimiento</label>
@@ -93,38 +89,26 @@ $direccion = new Direccion();
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input class="form-control"  placeholder="DD-MM-YY" type='datetime' name='fecha' >
+                                            <input class="form-control"  placeholder="DD-MM-YY" type='datetime' name='fecha'placeholder="fecha de nacimiento" >
                                         </div><!-- /.input group -->
                                      </div>
                                     
-                                    <?= $form->field($person, 'tlf1')->textInput()->label('Telefono'); ?>
+                                    <?= $form->field($person, 'tlf1')->textInput(['placeholder'=>'telefono'])->label('Telefono'); ?>
                                     
-                                    <?= $form->field($person, 'correoe')->textInput()->label('Correo'); ?>
+                                    <?= $form->field($person, 'correoe')->textInput(['placeholder'=>'correo'])->label('Correo'); ?>
                                     
                                     <?= $form->field($person, 'sexo')->radioList(array('m'=>'Masculino','f'=>'Femenino')); ?>
                                  
                                     
-                                      
-                                    <div class="frmSearch">
-                                      <input type="text" id="search-box" class="form-control" placeholder="buscar usuario" />
-                                     <div id="suggesstion-box"></div>    
-                                    </div><BR>
-                                    
                                     <div id="div_insertapersona" style="display:none;"> 
-                                         <button id="btn_insertarpersona" type="button" class="btn btn-info">INSERTAR PERSONAS</button>
-                                          
-                                    </div> 
-                                    
-                                     <button id="persona" type="button" class="btn btn-default">INSERTAR PERSONAS</button>
-                                     
-                                     <?php Pjax::begin(); ?>
-                                     <?= Html::a("send", ['usuarios/index'], ['class' => 'btn btn-lg btn-primary','id'=>'bajax']) ?>
-                                     <?php Pjax::end(); ?>
-                                     <br><br>
-                                     <spam id="pan"><a href src="#">pan</a></spam> <br>
+                                         
+                                         <button type="button" id ="pan" class="btn btn-success">Crear Persona</button>
+                                         <button type="reset" class="btn btn-danger" value="reset" id="reset"> Cancel</button>
+                                    </div> <br><br>
+                                     <!--<spam id="pan"><a href src="#">pan</a></spam> <br>-->
                                      
                                      
-                                        <?ActiveForm::end()  ?>
+                                        
                                 </div><!--panel-body-->
                             </div> <!--panel-->
                         </div>
@@ -140,7 +124,7 @@ $direccion = new Direccion();
         </div><!--form-->
 
 
-<script>                                //buscar persona por cedula
+<script>                                //buscar persona por numero de cedula 
             $(document).ready(function(){
                 $("#seguridadusuarios-cedula").blur(function(){
                      	$.ajax({
@@ -163,7 +147,7 @@ $direccion = new Direccion();
 		                success: function(response){
                                     $('#contenido').unblock();
                                     response = JSON.parse(response);
-                                    console.log(response);
+                                    //console.log(response);
                                       if( response.success){
                                        $('#persona-cedula').val(response.cedula).attr('disabled','disabled');
 			               $('#persona-nombres').val(response.nombres).attr('disabled', 'disabled');
@@ -171,9 +155,16 @@ $direccion = new Direccion();
                                        $('#persona-direccion').val(response.direccion).attr('disabled', 'disabled');
                                        $('#persona-tlf1').val(response.telefono).attr('disabled', 'disabled');
                                        $('#persona-correoe').val(response.correo).attr('disabled', 'disabled');
-                                       $('#mensajero').html(' Aviso : Cedula Registrada!').slideUp(500);
-                                       //bloquear formulario de registro de usuarios
-                                       $('#direccion-nombre').removeAttr('disable').val('');
+                                       $('#mensajero').slideUp(500);
+                                       $('#div_insertapersona').slideUp(500);
+                                       $('#cedulausuario').val(response.cedulau);
+                                       
+                                       //desbloquear formulario de registro de usuarios
+                                         //$('#seguridadusuarios-login').removeAttr("disabled").val('');
+                                         $('#seguridadusuarios-password').removeAttr("disabled").val('');
+                                         $('#seguridadusuarios-id_direccion').removeAttr("disabled").val('');
+                                         $('#seguridadusuarios-login').prop("readonly",false).val('');
+                                 
 				      }
                                       
                                       if(response.false){
@@ -184,12 +175,10 @@ $direccion = new Direccion();
                                            $('#persona-direccion').removeAttr("disabled").val('');
                                            $('#persona-tlf1').removeAttr("disabled").val('');
                                            $('#persona-correoe').removeAttr("disabled").val('');
+                                 
                                            $('#mensajero').html(' Aviso : Cedula no Registrada!').slideDown(500);
-                                           //desabilitar campos formulario usuarios
-                                           
-                                           $('#seguridadusuarios-id_direccion').attr('disabled','disabled');
-                                           $('#seguridadusuarios-login').attr('disabled','disabled');
-                                           $('#seguridadusuarios-password').attr('disabled', 'disabled');
+                                           $('#seguridadusuarios-login').prop("readonly",true);
+                                           //$('#seguridadusuarios-password').attr('disabled', 'true');
                                            //DESPLEGAR BOTON INSERTAR PERSONAS
                                             $('#div_insertapersona').slideDown(500);
                                           
@@ -211,18 +200,49 @@ $direccion = new Direccion();
                       $("#confirmar_pass").html(' Aviso:  password no coinciden').slideDown(500);
                      }
                        if($(this).val() === $("#seguridadusuarios-password").val()){
-                             $("#confirmar_pass").slideup(500);
+                             $("#confirmar_pass").slideUp(500);
                        } 
                    });
+                   
+                   
+                                   
+                                   
             });//document
             
 </script>
 
  <script>                      //enviar formulario personas
 $(document).ready(function(){
-	$("#pan").click(function(e){
-            e.preventDefault();
-             $.ajax({
+	$("#pan").click(function(){
+            cedulap = $("#persona-cedula").val();
+            nombrep = $("#persona-nombres").val();
+	    apellidop = $("#persona-apellidos").val();
+            dirccionp = $("#persona-direccion").val()
+            
+            if (cedulap == ""){
+            alert("Campo cedula esta vacio");
+            $("#persona-cedula").focus();
+	     return false;
+            }
+                else if(isNaN(parseInt(cedulap))){
+                       alert('campo cedula debe ser numerico');
+                       $("persona-cedula").focus();
+                       return false;
+                   }    
+            
+                       else if (nombrep == ""){
+		         alert(" campo nombre esta  vacioo! ");
+	                 $("#persona-nombres").focus();
+		         return false;
+		        }
+                
+                            else if (apellidop == ""){
+                                alert("campo apellido esta vacio !!");
+                                $("#persona-apellidos").focus();
+                                return false;
+                           }
+                             
+         $.ajax({
 		type: "POST",
 	        url: '<?php echo Yii::$app->request->baseUrl. '/index.php?r=admin/usuarios/insertapersona' ?>',
 		data:{ cedula:$('#persona-cedula').val(),
@@ -231,9 +251,22 @@ $(document).ready(function(){
                        direccion:$('#persona-direccion').val()},
 		
 		success: function(response){
-                        console.log(response);
-			
-		}
+                              console.log(response);
+                              //$('#seguridadusuarios-login').attr('disabled','false');
+                             //$('#seguridadusuarios-password').attr('disabled', 'false');
+                              alert('Persona Registrada con Exito!');
+                              $('#persona-cedula').val('');
+                               $('#persona-nombre').val('');
+                                $('#persona-apellido').val('');
+                                 $('#persona-direccion').val('');
+                                  $('#persona-corroe').val('');
+		},
+                        
+                error: function(){
+                
+                      alert("datos duplicados");
+                 }
+                
                
                 
 		});
@@ -245,5 +278,53 @@ $(document).ready(function(){
 
 
 </script>
+
+  
     
+                                           <!--valida cedula con ajax-->
+
+          <script>
+              $(document).ready(function()
+              {
+                 $("#seguridadusuarios-cedula").blur(function(){
+                   
+                     $.ajax({
+		type: "POST",
+	        url: '<?php echo Yii::$app->request->baseUrl. '/index.php?r=admin/usuarios/validar' ?>',
+		data:{ cedula:$('#seguridadusuarios-cedula').val()},
+		success: function(response){
+                         response = JSON.parse(response);
+                              if(response.success){
+                              console.log(response);
+                              //$("#cedulausuario").val(response.cedulau);
+                              $("#seguridadusuarios-login").attr('disabled','disabled');
+                              $("#seguridadusuarios-password").attr('disabled','disabled');
+                              $('#div_validacedula').html(' Aviso : Cedula ya tiene asignado un Usuario !').slideDown(500);
+                              $("#seguridadusuarios-cedula").focus();
+                             }//if success
+                                  if(response.false){
+                                     $("#seguridadusuarios-login").removeAttr("disabled").val('');
+                                     $("#seguridadusuarios-password").removeAttr("disabled").val('');
+                                      $('#div_validacedula').slideUp(500);
+                                      
+                                    } //if false
+                         
+		},
+                error:function(){
+                                   
+                   alert('introduzca numero de cedula');           
+                                    
+                }
+               
+                
+		});//ajax
+                
+                
+              
+                 }); //function
+                  
+              }); //document
+         </script>
+    
+
     

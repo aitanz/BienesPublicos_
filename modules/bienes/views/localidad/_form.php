@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
 use app\modules\bienes\models\BienesLocalidad;
 use app\modules\bienes\models\BienesTipoLocalidadBien;
 use yii\helpers\ArrayHelper;

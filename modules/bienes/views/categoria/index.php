@@ -41,11 +41,12 @@ $this->params['breadcrumbs'][] = 'Categoria de los Bienes';
       'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id_categoria',
+         //   'id_categoria',
             'descripcion',
 
        [
                 'class' => 'yii\grid\ActionColumn',
+             //iconos de acciones
                 'template' => '{view}{update}{delete}',
                 'buttons' => [
               'view' => function ($url, $model, $key) {
@@ -86,9 +87,9 @@ $this->params['breadcrumbs'][] = 'Categoria de los Bienes';
                 function (data) {
                     $('.modal-body').html(data);
                     $('#modal').modal();
-                                                              } 
-            );
-        }));"
+                                 } 
+                     );
+                                                              }));"
     ); ?>
 
 <?php

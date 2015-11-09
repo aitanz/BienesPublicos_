@@ -7,7 +7,7 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\modules\bienes\models\BienesNCodigoBien;
 use app\modules\bienes\models\BienesLocalidad;
-
+  use app\modules\admin\models\SeguridadUsuarios;
 /**
  * BienesNCodigoBienSearch represents the model behind the search form about `app\modules\bienes\models\BienesNCodigoBien`.
  */
@@ -45,8 +45,13 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
      */
     public function search($params)
     {
-        $query = BienesNCodigoBien::find();
+        //filtrado segun el usuario 
+         $direccion = \yii::$app->user->Identity->id_direccion;
 
+   
+        $query = BienesNCodigoBien::find()->where(['id_direccion'=>$direccion]);
+
+          
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

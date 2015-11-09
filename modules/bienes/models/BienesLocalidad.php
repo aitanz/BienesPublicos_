@@ -34,6 +34,7 @@ class BienesLocalidad extends \yii\db\ActiveRecord
         return [
             [['codigo_localidad', 'nombre', 'id_tipo_localidad'], 'required'],
             [['codigo_localidad', 'padre', 'codigo_completo', 'id_tipo_localidad'], 'integer'],
+            [['codigo_localidad'], 'unique', 'message'=>'Ya Existe un Registro con este Id'],
             [['nombre'], 'string']
         ];
     }

@@ -28,6 +28,7 @@ class SeguridadUsuarios extends \yii\db\ActiveRecord implements IdentityInterfac
 {
     public $authKey;
     public $accessToken;
+    public $confirmar;
     /**
      * @inheritdoc
      */
@@ -44,6 +45,7 @@ class SeguridadUsuarios extends \yii\db\ActiveRecord implements IdentityInterfac
         return [
             [['cedula', 'id_direccion', 'login', 'password'], 'required'],
             [['cedula', 'id_direccion'], 'integer'],
+            [['cedula'],'unique'],
             [['login'], 'string', 'max' => 32],
             [['password'], 'string', 'max' => 64]
         ];
@@ -274,5 +276,11 @@ class SeguridadUsuarios extends \yii\db\ActiveRecord implements IdentityInterfac
         }
         return $items;
     }
+    
+    
+    
+       
+    
+    
        
 }

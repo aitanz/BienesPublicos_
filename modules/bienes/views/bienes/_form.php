@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 use kartik\widgets\Select2;
+use kartik\widgets\DatePicker;
 //use kartik\widgets\DepDrop;
 /* @var $this yii\web\View */
 /* @var $model app\modules\bienes\models\BienesNCodigoBien */
@@ -88,37 +89,38 @@ echo $form->field($model, 'categoria')->dropDownList(
 
     <?= $form->field($model, 'identificacion')->textInput(array('onkeydown'=>"return soloNumeros(event)"));?>
 
-    <?= $form->field($model, 'ubicacion')->textInput() ?>
+    <?= $form->field($model, 'ubicacion')->textInput(); ?>
 
-    <?= $form->field($model, 'valor_unidad')->textInput(array('onkeydown'=>"return soloNumeros(event)"));?>
+    <?= $form->field($model, 'valor_unidad')->textInput();?>
 
-    <?= $form->field($model, 'justiprecio')->textInput(array('onkeydown'=>"return soloNumeros(event)")) ?>
+    <?= $form->field($model, 'justiprecio')->textInput(); ?>
 
-    <?= $form->field($model, 'ano_adquisicion')->widget(\kartik\date\DatePicker::classname(), [
+    <?= $form->field($model, 'ano_adquisicion')->widget(DatePicker::classname(), [
        'name' => 'fechas',
-    'type' => \kartik\date\DatePicker::TYPE_COMPONENT_APPEND,
+    'type' => DatePicker::TYPE_COMPONENT_APPEND,
      'options' => ['placeholder' => 'Introduce una Fecha ...'],
     'pluginOptions' => [
         'autoclose'=>true,
-        'format' => 'dd-M-yyyy'
+        'format' => 'yyyy-m-dd'
     ]
 ]) ?>
 
-    <?= $form->field($model, 'tipo_adquisicion')->textInput() ?>
+    <?= $form->field($model, 'tipo_adquisicion')->textInput(); ?>
 
-    <?= $form->field($model, 'n_documento')->textInput(array('onkeydown'=>"return soloNumeros(event)")) ?>
+    <?= $form->field($model, 'n_documento')->textInput(array('onkeydown'=>"return soloNumeros(event)")); ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']); ?>
+        
     </div>
+
 
     <?php ActiveForm::end(); ?>
 
 </div>
 
 <script type="text/javascript">
-
-//Funcion para bloquear letras
+//Funcion para bloquear numeros
         function soloLetras(event) {
             var keyCode = ('which' in event) ? event.which : event.keyCode;
 
@@ -130,10 +132,9 @@ echo $form->field($model, 'categoria')->dropDownList(
 
     //Funcion para bloquear letras
 
-    function soloNumeros(event){
-    // NOTE: Backspace = 8, Enter = 13, '0' = 48, '9' = 57
-    var key = event.keyCode ? event.keyCode : event.which ;
+function soloNumeros(event){
+var key = event.keyCode ? event.keyCode : event.which ;
 
-    return (key <= 40 || (key >= 48 && key <= 57));
-    }
+return (key <= 40 || (key >= 48 && key <= 57));
+}
     </script>

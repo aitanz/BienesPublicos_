@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'descripcion',
             // 'valor_unidad',
             // 'justiprecio',
-            // 'ano_adquisicion',
+          'ano_adquisicion',
             // 'ubicacion',
             // 'tipo_adquisicion',
             // 'n_documento',

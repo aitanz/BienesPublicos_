@@ -28,7 +28,9 @@ class BienesSede extends \yii\db\ActiveRecord
     {
         return [
             [['id_sede'], 'required'],
+            [['id_sede'], 'unique', 'message'=>'Ya Existe un Registro con este Id'],
             [['id_sede', 'id_localidad'], 'integer'],
+            [['nombre'], 'unique', 'message'=>'Ya Existe un Registro con este Nombre'],
             [['nombre'], 'string']
         ];
     }

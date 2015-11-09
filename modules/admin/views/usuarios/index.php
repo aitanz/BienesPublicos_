@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'cedula',
             'id_direccion',
             'login',
-            'password',
+            
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

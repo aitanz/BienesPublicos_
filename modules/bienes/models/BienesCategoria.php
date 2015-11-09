@@ -31,7 +31,8 @@ class BienesCategoria extends \yii\db\ActiveRecord
         return [
             [['id_categoria', 'descripcion'], 'required'],
             [['id_categoria'], 'integer'],
-            [['descripcion'], 'string']
+            [['descripcion'], 'string'],
+              [['id_categoria'], 'unique','message'=>'Ya Existe un Registro con este Id']
         ];
     }
 

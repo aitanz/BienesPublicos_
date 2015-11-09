@@ -82,6 +82,7 @@ $this->params['breadcrumbs'][] = 'Localidad de los Bienes';
     <?php
     $this->registerJs(
         "$(document).on('click', '#boton_crear', (function() {
+         
             $.get(
                 $(this).data('url'),
                 function (data) {

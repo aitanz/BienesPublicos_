@@ -51,10 +51,10 @@ class BienesController extends AitController
      * @param integer $id_localidad
      * @return mixed
      */
-    public function actionView($id_codigo)
+    public function actionView($id_codigo, $id_direccion, $identificacion)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id_codigo),
+            'model' => BienesNCodigoBien::findOne(['id_codigo'=>$id_codigo,'id_direccion'=> $id_direccion, 'identificacion'=> $identificacion]),
 
 
             //'model' => $this->findModel($id_codigo, find->where('$BienesLocalidad' = $id_localidad),
@@ -90,7 +90,7 @@ class BienesController extends AitController
 
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id_codigo' => $model->id_codigo]);
+            return $this->redirect(['view', 'id_codigo' => $model->id_codigo, 'id_direccion' => $model->id_direccion, 'identificacion'=>$model->identificacion]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -106,12 +106,12 @@ class BienesController extends AitController
      * @param integer $id_localidad
      * @return mixed
      */
-    public function actionUpdate($id_codigo)
+    public function actionUpdate($id_codigo, $id_direccion, $identificacion)
     {
-        $model = $this->findModel($id_codigo);
+        $model = BienesNCodigoBien::findOne(['id_codigo'=>$id_codigo,'id_direccion'=> $id_direccion, 'identificacion'=> $identificacion]);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id_codigo' => $model->id_codigo]);
+            return $this->redirect(['view', 'id_codigo' => $model->id_codigo, 'id_direccion' => $model->id_direccion, 'identificacion'=>$model->identificacion]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -126,9 +126,11 @@ class BienesController extends AitController
      * @param integer $id_localidad
      * @return mixed
      */
-    public function actionDelete($id_codigo)
+    public function actionDelete($id_codigo, $id_direccion, $identificacion)
     {
-        $this->findModel($id_codigo)->delete();
+        BienesNCodigoBien::findOne(['id_codigo'=>$id_codigo,
+            'id_direccion'=> $id_direccion, 
+            'identificacion'=> $identificacion])->delete();
 
         return $this->redirect(['index']);
     }
