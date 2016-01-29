@@ -1,0 +1,2522 @@
+a:8:{s:6:"config";a:5:{s:10:"phpVersion";s:15:"5.4.45-0+deb7u2";s:10:"yiiVersion";s:5:"2.0.6";s:11:"application";a:4:{s:3:"yii";s:5:"2.0.6";s:4:"name";s:14:"My Application";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:4:{s:7:"version";s:15:"5.4.45-0+deb7u2";s:6:"xdebug";b:1;s:3:"apc";b:1;s:8:"memcache";b:0;}s:10:"extensions";a:32:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:48:"/var/www/siapweb/vendor/yiisoft/yii2-swiftmailer";}}s:24:"yiisoft/yii2-codeception";a:3:{s:4:"name";s:24:"yiisoft/yii2-codeception";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:16:"@yii/codeception";s:48:"/var/www/siapweb/vendor/yiisoft/yii2-codeception";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:42:"/var/www/siapweb/vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:40:"/var/www/siapweb/vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:42:"/var/www/siapweb/vendor/yiisoft/yii2-faker";}}s:30:"kartik-v/yii2-widget-typeahead";a:3:{s:4:"name";s:30:"kartik-v/yii2-widget-typeahead";s:7:"version";s:7:"1.0.1.0";s:5:"alias";a:1:{s:17:"@kartik/typeahead";s:54:"/var/www/siapweb/vendor/kartik-v/yii2-widget-typeahead";}}s:30:"kartik-v/yii2-widget-touchspin";a:3:{s:4:"name";s:30:"kartik-v/yii2-widget-touchspin";s:7:"version";s:7:"1.2.0.0";s:5:"alias";a:1:{s:17:"@kartik/touchspin";s:54:"/var/www/siapweb/vendor/kartik-v/yii2-widget-touchspin";}}s:31:"kartik-v/yii2-widget-timepicker";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-timepicker";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:12:"@kartik/time";s:55:"/var/www/siapweb/vendor/kartik-v/yii2-widget-timepicker";}}s:32:"kartik-v/yii2-widget-switchinput";a:3:{s:4:"name";s:32:"kartik-v/yii2-widget-switchinput";s:7:"version";s:7:"1.3.0.0";s:5:"alias";a:1:{s:19:"@kartik/switchinput";s:56:"/var/www/siapweb/vendor/kartik-v/yii2-widget-switchinput";}}s:28:"kartik-v/yii2-widget-spinner";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-spinner";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:15:"@kartik/spinner";s:52:"/var/www/siapweb/vendor/kartik-v/yii2-widget-spinner";}}s:28:"kartik-v/yii2-widget-sidenav";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-sidenav";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:15:"@kartik/sidenav";s:52:"/var/www/siapweb/vendor/kartik-v/yii2-widget-sidenav";}}s:27:"kartik-v/yii2-widget-rating";a:3:{s:4:"name";s:27:"kartik-v/yii2-widget-rating";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:14:"@kartik/rating";s:51:"/var/www/siapweb/vendor/kartik-v/yii2-widget-rating";}}s:26:"kartik-v/yii2-widget-growl";a:3:{s:4:"name";s:26:"kartik-v/yii2-widget-growl";s:7:"version";s:7:"1.1.1.0";s:5:"alias";a:1:{s:13:"@kartik/growl";s:50:"/var/www/siapweb/vendor/kartik-v/yii2-widget-growl";}}s:30:"kartik-v/yii2-widget-fileinput";a:3:{s:4:"name";s:30:"kartik-v/yii2-widget-fileinput";s:7:"version";s:7:"1.0.3.0";s:5:"alias";a:1:{s:12:"@kartik/file";s:54:"/var/www/siapweb/vendor/kartik-v/yii2-widget-fileinput";}}s:28:"kartik-v/yii2-widget-depdrop";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-depdrop";s:7:"version";s:7:"1.0.2.0";s:5:"alias";a:1:{s:15:"@kartik/depdrop";s:52:"/var/www/siapweb/vendor/kartik-v/yii2-widget-depdrop";}}s:31:"kartik-v/yii2-widget-datepicker";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-datepicker";s:7:"version";s:7:"1.3.3.0";s:5:"alias";a:1:{s:12:"@kartik/date";s:55:"/var/www/siapweb/vendor/kartik-v/yii2-widget-datepicker";}}s:26:"kartik-v/yii2-widget-alert";a:3:{s:4:"name";s:26:"kartik-v/yii2-widget-alert";s:7:"version";s:7:"1.1.0.0";s:5:"alias";a:1:{s:13:"@kartik/alert";s:50:"/var/www/siapweb/vendor/kartik-v/yii2-widget-alert";}}s:26:"kartik-v/yii2-widget-affix";a:3:{s:4:"name";s:26:"kartik-v/yii2-widget-affix";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:13:"@kartik/affix";s:50:"/var/www/siapweb/vendor/kartik-v/yii2-widget-affix";}}s:21:"kartik-v/yii2-widgets";a:3:{s:4:"name";s:21:"kartik-v/yii2-widgets";s:7:"version";s:7:"3.4.0.0";s:5:"alias";a:1:{s:15:"@kartik/widgets";s:45:"/var/www/siapweb/vendor/kartik-v/yii2-widgets";}}s:16:"yiisoft/yii2-jui";a:3:{s:4:"name";s:16:"yiisoft/yii2-jui";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:8:"@yii/jui";s:40:"/var/www/siapweb/vendor/yiisoft/yii2-jui";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:46:"/var/www/siapweb/vendor/yiisoft/yii2-bootstrap";}}s:18:"kartik-v/yii2-grid";a:3:{s:4:"name";s:18:"kartik-v/yii2-grid";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:12:"@kartik/grid";s:42:"/var/www/siapweb/vendor/kartik-v/yii2-grid";}}s:23:"kartik-v/yii2-popover-x";a:3:{s:4:"name";s:23:"kartik-v/yii2-popover-x";s:7:"version";s:7:"1.3.1.0";s:5:"alias";a:1:{s:15:"@kartik/popover";s:47:"/var/www/siapweb/vendor/kartik-v/yii2-popover-x";}}s:22:"kartik-v/yii2-editable";a:3:{s:4:"name";s:22:"kartik-v/yii2-editable";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:16:"@kartik/editable";s:46:"/var/www/siapweb/vendor/kartik-v/yii2-editable";}}s:18:"kartik-v/yii2-mpdf";a:3:{s:4:"name";s:18:"kartik-v/yii2-mpdf";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:12:"@kartik/mpdf";s:42:"/var/www/siapweb/vendor/kartik-v/yii2-mpdf";}}s:24:"reportico/yii2-reportico";a:3:{s:4:"name";s:24:"reportico/yii2-reportico";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:20:"@reportico/reportico";s:48:"/var/www/siapweb/vendor/reportico/yii2-reportico";}}s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"1.8.0.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:49:"/var/www/siapweb/vendor/kartik-v/yii2-krajee-base";}}s:31:"kartik-v/yii2-widget-activeform";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-activeform";s:7:"version";s:7:"1.4.7.0";s:5:"alias";a:1:{s:12:"@kartik/form";s:55:"/var/www/siapweb/vendor/kartik-v/yii2-widget-activeform";}}s:31:"kartik-v/yii2-widget-colorinput";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-colorinput";s:7:"version";s:7:"1.0.1.0";s:5:"alias";a:1:{s:13:"@kartik/color";s:55:"/var/www/siapweb/vendor/kartik-v/yii2-widget-colorinput";}}s:35:"kartik-v/yii2-widget-datetimepicker";a:3:{s:4:"name";s:35:"kartik-v/yii2-widget-datetimepicker";s:7:"version";s:7:"1.4.1.0";s:5:"alias";a:1:{s:16:"@kartik/datetime";s:59:"/var/www/siapweb/vendor/kartik-v/yii2-widget-datetimepicker";}}s:31:"kartik-v/yii2-widget-rangeinput";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-rangeinput";s:7:"version";s:7:"1.0.1.0";s:5:"alias";a:1:{s:13:"@kartik/range";s:55:"/var/www/siapweb/vendor/kartik-v/yii2-widget-rangeinput";}}s:28:"kartik-v/yii2-widget-select2";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-select2";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:15:"@kartik/select2";s:52:"/var/www/siapweb/vendor/kartik-v/yii2-widget-select2";}}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:8:{s:4:"host";s:9:"localhost";s:10:"user-agent";s:68:"Mozilla/5.0 (X11; Linux x86_64; rv:44.0) Gecko/20100101 Firefox/44.0";s:6:"accept";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:15:"accept-language";s:35:"es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3";s:15:"accept-encoding";s:13:"gzip, deflate";s:7:"referer";s:65:"http://localhost/siapweb/web/index.php?r=bienes%2Fbienes%2Fcreate";s:6:"cookie";s:1238:"__gads=ID=1f83e9fce847affc:T=1418645431:S=ALNI_MYY3b_UtjdXUB1rD-BV1sNYEmK6jw; _ga=GA1.1.258165957.1440527791; __utma=1.258165957.1440527791.1452890065.1453463397.18; __utmz=1.1441816885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); SESS4bf1d67aa70c67c212cda34fe555c852=iSq3U1IcwoWEER71MfxgdM1wuy6ZDgq6p9GD-WJ3MQU; _identity=7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B48%2Cnull%2C2592000%5D%22%3B%7D; SESS5077d97e28a2ce3534bb03e377211917=BerPCrJtpagNlVflD2f4KDbLsO1iaOPXnI8VAdmS8Uc; SESS91e691c4edae5e7481340dacc5d9b965=Is3Tg4jUkzvbVh_6BiR_qxU_UGyw3ADTG9qroUHaLVw; SESS6b4cf61eb748d40c0cd57c56b8f92698=rvBwC6WKwSc79pPG8a__0t-G4ljsVhhbUS5J24jnhmA; SESS92c523154ca1c23bd9098797d180d23e=Rdd-qAsVbCncckcuiXr50CaBwzMJq4j-Ul3aEtgShDE; rltoken=a9876a1a84b3da3b48f6c492417a5841; SESS936b81dfa443ee8c6b7e1e9eca702952=y0unMwJeCO0vrdEX_gVaplqLB16jltbpawddhqapvkA; SESS78ea44e3e0e12c0114bb38a0ef5dc2cb=pAnC2hnvn1hvs3y3eqfDT-LJsC0TlyMsCvrjxeVekOM; _csrf=689efb5ee1a6a113304a80e39e5381bead68cb7bb2022281f7d7e6cffd1f12dba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229IxOU86D275DYHq150S8_ZHJVg1mqdpr%22%3B%7D; PHPSESSID=osetaimfjnbjkhl886ka4k8d81";s:10:"connection";s:10:"keep-alive";}s:15:"responseHeaders";a:6:{s:12:"X-Powered-By";s:19:"PHP/5.4.45-0+deb7u2";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:62:"no-store, no-cache, must-revalidate, post-check=0, pre-check=0";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";s:10:"Set-Cookie";s:230:"_identity=7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B48%2Cnull%2C2592000%5D%22%3B%7D; expires=Sat, 27-Feb-2016 13:38:04 GMT; path=/; httponly";}s:5:"route";s:18:"bienes/bienes/view";s:6:"action";s:61:"app\modules\bienes\controllers\BienesController::actionView()";s:12:"actionParams";a:3:{i:0;s:3:"418";i:1;s:3:"129";i:2;s:9:"909009090";}s:11:"requestBody";a:0:{}s:6:"SERVER";a:28:{s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_USER_AGENT";s:68:"Mozilla/5.0 (X11; Linux x86_64; rv:44.0) Gecko/20100101 Firefox/44.0";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:20:"HTTP_ACCEPT_LANGUAGE";s:35:"es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:12:"HTTP_REFERER";s:65:"http://localhost/siapweb/web/index.php?r=bienes%2Fbienes%2Fcreate";s:11:"HTTP_COOKIE";s:1238:"__gads=ID=1f83e9fce847affc:T=1418645431:S=ALNI_MYY3b_UtjdXUB1rD-BV1sNYEmK6jw; _ga=GA1.1.258165957.1440527791; __utma=1.258165957.1440527791.1452890065.1453463397.18; __utmz=1.1441816885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); SESS4bf1d67aa70c67c212cda34fe555c852=iSq3U1IcwoWEER71MfxgdM1wuy6ZDgq6p9GD-WJ3MQU; _identity=7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B48%2Cnull%2C2592000%5D%22%3B%7D; SESS5077d97e28a2ce3534bb03e377211917=BerPCrJtpagNlVflD2f4KDbLsO1iaOPXnI8VAdmS8Uc; SESS91e691c4edae5e7481340dacc5d9b965=Is3Tg4jUkzvbVh_6BiR_qxU_UGyw3ADTG9qroUHaLVw; SESS6b4cf61eb748d40c0cd57c56b8f92698=rvBwC6WKwSc79pPG8a__0t-G4ljsVhhbUS5J24jnhmA; SESS92c523154ca1c23bd9098797d180d23e=Rdd-qAsVbCncckcuiXr50CaBwzMJq4j-Ul3aEtgShDE; rltoken=a9876a1a84b3da3b48f6c492417a5841; SESS936b81dfa443ee8c6b7e1e9eca702952=y0unMwJeCO0vrdEX_gVaplqLB16jltbpawddhqapvkA; SESS78ea44e3e0e12c0114bb38a0ef5dc2cb=pAnC2hnvn1hvs3y3eqfDT-LJsC0TlyMsCvrjxeVekOM; _csrf=689efb5ee1a6a113304a80e39e5381bead68cb7bb2022281f7d7e6cffd1f12dba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229IxOU86D275DYHq150S8_ZHJVg1mqdpr%22%3B%7D; PHPSESSID=osetaimfjnbjkhl886ka4k8d81";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:4:"PATH";s:28:"/usr/local/bin:/usr/bin:/bin";s:16:"SERVER_SIGNATURE";s:70:"<address>Apache/2.2.22 (Debian) Server at localhost Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:22:"Apache/2.2.22 (Debian)";s:11:"SERVER_NAME";s:9:"localhost";s:11:"SERVER_ADDR";s:3:"::1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:3:"::1";s:13:"DOCUMENT_ROOT";s:8:"/var/www";s:12:"SERVER_ADMIN";s:19:"webmaster@localhost";s:15:"SCRIPT_FILENAME";s:30:"/var/www/siapweb/web/index.php";s:11:"REMOTE_PORT";s:5:"53068";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:80:"r=bienes%2Fbienes%2Fview&id_codigo=418&id_direccion=129&identificacion=909009090";s:11:"REQUEST_URI";s:103:"/siapweb/web/index.php?r=bienes%2Fbienes%2Fview&id_codigo=418&id_direccion=129&identificacion=909009090";s:11:"SCRIPT_NAME";s:22:"/siapweb/web/index.php";s:8:"PHP_SELF";s:22:"/siapweb/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1453988284.2;s:12:"REQUEST_TIME";i:1453988284;}s:3:"GET";a:4:{s:1:"r";s:18:"bienes/bienes/view";s:9:"id_codigo";s:3:"418";s:12:"id_direccion";s:3:"129";s:14:"identificacion";s:9:"909009090";}s:4:"POST";a:0:{}s:6:"COOKIE";a:15:{s:6:"__gads";s:69:"ID=1f83e9fce847affc:T=1418645431:S=ALNI_MYY3b_UtjdXUB1rD-BV1sNYEmK6jw";s:3:"_ga";s:26:"GA1.1.258165957.1440527791";s:6:"__utma";s:47:"1.258165957.1440527791.1452890065.1453463397.18";s:6:"__utmz";s:62:"1.1441816885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)";s:36:"SESS4bf1d67aa70c67c212cda34fe555c852";s:43:"iSq3U1IcwoWEER71MfxgdM1wuy6ZDgq6p9GD-WJ3MQU";s:9:"_identity";s:119:"7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa:2:{i:0;s:9:"_identity";i:1;s:17:"[48,null,2592000]";}";s:36:"SESS5077d97e28a2ce3534bb03e377211917";s:43:"BerPCrJtpagNlVflD2f4KDbLsO1iaOPXnI8VAdmS8Uc";s:36:"SESS91e691c4edae5e7481340dacc5d9b965";s:43:"Is3Tg4jUkzvbVh_6BiR_qxU_UGyw3ADTG9qroUHaLVw";s:36:"SESS6b4cf61eb748d40c0cd57c56b8f92698";s:43:"rvBwC6WKwSc79pPG8a__0t-G4ljsVhhbUS5J24jnhmA";s:36:"SESS92c523154ca1c23bd9098797d180d23e";s:43:"Rdd-qAsVbCncckcuiXr50CaBwzMJq4j-Ul3aEtgShDE";s:7:"rltoken";s:32:"a9876a1a84b3da3b48f6c492417a5841";s:36:"SESS936b81dfa443ee8c6b7e1e9eca702952";s:43:"y0unMwJeCO0vrdEX_gVaplqLB16jltbpawddhqapvkA";s:36:"SESS78ea44e3e0e12c0114bb38a0ef5dc2cb";s:43:"pAnC2hnvn1hvs3y3eqfDT-LJsC0TlyMsCvrjxeVekOM";s:5:"_csrf";s:130:"689efb5ee1a6a113304a80e39e5381bead68cb7bb2022281f7d7e6cffd1f12dba:2:{i:0;s:5:"_csrf";i:1;s:32:"9IxOU86D275DYHq150S8_ZHJVg1mqdpr";}";s:9:"PHPSESSID";s:26:"osetaimfjnbjkhl886ka4k8d81";}s:5:"FILES";a:0:{}s:7:"SESSION";a:3:{s:7:"__flash";a:0:{}s:4:"__id";i:48;s:9:"reportico";a:55:{s:25:"awaiting_initial_defaults";b:0;s:11:"firsttimeIn";b:1;s:12:"execute_mode";s:4:"MENU";s:7:"project";s:6:"bienes";s:11:"target_menu";b:0;s:12:"project_path";s:84:"/var/www/siapweb/vendor/reportico/yii2-reportico/../../../components/reportes/bienes";s:18:"reportico_language";s:5:"es_es";s:13:"external_user";i:129;s:15:"external_param1";b:0;s:15:"external_param2";b:0;s:15:"external_param3";b:0;s:15:"user_parameters";a:0:{}s:13:"dropdown_menu";b:0;s:11:"static_menu";b:0;s:15:"charting_engine";s:6:"PCHART";s:20:"charting_engine_html";s:4:"NVD3";s:26:"output_template_parameters";a:9:{s:25:"show_hide_navigation_menu";s:4:"show";s:23:"show_hide_dropdown_menu";s:4:"show";s:29:"show_hide_report_output_title";s:4:"show";s:31:"show_hide_prepare_section_boxes";s:4:"hide";s:28:"show_hide_prepare_pdf_button";s:4:"show";s:29:"show_hide_prepare_html_button";s:4:"hide";s:35:"show_hide_prepare_print_html_button";s:4:"show";s:28:"show_hide_prepare_csv_button";s:4:"show";s:28:"show_hide_prepare_page_style";s:4:"hide";}s:13:"dynamic_grids";b:0;s:22:"dynamic_grids_sortable";b:1;s:24:"dynamic_grids_searchable";b:1;s:20:"dynamic_grids_paging";b:0;s:23:"dynamic_grids_page_size";i:10;s:16:"framework_parent";s:3:"yii";s:11:"access_mode";s:10:"ONEPROJECT";s:13:"progress_text";s:5:"Ready";s:15:"progress_status";s:5:"READY";s:11:"firstTimeIn";b:1;s:13:"target_format";s:4:"HTML";s:13:"latestRequest";s:0:"";s:12:"reporticourl";s:45:"../vendor/reportico/yii2-reportico/components";s:25:"reportico_ajax_script_url";s:22:"/siapweb/web/index.php";s:26:"forward_url_get_parameters";s:26:"r=reportico/reportico/ajax";s:32:"forward_url_get_parameters_graph";s:15:"reportico/graph";s:34:"forward_url_get_parameters_dbimage";s:17:"reportico/dbimage";s:16:"bootstrap_styles";s:1:"3";s:30:"force_reportico_mini_maintains";b:0;s:18:"url_path_to_assets";s:28:"/siapweb/web/assets/902b515e";s:16:"jquery_preloaded";b:0;s:19:"bootstrap_preloaded";b:0;s:8:"loggedin";b:1;s:8:"database";N;s:8:"hostname";N;s:6:"driver";s:5:"mysql";s:6:"server";N;s:8:"protocol";N;s:6:"xmlout";s:7:"modelos";s:18:"reportico_template";b:0;s:17:"show_print_button";b:1;s:18:"target_show_detail";s:1:"1";s:17:"target_show_graph";b:0;s:25:"target_show_group_headers";s:1:"1";s:26:"target_show_group_trailers";s:1:"1";s:26:"target_show_column_headers";s:1:"1";s:20:"target_show_criteria";s:1:"0";s:12:"target_style";s:5:"TABLE";}}}s:3:"log";a:1:{s:8:"messages";a:41:{i:0;a:5:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1453988284.2078741;i:4;a:0:{}}i:1;a:5:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1453988284.2080419;i:4;a:0:{}}i:2;a:5:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1453988284.2112689;i:4;a:0:{}}i:3;a:5:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1453988284.2115841;i:4;a:0:{}}i:4;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1453988284.2117269;i:4;a:0:{}}i:5;a:5:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1453988284.211936;i:4;a:0:{}}i:6;a:5:{i:0;s:37:"Route requested: 'bienes/bienes/view'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1453988284.2119839;i:4;a:0:{}}i:7;a:5:{i:0;s:22:"Loading module: bienes";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1453988284.2120221;i:4;a:0:{}}i:8;a:5:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1453988284.2124751;i:4;a:1:{i:0;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:9;a:5:{i:0;s:69:"Opening DB connection: pgsql:host=192.168.0.6;port=5434;dbname=bienes";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1453988284.2134621;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:12;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.2527659;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:15;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.278008;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:18;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.2956409;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:21;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3099599;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:24;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3223901;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:27;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.332222;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:30;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.346611;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:33;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3616531;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:36;a:5:{i:0;s:32:"Route to run: bienes/bienes/view";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1453988284.379271;i:4;a:0:{}}i:37;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.38006;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:40;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3898389;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:43;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3987269;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:46;a:5:{i:0;s:77:"Running action: app\modules\bienes\controllers\BienesController::actionView()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1453988284.408895;i:4;a:0:{}}i:47;a:5:{i:0;s:126:"SELECT * FROM "bienes"."n_codigo_bien" WHERE ("id_codigo"='418') AND ("id_direccion"='129') AND ("identificacion"='909009090')";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4105721;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:50;a:5:{i:0;s:1959:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'n_codigo_bien'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4252219;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:53;a:5:{i:0;s:881:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='n_codigo_bien'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.460165;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:56;a:5:{i:0;s:74:"Rendering view file: /var/www/siapweb/modules/bienes/views/bienes/view.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1453988284.482378;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:57;a:5:{i:0;s:1952:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'codigo'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4847469;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:60;a:5:{i:0;s:874:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='codigo'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5027189;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:63;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5229261;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:66;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.538944;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:69;a:5:{i:0;s:1950:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'sede'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5564959;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:72;a:5:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='sede'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5728941;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:75;a:5:{i:0;s:47:"SELECT * FROM "bienes"."sede" WHERE "id_sede"=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6257219;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:78;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'adquisicion'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.657969;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:81;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='adquisicion'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.673877;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:84;a:5:{i:0;s:63:"SELECT * FROM "bienes"."adquisicion" WHERE "id_adquisicion"='1'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6891451;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:87;a:5:{i:0;s:60:"Rendering view file: /var/www/siapweb/views/layouts/main.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1453988284.70258;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:88;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7070351;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:91;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.725795;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:94;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.757179;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:9:"profiling";a:3:{s:6:"memory";i:4646536;s:4:"time";d:0.58627605438232422;s:8:"messages";a:56:{i:10;a:5:{i:0;s:69:"Opening DB connection: pgsql:host=192.168.0.6;port=5434;dbname=bienes";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1453988284.213547;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:11;a:5:{i:0;s:69:"Opening DB connection: pgsql:host=192.168.0.6;port=5434;dbname=bienes";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1453988284.25137;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:13;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.2534089;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.273819;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.278518;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.2907591;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.296021;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3012249;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3103449;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:23;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3154039;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:25;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3227839;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:26;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3284199;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:28;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.332633;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:29;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3424489;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:31;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.347127;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:32;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3581409;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:34;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.361892;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:35;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3730609;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:38;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3802769;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:39;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.385905;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:41;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.389955;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:42;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3945179;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:44;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3988581;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:45;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4046819;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:48;a:5:{i:0;s:126:"SELECT * FROM "bienes"."n_codigo_bien" WHERE ("id_codigo"='418') AND ("id_direccion"='129') AND ("identificacion"='909009090')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.410886;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:49;a:5:{i:0;s:126:"SELECT * FROM "bienes"."n_codigo_bien" WHERE ("id_codigo"='418') AND ("id_direccion"='129') AND ("identificacion"='909009090')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4211321;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:51;a:5:{i:0;s:1959:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'n_codigo_bien'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.425668;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:52;a:5:{i:0;s:1959:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'n_codigo_bien'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.453413;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:54;a:5:{i:0;s:881:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='n_codigo_bien'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4605041;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:55;a:5:{i:0;s:881:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='n_codigo_bien'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4741189;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:58;a:5:{i:0;s:1952:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'codigo'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4851451;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:59;a:5:{i:0;s:1952:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'codigo'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.498291;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:61;a:5:{i:0;s:874:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='codigo'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5034969;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:62;a:5:{i:0;s:874:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='codigo'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.517312;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:64;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.523366;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:65;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5301189;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:67;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.539387;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:68;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5489299;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:70;a:5:{i:0;s:1950:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'sede'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.557224;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:71;a:5:{i:0;s:1950:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'sede'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5688219;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:73;a:5:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='sede'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5732751;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:74;a:5:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='sede'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5927939;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:76;a:5:{i:0;s:47:"SELECT * FROM "bienes"."sede" WHERE "id_sede"=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6261699;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:77;a:5:{i:0;s:47:"SELECT * FROM "bienes"."sede" WHERE "id_sede"=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6490519;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:79;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'adquisicion'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6583929;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:80;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'adquisicion'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.669337;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:82;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='adquisicion'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.67434;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:83;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='adquisicion'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6850259;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:85;a:5:{i:0;s:63:"SELECT * FROM "bienes"."adquisicion" WHERE "id_adquisicion"='1'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6895039;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:86;a:5:{i:0;s:63:"SELECT * FROM "bienes"."adquisicion" WHERE "id_adquisicion"='1'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.694772;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:89;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7074139;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:90;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7155321;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:92;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7263491;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:93;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.742095;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:95;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.757581;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:96;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7691579;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:2:"db";a:1:{s:8:"messages";a:54:{i:13;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.2534089;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.273819;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.278518;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.2907591;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.296021;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3012249;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3103449;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:23;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3154039;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:25;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3227839;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:26;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3284199;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:28;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.332633;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:29;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3424489;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:31;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.347127;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:32;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3581409;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:34;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.361892;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:35;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3730609;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:42:"/var/www/siapweb/modules/bienes/Bienes.php";s:4:"line";i:27;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:38;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3802769;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:39;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.385905;i:4;a:2:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:41;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.389955;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:42;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3945179;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:44;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.3988581;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:45;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4046819;i:4;a:3:{i:0;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:59:"/var/www/siapweb/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:45:"/var/www/siapweb/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:48;a:5:{i:0;s:126:"SELECT * FROM "bienes"."n_codigo_bien" WHERE ("id_codigo"='418') AND ("id_direccion"='129') AND ("identificacion"='909009090')";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.410886;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:49;a:5:{i:0;s:126:"SELECT * FROM "bienes"."n_codigo_bien" WHERE ("id_codigo"='418') AND ("id_direccion"='129') AND ("identificacion"='909009090')";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4211321;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:51;a:5:{i:0;s:1959:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'n_codigo_bien'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.425668;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:52;a:5:{i:0;s:1959:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'n_codigo_bien'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.453413;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:54;a:5:{i:0;s:881:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='n_codigo_bien'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4605041;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:55;a:5:{i:0;s:881:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='n_codigo_bien'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4741189;i:4;a:1:{i:0;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:59;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}}i:58;a:5:{i:0;s:1952:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'codigo'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.4851451;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:59;a:5:{i:0;s:1952:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'codigo'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.498291;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:61;a:5:{i:0;s:874:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='codigo'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5034969;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:62;a:5:{i:0;s:874:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='codigo'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.517312;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:64;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.523366;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:65;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5301189;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:17;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:67;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.539387;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:68;a:5:{i:0;s:53:"SELECT * FROM "bienes"."codigo" WHERE "id_codigo"=418";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5489299;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:47;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:70;a:5:{i:0;s:1950:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'sede'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.557224;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:71;a:5:{i:0;s:1950:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'sede'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5688219;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:73;a:5:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='sede'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5732751;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:74;a:5:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='sede'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.5927939;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:76;a:5:{i:0;s:47:"SELECT * FROM "bienes"."sede" WHERE "id_sede"=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6261699;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:77;a:5:{i:0;s:47:"SELECT * FROM "bienes"."sede" WHERE "id_sede"=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6490519;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:51;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:79;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'adquisicion'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6583929;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:80;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'adquisicion'
+    and d.nspname = 'bienes'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.669337;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:82;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='adquisicion'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.67434;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:83;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='adquisicion'
+    and ns.nspname='bienes'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6850259;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:85;a:5:{i:0;s:63:"SELECT * FROM "bienes"."adquisicion" WHERE "id_adquisicion"='1'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.6895039;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:86;a:5:{i:0;s:63:"SELECT * FROM "bienes"."adquisicion" WHERE "id_adquisicion"='1'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.694772;i:4;a:2:{i:0;a:5:{s:4:"file";s:53:"/var/www/siapweb/modules/bienes/views/bienes/view.php";s:4:"line";i:61;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:89;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7074139;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:90;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7155321;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:92;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7263491;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:93;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.742095;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:95;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.757581;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:96;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1453988284.7691579;i:4;a:2:{i:0;a:5:{s:4:"file";s:39:"/var/www/siapweb/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:64:"/var/www/siapweb/modules/bienes/controllers/BienesController.php";s:4:"line";i:61;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:6:"assets";a:2:{s:19:"app\assets\AppAsset";a:9:{s:10:"sourcePath";s:39:"/var/www/siapweb/vendor/bower/admin-lte";s:3:"css";a:5:{i:0;s:27:"bootstrap/css/bootstrap.css";i:1;s:75:"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";i:2;s:67:"https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";i:3;s:21:"dist/css/AdminLTE.css";i:4;s:29:"dist/css/skins/_all-skins.css";}s:2:"js";a:4:{i:0;s:34:"plugins/jQuery/jQuery-2.1.4.min.js";i:1;s:29:"bootstrap/js/bootstrap.min.js";i:2;s:18:"dist/js/app.min.js";i:3;s:43:"plugins/slimScroll/jquery.slimscroll.min.js";}s:7:"depends";a:0:{}s:8:"basePath";s:36:"/var/www/siapweb/web/assets/56e1c5db";s:7:"baseUrl";s:28:"/siapweb/web/assets/56e1c5db";s:9:"jsOptions";a:1:{s:8:"position";i:1;}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:22:"yii\debug\ToolbarAsset";a:9:{s:10:"sourcePath";s:49:"/var/www/siapweb/vendor/yiisoft/yii2-debug/assets";s:3:"css";a:1:{i:0;s:11:"toolbar.css";}s:2:"js";a:1:{i:0;s:10:"toolbar.js";}s:8:"basePath";s:36:"/var/www/siapweb/web/assets/5f40f85e";s:7:"baseUrl";s:28:"/siapweb/web/assets/5f40f85e";s:7:"depends";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}s:4:"mail";a:0:{}s:7:"summary";a:9:{s:3:"tag";s:13:"56aa19bc339e6";s:3:"url";s:119:"http://localhost/siapweb/web/index.php?r=bienes%2Fbienes%2Fview&id_codigo=418&id_direccion=129&identificacion=909009090";s:4:"ajax";i:0;s:6:"method";s:3:"GET";s:2:"ip";s:3:"::1";s:4:"time";i:1453988284;s:10:"statusCode";i:200;s:8:"sqlCount";i:27;s:9:"mailCount";i:0;}}

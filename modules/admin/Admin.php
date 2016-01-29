@@ -17,7 +17,7 @@ class Admin extends \yii\base\Module
         }
         \Yii::$app->params['menuItems'] = [
             [
-                'label' => 'Dashboard', 'url' => \Yii::$app->homeUrl,
+                'label' => 'Inicio', 'url' => \Yii::$app->homeUrl,
                 'icon' => 'dashboard',
             ],
             [
@@ -36,6 +36,9 @@ class Admin extends \yii\base\Module
                             ],
                             [
                                 'label' => 'Modulos', 'url' => ['/admin/modulo']
+                            ],
+                                  [
+                                'label' => 'Usuarios', 'url' => ['/admin/usuarios']
                             ],
                         ],
                     ],

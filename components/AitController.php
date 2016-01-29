@@ -16,7 +16,7 @@ class AitController extends Controller
         {
                 if( !SeguridadUsuarios::hasAccess( $this->module->id, $this->id, $accion ) )
                 {
-                    throw new ForbiddenHttpException("No tiene permisos para ver esta pagina.");
+                    throw new ForbiddenHttpException("DISCULPE USTED NO POSEE LOS PERMISOS NECESARIOS PARA ENTRAR AL SISTEMA");
                 }
         }
         catch (Exception $ex)

@@ -45,7 +45,7 @@ class SeguridadUsuarios extends \yii\db\ActiveRecord implements IdentityInterfac
         return [
             [['cedula', 'id_direccion', 'login', 'password'], 'required'],
             [['cedula', 'id_direccion'], 'integer'],
-            [['cedula'],'unique'],
+            [['cedula'],'unique','message'=>'cedula duplicada o repetida'],
             [['login'], 'string', 'max' => 32],
             [['password'], 'string', 'max' => 64]
         ];
@@ -157,6 +157,52 @@ class SeguridadUsuarios extends \yii\db\ActiveRecord implements IdentityInterfac
     public function validatePassword($password)
     {
         return strcmp(trim($this->password), md5(trim($password))) == 0;
+    }
+    
+    /**
+     * Generates "remember me" authentication key
+     */
+    public function generateAuthKey()
+    {
+        $this->auth_key = Security::generateRandomKey();
+    }
+
+    /**
+     * Generates new password reset token
+     */
+    public function generatePasswordResetToken()
+    {
+        $this->password_reset_token = Security::generateRandomKey() . '_' . time();
+    }
+    
+    /**
+     * Removes password reset token
+     */
+    public function removePasswordResetToken()
+    {
+        $this->password_reset_token = null;
+    }
+
+    /**
+     * Finds user by password reset token
+     *
+     * @param  string      $token password reset token
+     * @return static|null
+     */
+    public static function findByPasswordResetToken($token)
+    {
+        $expire = Yii::$app->params['user.passwordResetTokenExpire'];
+        $parts = explode('_', $token);
+        $timestamp = (int) end($parts);
+        if ($timestamp + $expire < time())
+        {
+            // token expired
+            return null;
+        }
+
+        return static::findOne([
+                    'password_reset_token' => $token
+        ]);
     }
     
     public static function hasAccess($module, $controller = null, $action = null)
@@ -276,11 +322,5 @@ class SeguridadUsuarios extends \yii\db\ActiveRecord implements IdentityInterfac
         }
         return $items;
     }
-    
-    
-    
-       
-    
-    
-       
+          
 }

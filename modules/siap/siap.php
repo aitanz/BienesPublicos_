@@ -3,7 +3,7 @@
 namespace app\modules\siap;
 
 use \Yii;
-use app\models\Usuario;
+
 
 class siap extends \yii\base\Module
 {
@@ -18,7 +18,7 @@ class siap extends \yii\base\Module
 //        }
         \Yii::$app->params['menuItems'] = [
             [
-                'label' => 'Dashboard', 'url' => \Yii::$app->homeUrl,
+                'label' => 'Inicio', 'url' => \Yii::$app->homeUrl,
                 'icon' => 'dashboard',
             ],
             [
@@ -38,14 +38,20 @@ class siap extends \yii\base\Module
                             [
                                 'label' => 'Modulos', 'url' => ['/admin/modulo']
                             ],
+                            [
+                                'label' => 'Usuarios', 'url' => ['/admin/usuarios']
+                            ],
                         ],
                     ],
                 ]
             ],
             [
+                'label' => 'Configuración', 'url' => ['/organizacion/'],
+                'icon' => 'gear',
+            ],
+            [
                 'label' => 'Tesoreria', 'url' => '#',
                 'icon' => 'btc',
-                'visible' => Usuario::hasAccess($this->id, "tesoreria"),
                 'items' => [
                     [
                         'label' => 'Pago de Proveedores', 'url' => ['/siap/tesoreria/pago-proveedores'],
@@ -59,10 +65,11 @@ class siap extends \yii\base\Module
                 //label de bienes
             [
                 'label' => 'Bienes', 'url' => ['/bienes/'],
-                'icon' => 'table'
+                'icon' => 'table',
+
                 //'visible' => Usuario::hasAccess($this->id, "bienes"),
-                
-                
+
+
             ],
 
 

@@ -7,6 +7,8 @@ use yii\grid\GridView;
 /* @var $searchModel app\modules\admin\models\SeguridadUsuariosSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
+$data = new app\modules\admin\models\Direccion;
+
 $this->title = Yii::t('app', 'Seguridad Usuarios');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -24,11 +26,16 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id_usuario',
             'cedula',
-            'id_direccion',
-            'login',
+             'login',
+            [
+              'attribute' => 'id_direccion',
+              'value' => function($data){
+              $Codigo = app\modules\admin\models\Direccion::findOne($data->id_direccion);
+              return $Codigo->nombre;
+                },
+            ],
+           
             
 
             ['class' => 'yii\grid\ActionColumn'],

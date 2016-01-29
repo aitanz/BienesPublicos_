@@ -9,6 +9,7 @@ use app\components\AitController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use app\modules\bienes\models\BienesCodigo;
+use app\models\HtmlHelpers;
 $direccion = \yii::$app->user->Identity->id_direccion;
 $idusuario = \yii::$app->user->Identity->id_usuario;
 
@@ -18,6 +19,7 @@ $BienesCodigo = new BienesCodigo;
  */
 class BienesController extends AitController
 {
+    public $id;
     public function behaviors()
     {
         return [
@@ -56,12 +58,6 @@ class BienesController extends AitController
         return $this->render('view', [
             'model' => BienesNCodigoBien::findOne(['id_codigo'=>$id_codigo,'id_direccion'=> $id_direccion, 'identificacion'=> $identificacion]),
 
-
-            //'model' => $this->findModel($id_codigo, find->where('$BienesLocalidad' = $id_localidad),
-            //$BienesLocalidad
-
-          //  (['view', 'id_codigo' => $model->id_codigo, 'id_localidad' => $model->id_localidad]);
-
         ]);
     }
 
@@ -73,7 +69,6 @@ class BienesController extends AitController
     public function actionCreate()
     {
         $model = new BienesNCodigoBien();
-
 
         // $model->nombre= '1';
         // $model->descripcion= 'esta es la descripcion';
@@ -109,7 +104,7 @@ class BienesController extends AitController
     public function actionUpdate($id_codigo, $id_direccion, $identificacion)
     {
         $model = BienesNCodigoBien::findOne(['id_codigo'=>$id_codigo,'id_direccion'=> $id_direccion, 'identificacion'=> $identificacion]);
-
+        
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id_codigo' => $model->id_codigo, 'id_direccion' => $model->id_direccion, 'identificacion'=>$model->identificacion]);
         } else {
@@ -129,10 +124,18 @@ class BienesController extends AitController
     public function actionDelete($id_codigo, $id_direccion, $identificacion)
     {
         BienesNCodigoBien::findOne(['id_codigo'=>$id_codigo,
-            'id_direccion'=> $id_direccion, 
+            'id_direccion'=> $id_direccion,
             'identificacion'=> $identificacion])->delete();
 
         return $this->redirect(['index']);
+    }
+
+
+    public function actionReportes()
+    {
+     
+      return $this->render('reportes');
+
     }
 
     /**
@@ -199,7 +202,58 @@ class BienesController extends AitController
       }
       echo Json::encode(['output'=>'', 'selected'=>'']);
   }
+      public function actionCategoria($id_codigo){
+        echo HtmlHelpers::dropDownList(\app\modules\bienes\models\BienesCodigo::className(), 'padre', $id_codigo, 'id_codigo', 'descripcion');
+    }
+
+    /*public function actionSubCategoria($id_codigo){
+        echo HtmlHelpers::dropDownList(\app\modules\bienes\models\BienesCodigo::className(), 'padre', $id_codigo, 'id_codigo', 'descripcion');
+  } */
 
 
+    public function actionMarcas($id_marca){
+        echo HtmlHelpers::dropDownList(\app\modules\bienes\models\BienesModelos::className(),'id_marca', $id_marca,'id_modelo','descripcion');
+    }
 
+       
+  public function actionOrigen(){ 
+
+
+            $tipo_adquisicion = yii::$app->request->POST('tipo_adquisicion');     
+       
+      $prueba = Yii::$app->db->createCommand('SELECT codigo_origen FROM bienes.n_codigo_bien '
+        . ' WHERE tipo_adquisicion=:tipo_adquisicion ORDER BY codigo_origen DESC LIMIT 1',[':tipo_adquisicion'=>$tipo_adquisicion])->queryAll();
+   
+            if($tipo_adquisicion==1){$conver1= 'B-';}
+            if($tipo_adquisicion==2){$conver1= 'G-';}
+            if($tipo_adquisicion==3){$conver1= 'D-';}        
+            if($tipo_adquisicion==4){$conver1= 'E-';}
+            if($tipo_adquisicion==5){$conver1= 'H-';}
+            if($tipo_adquisicion==6){$conver1= 'F-';}           
+            if($tipo_adquisicion==7){$conver1= 'C-';}
+            if($tipo_adquisicion==8){$conver1= 'A-';} 
+            if($tipo_adquisicion==9){$conver1= 'A-';}        
+            if($tipo_adquisicion==10){$conver1='I-';}
+          $h='2';
+            if ($prueba){
+              $prueba=$prueba;
+                  $a=$prueba[0];
+            $rest = substr($a['codigo_origen'], 2); 
+            $conver= (int)$rest;
+            $suma= $conver + 1; 
+            $final = ($conver1.$suma);
+            }
+            else{
+                $suma=2;
+               $final=($conver1.$suma);
+                }   
+
+                           $array=['respuesta'=>$final];
+                return json_encode($array);
+                                     
+
+    }
+   
+   
+   
 }

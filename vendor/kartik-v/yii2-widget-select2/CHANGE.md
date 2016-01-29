@@ -1,6 +1,14 @@
 Change Log: `yii2-widget-select2`
 =================================
 
+## Version 2.0.4
+
+**Date:** 14-Dec-2015
+
+- (enh #67): Remove redundant code in embedAddon.
+- (enh #94): Update to latest release of Select2 plugin.
+- (enh #96): Enhance fix for clearing Select2 selection.
+
 ## Version 2.0.3
 
 **Date:** 13-Sep-2015

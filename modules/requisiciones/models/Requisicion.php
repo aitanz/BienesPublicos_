@@ -58,8 +58,8 @@ class Requisicion extends \yii\db\ActiveRecord
     {
         return [
             [['status', 'tipo', 'numcontrol', 'idefiscal', 'idtipoproducto', 'idcoordinacion', 'idtipopago', 'statusinformatica', 'statusadmin', 'idusuario', 'idproveedor', 'idcuenta', 'idpuc', 'idcategoriaprogramatica', 'iddireccion'], 'integer'],
-            [['fecha', 'tipo', 'concepto', 'numcontrol'], 'required'],
-            [['fecha', 'fechainformatica', 'fechaadmin', 'bitacora'], 'safe'],
+            [['fecha', 'concepto','tipo'], 'required'],
+            [['fecha','tipo','numcontrol' ,'fechainformatica', 'fechaadmin', 'bitacora'], 'safe'],
             [['motivorechazo'], 'string'],
             [['monto', 'disponible'], 'number'],
             [['imputacion'], 'boolean'],

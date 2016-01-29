@@ -4,27 +4,28 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
  * @package yii2-widgets
  * @subpackage yii2-widget-select2
- * @version 2.0.3
+ * @version 2.0.4
  */
 
 namespace kartik\select2;
 
+use kartik\base\AssetBundle;
+use kartik\base\InputWidget;
 use Yii;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
-use yii\base\InvalidConfigException;
+use yii\web\JsExpression;
 
 /**
- * Select2 widget is a Yii2 wrapper for the Select2 jQuery plugin. This
- * input widget is a jQuery based replacement for select boxes. It supports
- * searching, remote data sets, and infinite scrolling of results. The widget
- * is specially styled for Bootstrap 3.
+ * Select2 widget is a Yii2 wrapper for the Select2 jQuery plugin. This input widget is a jQuery based replacement for
+ * select boxes. It supports searching, remote data sets, and infinite scrolling of results. The widget is specially
+ * styled for Bootstrap 3.
  *
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  * @see https://github.com/select2/select2
  */
-class Select2 extends \kartik\base\InputWidget
+class Select2 extends InputWidget
 {
     const LARGE = 'lg';
     const MEDIUM = 'md';
@@ -123,9 +124,7 @@ class Select2 extends \kartik\base\InputWidget
         $multiple = ArrayHelper::getValue($this->options, 'multiple', $multiple);
         $this->options['multiple'] = $multiple;
         if ($this->hideSearch) {
-            $css = ArrayHelper::getValue($this->pluginOptions, 'dropdownCssClass', '');
-            $css .= ' kv-hide-search';
-            $this->pluginOptions['dropdownCssClass'] = $css;
+            $this->pluginOptions['minimumResultsForSearch'] = new JsExpression('Infinity');
         }
         $this->initPlaceholder();
         if (!isset($this->data)) {
@@ -180,9 +179,6 @@ class Select2 extends \kartik\base\InputWidget
         $group = ArrayHelper::getValue($this->addon, 'groupOptions', []);
         $size = isset($this->size) ? ' input-group-' . $this->size : '';
         Html::addCssClass($group, 'input-group' . $size);
-        if (empty($this->addon)) {
-            return Html::tag('div', $input, $group);
-        }
         $prepend = ArrayHelper::getValue($this->addon, 'prepend', '');
         $append = ArrayHelper::getValue($this->addon, 'append', '');
         if ($this->pluginLoading) {
@@ -238,6 +234,9 @@ class Select2 extends \kartik\base\InputWidget
         $lang = isset($this->language) ? $this->language : '';
         Select2Asset::register($view)->addLanguage($lang, '', 'js/i18n');
         if (in_array($this->theme, self::$_inbuiltThemes)) {
+            /**
+             * @var AssetBundle $bundleClass
+             */
             $bundleClass = __NAMESPACE__ . '\Theme' . ucfirst($this->theme) . 'Asset';
             $bundleClass::register($view);
         }
@@ -251,7 +250,7 @@ class Select2 extends \kartik\base\InputWidget
         $id = $this->options['id'];
         $this->registerAssetBundle();
         // do not open dropdown when clear icon is pressed to clear value
-        $js = "\$('#{$id}').on('select2:opening', initS2Open).on('select2:unselecting', initS2Unselect);";
+        $js = "\$('#{$id}').on('select2:open', initS2Open).on('select2:unselecting', initS2Unselect);";
         $this->getView()->registerJs($js);
         $size = empty($this->addon) && $this->size !== self::MEDIUM ? 'input-' . $this->size : '';
         // register plugin

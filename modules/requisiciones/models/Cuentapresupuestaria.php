@@ -58,7 +58,8 @@ class Cuentapresupuestaria extends \yii\db\ActiveRecord
     {
         return 'cuentapresupuestaria';
     }
-
+public $categoria;
+public $puc;
     /**
      * @inheritdoc
      */

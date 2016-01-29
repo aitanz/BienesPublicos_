@@ -57,3 +57,7 @@ class Requisiciondeta extends \yii\db\ActiveRecord
         ];
     }
 }
+
+
+
+

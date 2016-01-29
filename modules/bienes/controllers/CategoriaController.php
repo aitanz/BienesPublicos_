@@ -1,18 +1,18 @@
 <?php
 
 namespace app\modules\bienes\controllers;
-use yii\widgets\Pjax;
+
 use Yii;
-use yii\helpers\Html;
-use yii\web\Response;
-use yii\widgets\ActiveForm;
 use app\modules\bienes\models\BienesCategoria;
 use app\modules\bienes\models\BienesCategoriaSearch;
 use app\components\AitController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\base\Model;
-
+    use yii\base\Model;
+    use yii\widgets\Pjax;
+    use yii\helpers\Html;
+    use yii\web\Response;
+    use yii\widgets\ActiveForm;
 /**
  * CategoriaController implements the CRUD actions for BienesCategoria model.
  */

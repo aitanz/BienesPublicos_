@@ -241,5 +241,28 @@ var_dump($model);
     
     
     
-    
+    /*--------------------------------crear funciones-------------------------------------*/
+
+     function unidadEjecutora(unidadEjecutora)
+     {
+      this.unidadEjecutora = unidadEjecutora;
+     }
+
+     function imputacionPresupuestaria(unidadEjecutora, monto, ord)
+     {
+        this.unidadEjecutora = unidadEjecutora;
+        this.monto = monto;
+        this.ord = ord;
+     }
+
+     function detalles(cantidad, descripcion, monto)
+     {
+       this.cantidad = cantidad;
+       this.descripcion = descripcion;
+       this.monto = monto;
+     }
+      
+       
+   /*---------------------------------------------fin----------------------------------------------------*/
+
     

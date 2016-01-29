@@ -17,12 +17,23 @@ use app\modules\requisiciones\models\Coordinacion;
 use app\components\AitController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\db\Query;
+use app\models\HtmlHelpers;
+use app\models\HtmlHelpers2;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
+
+
 
 /**
  * RequisicionController implements the CRUD actions for Requisicion model.
  */
 class RequisicionController extends AitController
 {
+   public $variablecategoria ;
+   
+ 
+   
     public function behaviors()
     {
         return [
@@ -61,47 +72,25 @@ class RequisicionController extends AitController
      */
     public function actionCreate() {
 
-       
+
         $model = new Requisicion();
-        $reqDeta = new Requisiciondeta();    
+        $reqDeta = new Requisiciondeta();
         $unidadmedida = new Unidadmedida();
         $tipoproducto = new Tipoproducto();
         $tp = new Tipopagos();
         $coordinacion = new Coordinacion();
-        
-        /*modelo requisiciones
-        $model->numcontrol= 23;
-        $model->concepto='pruebas';
-        $tipoproducto->descripcion = "fuerza bruta";
-        $coordinacion->nombre = "analista";
-        $coordinacion->funciones = "nada";
-        $cp->causado = "bull";
-        $cp->comprometido = "bull";
-        $cp->disponibilidad = "bull";
-        $cp->pagado = "bull";
-        $cp->precomprometido = "bull";
-        $cp->statusaprobacion = 1;
-        $cp->tipopartida = 6;
-        $cp->montoinicial = "bull";
-        $tp->descripcion = "bull";*/
-       
-        if ($model->load(Yii::$app->request->post()) && $model->save() && 
-            $reqDeta->load(Yii::$app->request->post()) && $reqDeta->save()) 
-             {
-           $mensaje =  Yii::$app->session->setFlash('success', 'Datos de Requisicion Guardados..');
-             //return $this->redirect(['index','model'=>$model,'mensaje'=>$mensaje]);
-             return $this->redirect(['view', 'id' => $model->idrequisicion]);
-         } 
-             else {
-                   return $this->render('create', ['model' => $model,'requisiciondeta'=>$reqDeta]);
-             }
-    }
+        $model->numcontrol = 1;
+        $model->tipo = 0;
+        $model->status = 5;
 
-  
-                
-                
-                
-  
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $mensaje = Yii::$app->session->setFlash('success', 'Datos de Requisicion Guardados..');
+            return $this->redirect(['view', 'id' => $model->idrequisicion]);
+        } else {
+            return $this->render('create', ['model' => $model, 'requisiciondeta' => $reqDeta]);
+        }
+    }
 
     /**
      * Updates an existing Requisicion model.
@@ -109,7 +98,7 @@ class RequisicionController extends AitController
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id) {
+     public function actionUpdate($id) {
         $model = $this->findModel($id);
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->idrequisicion]);
@@ -117,6 +106,10 @@ class RequisicionController extends AitController
             return $this->render('update', ['model' => $model,]);
         }
     }
+    
+    
+    
+
 
     /**
      * Deletes an existing Requisicion model.
@@ -124,10 +117,10 @@ class RequisicionController extends AitController
      * @param integer $id
      * @return mixed
      */
-		public function actionDelete($id) {
-			$this->findModel($id)->delete();
-			return $this->redirect(['index']);
-		}
+    public function actionDelete($id) {
+	$this->findModel($id)->delete();
+	return $this->redirect(['index']);
+    }
 
     /**
      * Finds the Requisicion model based on its primary key value.
@@ -136,44 +129,48 @@ class RequisicionController extends AitController
      * @return Requisicion the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-		protected function findModel($id) {
-			if(($model = Requisicion::findOne($id)) !== null) {
-			  return $model;
-			   } else {
-				  throw new NotFoundHttpException('The requested page does not exist.');
-			  }
-		   }
+    protected function findModel($id) {
+        if (($model = Requisicion::findOne($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+     protected function findModel2($id) {
+        if (($model = Requisiciondeta::findAll($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
 
-		public function actionBuscarProveedor() {
-		  $request = trim($_GET['term']);
-		  if ($request != "") {
-			$model = Proveedor::find()->select(['(idproveedor||\'-----\'||razonsocial||\'-----\'||rif )
-			as value', 'idproveedor as id'])->where(" codigo like '%" . $request . "%' ")->orderBy('idproveedor')
-			->limit('20')->asArray()->all();
-			$data = array();
-			foreach ($model as $prov) {
-					$data[$prov['id']] = [
-					'value' => $prov['id'],
-					'label' => $prov['value'],
-					'id' => $prov['id']
-					];
-				}
-				echo json_encode($data);
-			} else {
-
-			}
-		}
+    public function actionBuscarProveedor() {
+        $request = trim($_GET['term']);
+        if ($request != "") {
+            $model = Proveedor::find()->select(['(idproveedor||\'-----\'||razonsocial||\'-----\'||rif as value', 'idproveedor as id'])->where(" codigo like '%" . $request . "%' ")->orderBy('idproveedor')
+            ->limit('20')->asArray()->all();
+            $data = array();
+            foreach ($model as $prov) {
+              $data[$prov['id']] = ['value' => $prov['id'],'label' => $prov['value'],'id' => $prov['id'] ];
+            }
+            echo json_encode($data);
+        } 
+            else {
+            
+            }
+    }
 
     public function actionGetActividad() {
     $respuestacapro = array('success' => 'false', 'mensaje' => '');
     if (\Yii::$app->request->isAjax && isset($_POST['idcategoriaprogramatica'])) {
         $categoria = Categoriaprogramatica::findOne(\Yii::$app->request->post('idcategoriaprogramatica'));
-            if ($categoria) {
-                $respuestacapro = array('success' => 'true', 'categoria' => trim($categoria->categoriaprogramatica));
-            } else {
+        if ($categoria) {
+            $respuestacapro = array('success' => 'true', 'categoria' => trim($categoria->categoriaprogramatica));
+        }   else {
                 $respuestacapro = array('success' => 'false', 'mensaje' => 'No se encuentra la Categoria Programatica');
             }
-        }
+    }
         echo json_encode($respuestacapro);
         return;
     }
@@ -181,9 +178,9 @@ class RequisicionController extends AitController
     public function actionGetPuc() {  //disable
         $return = array('success' => 'false', 'mensaje' => '');
         if (\Yii::$app->request->isAjax && isset($_POST['idtipopago'])) {
-          $disponibilidad = Tipopagos::findOne(\Yii::$app->request->post('idtipopago'));
+        $disponibilidad = Tipopagos::findOne(\Yii::$app->request->post('idtipopago'));
            if ($disponibilidad) {
-                $return = array('success' => 'true', 'disponibilidad' => trim($disponibilidad->descripcion));
+              $return = array('success' => 'true', 'disponibilidad' => trim($disponibilidad->descripcion));
             } else
                 $return = array('success' => 'false', 'mensaje' => 'No se encuentra la Categoria Programatica en la db ');
         }
@@ -193,81 +190,88 @@ class RequisicionController extends AitController
      
     /*busca la cuenta presupuestaria que esta conformda por categoria +puc*/
     
-    public function actionGetUnidad() {
+    public function actionGetUnidad(){
         $return = array('success' => 'false', 'mensaje' =>'');
-        if (\yii::$app->request->isAjax && \yii::$app->request->post('idcoordinacion')) {
-            $categoria = Categoriaprogramatica::find()->where(['idcoordinacion' => \yii::$app->request->post('idcoordinacion')])->one();
-            $cuentapre = $categoria->categoriaprogramatica; //guardo la cuentapresupuestaria en esta variable!
-            $disponible = Cuentapresupuestaria::find()->where(['puc' => \yii::$app->request->post('puccoordinacion')])->one();
-            if($categoria) {
-                $return = array('success' => 'true', 'categoria' => trim($categoria->categoriaprogramatica),
-                    'disponible' => trim($disponible->disponibilidad));
-               
-                
-            } else {
-                $return = array('success' => 'false', 'mensaje' => 'no se encontro una categoriaprogramatica asociada al parametro');
+        $idcoordinacion = yii::$app->request->post('idcoordinacion');
+            if (\yii::$app->request->isAjax && \yii::$app->request->post('idcoordinacion')) {
+                 echo  HtmlHelpers::dropDownList(Categoriaprogramatica::className(),'idcoordinacion',$idcoordinacion,'idcategoriaprogramatica','descripcion');    
             }
-        }
-        echo json_encode($return);
     
-        return;
     }
     
     
     
-       public function actionGetAuxiliar() {
-           $return = array('success'=>'false', 'mensaje'=>'');
-           if (\yii::$app->request->isAjax && \yii::$app->request->post('puccoordinacion'))
-           {
-               $auxiliar = Cuentapresupuestaria::find()->where(['puc'=> yii::$app->request->post('puccoordinacion')])->one();
-               
-               if($auxiliar){
-                   
-                   $return=array('success'=>'true' , 'auxiliar'=> trim($auxiliar->auxiliar));
-               }
-               else{
-                   $return= array('success'=>'false', 'mensaje'=>'no se encontro');
-               }
-           }
-         
-        echo json_encode($return);
-        return;
+        
+    public function actionGetUnidadservicios() {
+        $return = array('success' => 'false', 'mensaje' =>'');
+        $idcoordinacion = yii::$app->request->post('idcoordinacion');
+            if (\yii::$app->request->isAjax && \yii::$app->request->post('idcoordinacion')) {
+                 echo  HtmlHelpers::dropDownList(Categoriaprogramatica::className(),'idcoordinacion',$idcoordinacion,'idcategoriaprogramatica','descripcion');    
+            }
+    
+ 
     }
     
     
+     /* action para consultar disponibilidad de la cuenta  */
+     public function actionCuentapresupuestaria(){
+        $matriz = array('success' => 'false', 'mensaje' =>'');
+    
+        if (\yii::$app->request->isAjax && \Yii::$app->request->post()){
+                $idcuenta = Yii::$app->request->post('idcuenta');
+                $cuenta = Cuentapresupuestaria::find()->where(['idcuenta'=>$idcuenta ])->one(); //consulta a la tabla cuentpresupuestaria 
+                if($cuenta){
+                 $matriz= array('success'=>'true' , 'disponibilidad'=>trim($cuenta->disponibilidad));
+                }
+                        
+                    else{
+                        $matriz = array('mensaje '=>'no se encuentra parametro en bd');
+                    }
+           } 
+         echo json_encode($matriz);
+        
+         return;
+    }
     
     
+    public function actionVariable(){
+     
+        $categoria= \Yii::$app->request->post('categoria');
+        $puc= \Yii::$app->request->post('puc');
+     
+       echo  HtmlHelpers2::dropDownList(Cuentapresupuestaria::className(),'categoria',$categoria  ,'puc',$puc, 'idcuenta','auxiliar');    
+ 
+       }
+    
+    
+       
+         public function actionVariable2(){
+     
+        $categoria= \Yii::$app->request->post('categoria');
+        $puc= \Yii::$app->request->post('puc');
+     
+       echo  HtmlHelpers2::dropDownList(Cuentapresupuestaria::className(),'categoria',$categoria  ,'puc',$puc, 'idcuenta','auxiliar');    
+ 
+       }
+    
+    
+    
+    
+   
     
 
-                        /*$auxiliar = Cuentapresupuestaria::find()
-                        ->where(["categoria like=>'%0101000051%' AND puc like=>'%401020700%' AND espadre => false"])
-                        ->all();*/
     
-    /*public function actionGetUnidad() {
-        $return = array('success' => 'false', 'mensaje' => '');
-        if (\Yii::$app->request->isAjax && isset($_POST['idcategoriaprogramatica'])){
-            $categoria = Categoriaprogramatica::findone(\Yii::$app->request->post('idcategoriaprogramatica'));
-            $cuenta = Cuentapresupuestaria::find()->where(['idpuc' => '5062','categoria'=>'1001000052'])->one();
-            
-            if ($cuenta) {
-                $return = array('success' => 'true', 'cat' => trim($cuenta->categoria.($cuenta->puc)), 'disponibilidad' => trim($cuenta->disponibilidad . ' BSF'));
-            } else {
-                $return = array('success' => 'false', 'mensaje' => 'No se encuentra la Categoria Programatica');
-            }
-        }
-            echo json_encode($return);
-            return;
-    }*/
     
-
+    
+    
     public function actionGetTipopagoip() {
         $return = array('success' => 'false', 'mensaje' => '');
-        if (\Yii::$app->request->isAjax && isset($_POST['idtipopago'])) {
+        if (\Yii::$app->request->isAjax &&  Yii::$app->request->post('idtipopago')) {
             $tipopago = Tipopagos::findOne(\Yii::$app->request->post('idtipopago'));
             $descripcion = Puc::findOne($tipopago->idpuc);
 
             if ($descripcion) {
-                $return = array('success' => 'true', 'descripcion' => trim($descripcion->descripcion), 'imputacion' => $descripcion->idpuc > 0 ? true : false);
+                $return = array('success' => 'true','puc'=>$tipopago->puc, 'descripcion' => trim($descripcion->descripcion), 'imputacion' => $descripcion->idpuc > 0 ? true : false);
             } else {
                 $return = array('success' => 'false', 'mensaje' => 'No se encuentra la Categoria Programatica en la db ');
             }
@@ -330,15 +334,15 @@ class RequisicionController extends AitController
 
 
     public function actionGetProductopuc() {
+        
         $return = array('success' => 'false', 'mensaje' => 'vacio');
-        if (\yii::$app->request->isAjax && isset($_POST['idtipoproducto'])) {
+        if (\yii::$app->request->isAjax && Yii::$app->request->post('idtipoproducto')) {
             $consulta = Tipoproducto::findOne(\yii::$app->request->post('idtipoproducto'));
             $setpuc = Cuentapresupuestaria::find(\yii::$app->request->post('idpuccoordinacion'));
             if ($consulta) {
                 $return = array('success' => 'true', 'llamada' => trim($consulta->puc),
-                    'categoria' => trim($consulta->descripcion),
-                    'idpuc' => trim($consulta->idpuc),
-                );
+                                                     'categoria' => trim($consulta->descripcion),
+                                                     'idpuc' => trim($consulta->idpuc));
             } else {
                 $return = array('success' => 'false', 'mensaje' => 'no se encontro registro');
             }
@@ -348,61 +352,251 @@ class RequisicionController extends AitController
     }
 
     
-    
-    
-    
-      public function actionBienes() {
-        return $this->render('formbienesysuministros');
-    }                                               
-
-    
-    public function actionCreatebienes() {
-       
-          
-        $model = new Requisicion();
-        $reqDeta = new Requisiciondeta();
-        $capro = new Categoriaprogramatica();
-        $puc = new Puc();
-        $cp = new Cuentapresupuestaria();
-        $unidadmedida = new Unidadmedida();
-        $tipoproducto = new Tipoproducto();
-        $tp = new Tipopagos();
-        $prove = new Proveedor();
-        $coordinacion = new Coordinacion();
-        //modelo requisicione
-        $model->numcontrol= 23;
-        $model->concepto='pruebas';
-        //modelo tipo producto
-        $tipoproducto->descripcion = "fuerza bruta";
-        //modelo reqisiciondeta
-     
-        
-        //modelo coordinacion
-        $coordinacion->nombre = "analista";
-        $coordinacion->funciones = "nada";
-         //modelo cuentapresupuestaria
-        $cp->causado = "bull";
-        $cp->comprometido = "bull";
-        $cp->disponibilidad = "bull";
-        $cp->pagado = "bull";
-        $cp->precomprometido = "bull";
-        $cp->statusaprobacion = 1;
-        $cp->tipopartida = 6;
-        $cp->montoinicial = "bull";
-        $tp->descripcion = "bull";
-        
-         
-
-        if ($model->load(Yii::$app->request->post()) && $model->save() &&
-            $reqDeta->load(Yii::$app->request->post()) && $reqDeta->save()){
+    public function actionEnviarproductos(){
+            Yii::$app->response->format = 'json';
+            $return = array('success'=>'false','mensaje'=>'');
+            if(Yii::$app->request->post()){
+            $contenedor = Yii::$app->request->post();
+            $cant = Yii::$app->request->post('cantidad');
+            $des =  Yii::$app->request->post('descripcion');
+            $reqDeta = new \app\modules\requisiciones\models\Requisiciondeta();
+            $longitud = count($contenedor['inputs']);
+            $ultimo = end($contenedor['inputs']);
+            $requisicion_id= $ultimo['value'];
              
-             return $this->redirect(['index','model'=>$model,'requisiciondeta'=>$reqDeta]);
-        } 
-             else {
-             return $this->render('create', ['model' => $model,
-                                               'requisiciondeta' => $reqDeta]);
+                for($i=0; $i<$longitud; $i++){
+                    if($longitud = 3 ){
+                        $variable1=  $contenedor['inputs'][0]['value'];
+                        $variable2=  $contenedor['inputs'][1]['value']; 
+                        $idunidadmedida= $contenedor['inputs'][3]['value'];
+                        Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idunidadmedida','idrequisicion'], [
+                        [$variable1, $variable2, $idunidadmedida,$requisicion_id],])->execute();
+                         Yii::$app->session->setFlash('success', 'requisicion# '.$requisicion_id.' Creada con Exito');
+                       
+                    }//fila1
+                    if($longitud = 6 ){
+                        $variable3= $contenedor['inputs'][4]['value'];
+                        $variable4= $contenedor['inputs'][5]['value'];
+                        $idunidadmedida2 = $contenedor['inputs'][7]['value'];
+                        Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion', 'idunidadmedida' ,'idrequisicion'], [
+                        [$variable3, $variable4, $idunidadmedida2 ,$requisicion_id],])->execute();
+                         Yii::$app->session->setFlash('success', 'requisicion # '.$requisicion_id.' Creada con Exito');
+                    }//fila2
+                    
+                    if($longitud = 9){
+                        $variable6= $contenedor['inputs'][8]['value'];
+                        $variable7= $contenedor['inputs'][9]['value']; 
+                        $idunidadmedida3 = $contenedor['inputs'][11]['value'];
+                        Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idunidadmedida' ,'idrequisicion'], [
+                        [$variable6, $variable7, $idunidadmedida3  ,$requisicion_id],])->execute();
+                         Yii::$app->session->setFlash('success', 'requisicion # '.$requisicion_id.' Creada con Exito');
+                        }//fila3
+                        
+                        
+                    if($longitud = 12){
+                        $variable8= $contenedor['inputs'][12]['value'];
+                        $variable9= $contenedor['inputs'][13]['value']; 
+                        $idunidadmedida4 = $contenedor['inputs'][15]['value'];
+                        Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idunidadmedida' ,'idrequisicion'], [
+                        [$variable8, $variable9, $idunidadmedida4  ,$requisicion_id],])->execute();
+                         Yii::$app->session->setFlash('success', 'requisicion # '.$requisicion_id.' Creada con Exito');
+                        }
+                        
+                        
+                        
+                }//for
+                  
+            } //post
+             
+    }//funcion envia producto     
+            
+                                                
+
+      
+    
+    public function actionSend(){
+              $return = array('success' => 'false', 'mensaje' => 'vacio');
+              $model = new Requisicion();
+              Yii::$app->response->format = 'json';
+              $direction = \yii::$app->user->Identity->id_direccion;
+              
+            if(\Yii::$app->request->post() && !empty($model)) {    
+                $fecha = Yii::$app->request->post('fecha');
+                $concepto = Yii::$app->request->post('concepto');
+                $tipo = 0;
+                $monto = Yii::$app->request->post('monto');
+                $secuencia = Yii::$app->request->post('secuencia');
+                $ip = Yii::$app->getRequest()->getUserIP();
+              
+                $model->numcontrol = 1;
+                $model->status = 5;
+                $model->fecha = $fecha;
+                $model->concepto = $concepto;
+                $model->tipo = $tipo;
+                $model->monto = $monto;
+                $model->iddireccion= $direction;
+                $model->dirip = $ip;
+                $model->secuencia = $secuencia;
+               
+                if($model->validate()){
+                    $model->save();
+                    return $this->redirect(['view', 'id' => $model->idrequisicion]);
+                     Yii::$app->session->setFlash('success', 'Requisicion Creada con Exito....');
+                }
+                    else{
+                           return['mnsajemalvado'=>'joder'];
+                     }
+                }
+                
+                else{
+                    return['mensajemalo'=>'no guardarequisicion'];
+                }
+              
+        }//action send
+        
+     
+    public function actionControl(){
+            
+            //consulta secuencia por direccion
+            $return = array('success'=>'false','mensaje'=>'');
+            $direction = \yii::$app->user->Identity->id_direccion;
+	      $query = new Query;
+              $query->select('max(secuencia) as secuencia')
+              ->from('requisicion')
+              ->where(['iddireccion'=> $direction])
+              ->orderBy('secuencia DESC')
+              ->limit(1);
+               $command = $query->createCommand();
+               $data = $command->queryone();
+               
+               //consulta idrequisicion
+              $query = new Query;
+              $query->select('max(idrequisicion) as idrequisicion')
+              ->from('requisicion')
+              ->orderBy('idrequisicion DESC')
+              ->limit(1);
+               $command = $query->createCommand();
+               $idrequisicion = $command->queryone();
+               
+                $return = array('success' => 'true', 'secuencia' => $data , 'idrequisicion'=>$idrequisicion);
+                
+                 echo json_encode($return);
+                   return;
+            
         }
+        
+        
+    public function actionEnviardetalles(){
+     
+      $return = array('success'=>'false' ,  'mensaje'=>'');
+        if(Yii::$app->request->post() &&  Yii::$app->request->isAjax){
+         $contenedordetalles = Yii::$app->request->post();
+         $long = count($contenedordetalles['datos']);
+         $ultimo = end($contenedordetalles['datos']);
+         $idrequisicion_detalles= $ultimo['value'];
+         $reqDeta = new Requisiciondeta(); 
+            for($i=0; $i< $long; $i++){
+                if($i ==2){
+                    $variable1=  $contenedordetalles['datos'][0]['value'];
+                    $variable2=  $contenedordetalles['datos'][1]['value'];
+                    Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idrequisicion'], [
+                    [$variable1, $variable2,$idrequisicion_detalles],])->execute();
+                    Yii::$app->session->setFlash('success', 'detalles cargados1...');
+                   
+                }
+                if($i ==4){
+                    $variable3=  $contenedordetalles['datos'][2]['value'];
+                    $variable4=  $contenedordetalles['datos'][3]['value'];
+                    Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idrequisicion'], [
+                    [$variable3, $variable4,$idrequisicion_detalles],])->execute();
+                    Yii::$app->session->setFlash('success', 'detalles cargados2...');
+                }
+                        
+                if($i ==6){
+                    $variable5=  $contenedordetalles['datos'][4]['value'];
+                    $variable6=  $contenedordetalles['datos'][5]['value']; 
+                    Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idrequisicion'], [
+                    [$variable5, $variable6,$idrequisicion_detalles],])->execute();
+                    Yii::$app->session->setFlash('success', 'detalles cargados3...');
+                    }
+                    
+                 if($i ==8){
+                    $variable7=  $contenedordetalles['datos'][6]['value'];
+                    $variable8=  $contenedordetalles['datos'][7]['value']; 
+                    Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idrequisicion'], [
+                    [$variable7, $variable8,$idrequisicion_detalles],])->execute();
+                    Yii::$app->session->setFlash('success', 'detalles cargados4...');
+                    }
+                    
+                 if($i ==10){
+                    $variable9=  $contenedordetalles['datos'][8]['value'];
+                    $variable10=  $contenedordetalles['datos'][9]['value']; 
+                    Yii::$app->db->createCommand()->batchInsert('requisiciondeta', ['cantidad', 'descripcion','idrequisicion'], [
+                    [$variable9, $variable10, $idrequisicion_detalles],])->execute();
+                    Yii::$app->session->setFlash('success', 'detalles cargados4...');
+                    }
+                    
+                    
+             }//for
+          
+        }//post
+        
+    }//action enviar detalles
+    
+    
+    public function actionRequisicionservicios_send(){
+        
+            $model = new Requisicion();
+            $direction = \yii::$app->user->Identity->id_direccion;
+           
+              if(\Yii::$app->request->post() && !empty($model)) {    
+                $fecha = Yii::$app->request->post('fecha');
+                $concepto = Yii::$app->request->post('concepto');
+                $idtipopago = Yii::$app->request->post('idtipopago');
+                $secuencia = Yii::$app->request->post('secuencia');
+                
+                $model->numcontrol = 1;
+                $model->status = 5;
+                $model->tipo = 1;
+                $model->fecha = $fecha;
+                $model->concepto = $concepto;
+                $model->idtipopago = $idtipopago;
+                $model->secuencia = $secuencia;
+                $model->iddireccion= $direction;
+              
+                if($model->validate()){
+                        $model->save();
+                        return $this->redirect(['view', 'id' => $model->idrequisicion]);
+                        Yii::$app->session->setFlash('success', 'Requisicion Servicios Creada con Exito....');
+                    }
+                    
+                }
+                
+               
+        
     }
     
+      
+    public function actionXxx(){
+        $return = array('success'=>'false' ,  'mensaje'=>'');
+        if(Yii::$app->request->post() &&  Yii::$app->request->isAjax){ 
+        $idcategoriaprogramatica = Yii::$app->request->post('idcategoriaprogramatica'); 
+        
+        $findcategoria = Categoriaprogramatica::find()->where(['idcategoriaprogramatica'=>$idcategoriaprogramatica])->one();
+            if ($findcategoria) {
+                $return = array('success' => 'true', 'categoria' => trim($findcategoria->categoriaprogramatica));
+            }
+   
+         echo json_encode($return);
+         return;
+              
+    }
+    
+    
+  }
+                 
 
-}
+  
+  
+  
+     }   

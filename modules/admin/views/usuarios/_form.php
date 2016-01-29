@@ -12,6 +12,7 @@ use kartik\password\PasswordInput;
 use app\modules\admin\models\Persona;
 use app\modules\admin\models\Direccion;
 use app\modules\admin\models\SeguridadUsuarios;
+use kartik\widgets\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\SeguridadUsuarios */
@@ -47,7 +48,7 @@ $direccion = new Direccion();
                                         <label for="confirmar">Confirmar</label>
                                         <input type="password" name="confirmar" id="confirmar" class="form-control" placeholder="confirmar">
                                         <div id="confirmar_pass"style="font-size:16px;color:red;display:none" ></div> <!--confirmar pass--><br><br>
-                                        
+                                        <input type="hidden" id="ocultoiddireccion">
                                         
                                        
                                             <div class="form-group">
@@ -83,15 +84,13 @@ $direccion = new Direccion();
                                     
                                     <?= $form->field($person, 'direccion')->textInput(['required'=>true,'placeholder'=>'introduzca direccion']); ?>
                                     
-                                    <div class="form-group">
-                                        <label>Fecha Nacimiento</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input class="form-control"  placeholder="DD-MM-YY" type='datetime' name='fecha'placeholder="fecha de nacimiento" >
-                                        </div><!-- /.input group -->
-                                     </div>
+                                 
+                                    <?= $form->field($person, 'fnacimiento')->widget(DatePicker::classname(), [
+                                                    'name' => 'fnacimiento','type' => DatePicker::TYPE_COMPONENT_APPEND,
+                                                    'options' => ['placeholder' => 'Fecha de Nacimiento ...'],
+                                                    'pluginOptions' => ['autoclose'=>true,'format' => 'yyyy-m-dd' ]]) ?>
+                                    
+                                    
                                     
                                     <?= $form->field($person, 'tlf1')->textInput(['placeholder'=>'telefono'])->label('Telefono'); ?>
                                     
@@ -162,7 +161,7 @@ $direccion = new Direccion();
                                        //desbloquear formulario de registro de usuarios
                                          //$('#seguridadusuarios-login').removeAttr("disabled").val('');
                                          $('#seguridadusuarios-password').removeAttr("disabled").val('');
-                                         $('#seguridadusuarios-id_direccion').removeAttr("disabled").val('');
+                                         
                                          $('#seguridadusuarios-login').prop("readonly",false).val('');
                                  
 				      }
@@ -176,7 +175,7 @@ $direccion = new Direccion();
                                            $('#persona-tlf1').removeAttr("disabled").val('');
                                            $('#persona-correoe').removeAttr("disabled").val('');
                                  
-                                           $('#mensajero').html(' Aviso : Cedula no Registrada!').slideDown(500);
+                                           $('#mensajero').html(' Aviso : Cedula no Registrada!<br> Debes Registrar Persona').slideDown(500);
                                            $('#seguridadusuarios-login').prop("readonly",true);
                                            //$('#seguridadusuarios-password').attr('disabled', 'true');
                                            //DESPLEGAR BOTON INSERTAR PERSONAS
@@ -248,18 +247,24 @@ $(document).ready(function(){
 		data:{ cedula:$('#persona-cedula').val(),
                        nombres:$('#persona-nombres').val(),
                        apellidos:$('#persona-apellidos').val(),
-                       direccion:$('#persona-direccion').val()},
-		
+                       direccion:$('#persona-direccion').val(),
+		       fnacimiento:$('#persona-fnacimiento').val(),
+                       tlf1: $('#persona-tlf1').val(),
+                       correoe : $('#persona-correoe').val()},
 		success: function(response){
                               console.log(response);
-                              //$('#seguridadusuarios-login').attr('disabled','false');
-                             //$('#seguridadusuarios-password').attr('disabled', 'false');
-                              alert('Persona Registrada con Exito!');
+                            
+                              //limpiamos formulario personas al insertar datos de personas
                               $('#persona-cedula').val('');
-                               $('#persona-nombre').val('');
-                                $('#persona-apellido').val('');
-                                 $('#persona-direccion').val('');
-                                  $('#persona-corroe').val('');
+                              $('#persona-nombres').val('');
+                              $('#persona-apellidos').val('');
+                              $('#persona-direccion').val('');
+                              $('#persona-correoe').val('');
+                              $('#persona-tlf1').val('');
+                              $('#persona-fnacimiento').val('');
+                              $('#seguridadusuarios-cedula').val('');
+                              $('#mensajero').slideUp(500);
+                              alert('Datos de Personas Fueron Ingresados con Exito....');
 		},
                         
                 error: function(){
@@ -296,16 +301,17 @@ $(document).ready(function(){
                          response = JSON.parse(response);
                               if(response.success){
                               console.log(response);
-                              //$("#cedulausuario").val(response.cedulau);
-                              $("#seguridadusuarios-login").attr('disabled','disabled');
-                              $("#seguridadusuarios-password").attr('disabled','disabled');
                               $('#div_validacedula').html(' Aviso : Cedula ya tiene asignado un Usuario !').slideDown(500);
-                              $("#seguridadusuarios-cedula").focus();
+                              $('#seguridadusuarios-login').val(response.login);
+                              $('#validador').attr('disabled', 'disabled');
+                              $('#ocultoiddireccion').val(response.iddireccion);
                              }//if success
                                   if(response.false){
                                      $("#seguridadusuarios-login").removeAttr("disabled").val('');
                                      $("#seguridadusuarios-password").removeAttr("disabled").val('');
-                                      $('#div_validacedula').slideUp(500);
+                                     $("#validador").removeAttr("disabled");
+                                     $("#persona-cedula").focus();
+                                     $('#div_validacedula').slideUp(500);
                                       
                                     } //if false
                          
@@ -322,6 +328,24 @@ $(document).ready(function(){
                 
               
                  }); //function
+                 
+                 
+                 //ge-unidad ejecutora
+                   $("#seguridadusuarios-cedula").blur(function(){
+                      $.ajax({
+                              type:'POST',
+                              url: '<?php echo Yii::$app->request->baseUrl. '/index.php?r=admin/usuarios/unidadejecutora' ?>',
+                              data:{iddireccion:$('#ocultoiddireccion').val()},
+                              success:function(response){
+ 
+                              console.log(response);
+                             
+                                  
+                              }
+                      });
+                    });
+                 
+                 //
                   
               }); //document
          </script>

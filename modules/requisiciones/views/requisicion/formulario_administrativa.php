@@ -31,59 +31,59 @@
   $(document).ready(function (){
       $("#salvar2").click(function (){
         valorc = $("#requisiciondeta-cantidad").val();
-			  valord = $("#requisiciondeta-descripcion").val();
-			  valorm = parseFloat($("#requisicion-monto").val());
-        	if (valorc == ""){
-          	alert("Campo cantidad esta vacio!");
-				  	$("#requisiciondeta-cantidad").focus();
-				  	return false;
-					}
-          	else if (valord == ""){
-							alert(" campo descripcion esta  vacioo! ");
-							$("#requisiciondeta-descripcion").focus();
-							return false;
-						}
-          	else if (valorm == ""){
-							alert("campo monto esta vacio !!");
-							$("#requisicion-monto").focus();
-							return false;
-						}
+        valord = $("#requisiciondeta-descripcion").val();
+        valorm = parseFloat($("#requisicion-monto").val());
+            if (valorc == ""){
+                alert("Campo cantidad esta vacio!");
+                $("#requisiciondeta-cantidad").focus();
+                return false;
+            }
+                else if (valord == ""){
+                    alert(" campo descripcion esta  vacioo! ");
+                   $("#requisiciondeta-descripcion").focus();
+                  return false;
+              }
+              else if (valorm == "") {
+                  alert("campo monto esta vacio !!");
+                  $("#requisicion-monto").focus();
+                  return false;
+              }
 
-        id = $("tr.productoFila").last().attr("id");
-				id = Number(id.substr(8, id.length)) + 1;
-				dataKey = $("tr.productoFila").last().attr("data-key");
-				productoNumero = parseInt($("tr.productoFila").last().find("td").first().text()) + 1;
-        fila = '<tr id="detalles' + id + '" class="productoFila" data-key="' + dataKey + '"><td>' + productoNumero + '</td><td>' + '<input type="text" id=cantidad_administrativa' + id + '  readonly="true" value="'+valorc+'" class="form-control">' + '</td> <td> ' +'<input type="text" id=descripcion_administrativa' + id + '  readonly="true" value="'+valord+'" class="form-control">'+ '</td> <td>' +valorm+ '</td> <td> <div class="fa-hover col-md-3 col-sm-4" onclick="$(\'#detalles' + id + '\').remove(),actualizar()"; style="cursor: pointer"><i class="fa fa-minus-square"> </i> Eliminar</div></td> </tr>';
-			  $("#grilla table tbody").append(fila);
-        suma = 0;
-        $('#tgrilla tr.productoFila').each(function () //funcion suma
-				{
-					suma += Number($(this).find('td').eq(3).text());
+              id = $("tr.productoFila").last().attr("id");
+              id = Number(id.substr(8, id.length)) + 1;
+              dataKey = $("tr.productoFila").last().attr("data-key");
+              productoNumero = parseInt($("tr.productoFila").last().find("td").first().text()) + 1;
+              fila = '<tr id="detalles' + id + '" class="productoFila" data-key="' + dataKey + '"><td>' + productoNumero + '</td><td>' + '<input type="text" id=cantidad_administrativa' + id + '  readonly="true" value="' + valorc + '" class="form-control">' + '</td> <td> ' + '<input type="text" id=descripcion_administrativa' + id + '  readonly="true" value="' + valord + '" class="form-control">' + '</td> <td>' + valorm + '</td> <td> <div class="fa-hover col-md-3 col-sm-4" onclick="$(\'#detalles' + id + '\').remove(),actualizar()"; style="cursor: pointer"><i class="fa fa-minus-square"> </i> Eliminar</div></td> </tr>';
+              $("#grilla table tbody").append(fila);
+              suma = 0;
+              $('#tgrilla tr.productoFila').each(function () //funcion suma
+              {
+                  suma += Number($(this).find('td').eq(3).text());
 
-					// lenguaje español
-					numeral.language('Es', {
-						delimiters: {
-							thousands: '.',
-							decimal: ','
-						},
-						ordinal: function (number) {
-							return number === 1 ? 'er' : 'ème';
-						},
-						currency: {
-							symbol: '€'
-						}
-					});
+                  // lenguaje español
+                  numeral.language('Es', {
+                      delimiters: {
+                          thousands: '.',
+                          decimal: ','
+                      },
+                      ordinal: function (number) {
+                          return number === 1 ? 'er' : 'ème';
+                      },
+                      currency: {
+                          symbol: '€'
+                      }
+                  });
 
-					// switch between languages
-					numeral.language('Es');
-                    num = numeral(suma).format('0,0.00');
-                });
-				    $("#result").val(num).css('color', 'black');
+                  // switch between languages
+                  numeral.language('Es');
+                  num = numeral(suma).format('0,0.00');
+              });
+              $("#result").val(num).css('color', 'black');
+          });
+
+
       });
-
-
-		});
-    </script>
+        </script>
 
 
 		<script type="text/javascript">
@@ -92,14 +92,14 @@
 
 	    $(document).ready(function() {
 	        $("#salvarbs").click(function() {
-	            var valor1 = $("#modaluebs option:selected").text();
-	            var valor2 = $("#categoriaprogramatica-bs").val();
+	         var valor1 = $("#modaluebs option:selected").text();
+	         var valor2 = $("#categoriaprogramatica-bs").val();
 
-	            id = $("tr.uebs").last().attr("id");
-	            id = Number(id.substr(7, id.length)) + 1;
-	            dataKey = $("tr.uebs").last().attr("data-key");
-	            unidadeNumero = parseInt($("tr.uebs").last().find("td").first().text()) + 1;
-	            $("#tablauebs tbody").append('<tr id="unidade' + id + '" class="uebs" data-key="' + dataKey + '"><td>' + unidadeNumero + '</td><td>' + '<input type="text" name="uni" id=unidad_administrativa' + id + ' readonly="true" class="form-control" value="' + valor1 + '">' + '</td><td>' + '<input type="text" name="uni"  id=actividad_administrativa' + id + ' readonly="true" class="form-control" value="' + valor2 + '">' + '</td><td><div class="fa-hover col-md-3 col-sm-4" onclick="$(\'#unidade' + id + '\').remove(),actualizar()"; style="cursor: pointer"><i class="fa fa-minus-square"> </i> Eliminar</div></td></tr>');
+	         id = $("tr.uebs").last().attr("id");
+	         id = Number(id.substr(7, id.length)) + 1;
+	         dataKey = $("tr.uebs").last().attr("data-key");
+	         unidadeNumero = parseInt($("tr.uebs").last().find("td").first().text()) + 1;
+	         $("#tablauebs tbody").append('<tr id="unidade' + id + '" class="uebs" data-key="' + dataKey + '"><td>' + unidadeNumero + '</td><td>' + '<input type="text" name="uni" id=unidad_administrativa' + id + ' readonly="true" class="form-control" value="' + valor1 + '">' + '</td><td>' + '<input type="text" name="uni"  id=actividad_administrativa' + id + ' readonly="true" class="form-control" value="' + valor2 + '">' + '</td><td><div class="fa-hover col-md-3 col-sm-4" onclick="$(\'#unidade' + id + '\').remove(),actualizar()"; style="cursor: pointer"><i class="fa fa-minus-square"> </i> Eliminar</div></td></tr>');
 	        });
 
 	    });
@@ -422,3 +422,7 @@ Modal::end();?>
 $this->endBody();
 $this->endPage();
 ?>
+
+        
+          //$query->select('max((CAST (secuencia AS integer)))')
+              //$query->select('max(secuencia) as secuencia')

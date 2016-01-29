@@ -95,9 +95,14 @@ class UsuariosController extends AitController
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_usuario]);
+        
+        if ($model->load(Yii::$app->request->post())) {
+            $model->password = md5($model->password);
+              if($model->save()){
+                    return $this->redirect(['view', 'id' => $model->id_usuario]);
+                    Yii::$app->session->setFlash('usuario Actualizado..');
+              }
+          
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -188,6 +193,8 @@ class UsuariosController extends AitController
                  $nombres = Yii::$app->request->post('nombres');
                  $apellidos = Yii::$app->request->post('apellidos');
                  $direccion = Yii::$app->request->post('direccion');
+                 
+                 
                 
                      $person = new \app\modules\admin\models\Persona();
                        $person->cedula = $cedula;
@@ -216,12 +223,10 @@ class UsuariosController extends AitController
            
         $return = array('success' => 'false', 'mensaje' =>'');
         if (\yii::$app->request->isAjax) {
-            
             $validar = \app\modules\admin\models\SeguridadUsuarios::find()->where(['cedula' => \yii::$app->request->post('cedula')])->one();
-            if($validar){
-                $return = array('success' => 'true', 'cedulau' => trim($validar->cedula));
-                                                     
-            }    
+                if($validar){
+                $return = array('success' => 'true', 'cedulau' => trim($validar->cedula) , 'login'=>trim($validar->login), 'iddireccion'=>trim($validar->id_direccion));
+                     }    
             
                     else {
                          $return = array('false' => 'true', 'mensaje' => 'no se encuentra cedula de usuario');
@@ -233,13 +238,15 @@ class UsuariosController extends AitController
         return;
            
            
-            }//acction validar
+     }//acction validar
            
-           
-          
+       /* accion parra llamar nombre de unidad ejecutora cuando cuando usuario existe */    
+       public function actionUnidadejecutora(){
+    
+       } //action unidad ejecutora 
             
             
-        }//controller
+        }//usuarioscontroller
 
         
         

@@ -1,0 +1,189 @@
+CREATE SCHEMA organizacion
+  AUTHORIZATION jboss;
+
+CREATE TABLE bienes.adquisicion
+(
+  id_adquisicion integer NOT NULL,
+  descripcion character varying(255),
+  CONSTRAINT pk_adquisicion PRIMARY KEY (id_adquisicion )
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE bienes.categoriau
+(
+  id_categoria_adm integer NOT NULL, -- Identificador de la categoria administriva según listado generado por SUDEBIP
+  denominacion character varying(200) NOT NULL,
+  CONSTRAINT pk_categoria_unidad PRIMARY KEY (id_categoria_adm )
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE bienes.color
+(
+  id_color integer NOT NULL,
+  descripcion character varying(200),
+  CONSTRAINT pk_color PRIMARY KEY (id_color )
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE bienes.estado_bien
+(
+  id_estado_bien integer NOT NULL,
+  descripcion character varying(255),
+  CONSTRAINT pk_estado_bien PRIMARY KEY (id_estado_bien )
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+CREATE TABLE bienes.marcas
+(
+  id_marca integer NOT NULL,
+  marca character varying(200) NOT NULL,
+  fabricante character varying(255),
+  CONSTRAINT pk_marcas PRIMARY KEY (id_marca )
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+CREATE TABLE bienes.modelos
+(
+  id_modelo integer NOT NULL,
+  descripcion character varying,
+  id_marca integer,
+  CONSTRAINT pk_modelo PRIMARY KEY (id_modelo ),
+  CONSTRAINT fk_marca FOREIGN KEY (id_marca)
+      REFERENCES bienes.marcas (id_marca) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+CREATE TABLE bienes.seguros
+(
+  id_seguro integer NOT NULL,
+  denominacion character varying(255),
+  CONSTRAINT pk_seguros PRIMARY KEY (id_seguro )
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+CREATE TABLE bienes.uso
+(
+  id_uso integer NOT NULL, -- codigo del uso del bien segun catalogo de especificaciones técnicas
+  descripcion character varying(255) NOT NULL,
+  CONSTRAINT pk_uso PRIMARY KEY (id_uso )
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN id_uadministrativa integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN codigo_origen character varying(12);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN codigo_resp character varying(10);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN uso integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN otro_es character varying(100);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN moneda integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN otra_mon character varying(30);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN ingreso date;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN estado integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN otro_estado character varying(30);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN descripcion_es character varying(200);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN serial character varying(50);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN codigo_color integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN ano_fabricacion integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN otro_color character varying(50);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN otros_color character varying(255);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN otras_descripciones character varying(255);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN garantia integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN asegurado character varying(1);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN componentes character varying(1);
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN inicio_garantia date;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN fin_garantia date;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN codigo_marca integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN codigo_modelo integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN codigo_seguro integer;
+ALTER TABLE bienes.n_codigo_bien ADD COLUMN medida_garantia integer;
+
+
+
+update bienes.n_codigo_bien set codigo_origen= 'B-1' where codigo_origen is null;
+update bienes.n_codigo_bien set codigo_resp= 'XXX' where codigo_resp is null;
+update bienes.n_codigo_bien set uso= 99 where uso is null;
+update bienes.n_codigo_bien set otro_es= 'noaplica' where otro_es is null;
+update bienes.n_codigo_bien set moneda= 1 where moneda is null;
+update bienes.n_codigo_bien set otra_mon= 'noaplica' where otra_mon is null;
+update bienes.n_codigo_bien set ingreso= '1111-11-11' where ingreso is null;
+update bienes.n_codigo_bien set estado= 99 where estado is null;
+update bienes.n_codigo_bien set otro_estado= 'noaplica' where otro_estado is null;
+update bienes.n_codigo_bien set descripcion_es= 'XXX' where descripcion_es is null;
+update bienes.n_codigo_bien set serial='XXX' where serial is null;
+update bienes.n_codigo_bien set codigo_marca = 99 where codigo_marca is null;
+update bienes.n_codigo_bien set codigo_modelo = 99 where codigo_modelo is null;
+update bienes.n_codigo_bien set ano_fabricacion = 99 where ano_fabricacion is null;
+update bienes.n_codigo_bien set codigo_color = 99 where codigo_color is null;
+update bienes.n_codigo_bien set otro_color = 'XXX' where otro_color is null;
+update bienes.n_codigo_bien set otros_color = 'XXX' where otros_color is null;
+
+update bienes.n_codigo_bien set otras_descripciones = 'XXX' where otras_descripciones is null;
+update bienes.n_codigo_bien set garantia = 99 where garantia is null;
+update bienes.n_codigo_bien set medida_garantia = 99 where  medida_garantia is null;
+update bienes.n_codigo_bien set inicio_garantia= '1111-11-11' where inicio_garantia is null;
+update bienes.n_codigo_bien set fin_garantia= '1111-11-11' where fin_garantia is null;
+
+
+update bienes.n_codigo_bien set componentes= 'X' where componentes is null;
+update bienes.n_codigo_bien set asegurado= 'X' where asegurado is null;
+update bienes.n_codigo_bien set codigo_seguro= 99 where codigo_seguro is null;
+
+CREATE SEQUENCE organizacion.organizacion_id_organizacion_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER TABLE organizacion.organizacion_id_organizacion_seq
+  OWNER TO jboss;
+
+
+CREATE TABLE organizacion.organizacion
+(
+  id_organizacion serial NOT NULL,
+  nombre character varying(200) NOT NULL,
+  CONSTRAINT pk_organizacion PRIMARY KEY (id_organizacion )
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE organizacion.uadministrativa
+(
+  id_unidad integer NOT NULL,
+  denominacion character varying(200) NOT NULL,
+  depedencia integer NOT NULL,
+  id_organizacion integer NOT NULL,
+  id_categoria integer,
+  CONSTRAINT pk_unidad_adm PRIMARY KEY (id_unidad ),
+  CONSTRAINT fk_categoria FOREIGN KEY (id_categoria)
+      REFERENCES bienes.categoria (id_categoria) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT fk_unidad_adm FOREIGN KEY (id_categoria)
+      REFERENCES bienes.categoriau (id_categoria_adm) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);

@@ -1,3 +1,5 @@
+<script src="/siapweb/web/js/validaciones.js"></script>
+
 <?php
 
 use yii\helpers\Html;
@@ -28,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-
+       'id' => 'gridview',
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
@@ -38,12 +40,27 @@ $this->params['breadcrumbs'][] = $this->title;
               $Codigo = BienesCodigo::findOne($BienesCodigo->id_codigo);
               return $Codigo->descripcion;
                 },
+                        'filter'=>false,
+                        'label'=>'Tipo del Bien'
             ],
-            'identificacion',
+             
+            
+                                                [
+                'attribute' => 'identificacion',
+                         'label'=>'Identificación',
+               'filter' => Html::activeTextInput($searchModel, 'identificacion', ['class' => 'form-control', 'onKeyPress'=>'return soloNumeros(event)', 'maxlength'=>'10']),
+            ],
             'descripcion',
             // 'valor_unidad',
             // 'justiprecio',
-          'ano_adquisicion',
+                               [
+                'attribute' => 'ano_adquisicion',
+                         'label'=>'Año de Adquisición',
+      'filter' => Html::activeTextInput($searchModel, 'ano_adquisicion', ['class' => 'form-control', 'onKeyPress'=>'return soloNumeros(event)','maxlength'=>'10']),
+                   
+             
+            ],
+        
             // 'ubicacion',
             // 'tipo_adquisicion',
             // 'n_documento',
@@ -53,3 +70,11 @@ $this->params['breadcrumbs'][] = $this->title;
     ]); ?>
 
 </div>
+<?php
+#filtrar por teclas
+//$this->registerJs('$("body").on("keyup.yiiGridView", "#gridview .filters input", function(){
+        
+  //  $("#gridview").yiiGridView("applyFilter");
+
+//})', \yii\web\View::POS_READY);
+?>

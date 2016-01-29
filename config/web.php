@@ -17,10 +17,26 @@ $config = [
         'bienes' => [
             'class' => 'app\modules\bienes\Bienes',
         ],
-        
+
         'requisiciones'=>[
               'class'=> 'app\modules\requisiciones\Requisiciones',
         ],
+
+        'organizacion'=>[
+              'class'=> 'app\modules\organizacion\organizacion',
+        ],
+
+        'reportico' => [
+            'class' => 'reportico\reportico\Module' ,
+            'controllerMap' => [
+                            'reportico' => 'reportico\reportico\controllers\ReporticoController',
+                            'mode' => 'reportico\reportico\controllers\ModeController',
+                            'ajax' => 'reportico\reportico\controllers\AjaxController',
+                        ]
+            ],
+
+
+
         'gridview' => [
 'class' => '\kartik\grid\Module',
                             ],
@@ -82,8 +98,8 @@ $config = [
         '@admin' => '@app/modules/admin',
         '@bienes' => '@app/modules/Bienes',
         '@requisiciones' => '@app/modules/Requisiciones',
-        
-        
+
+
     ],
 ];
 

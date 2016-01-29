@@ -45,13 +45,18 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
      */
     public function search($params)
     {
-        //filtrado segun el usuario 
+        //filtrado segun el usuario
          $direccion = \yii::$app->user->Identity->id_direccion;
 
-   
+if (Yii::$app->user->identity->isAdmin())
+    {
+    $query = BienesNCodigoBien::find();
+}
+else
+    {
         $query = BienesNCodigoBien::find()->where(['id_direccion'=>$direccion]);
+}
 
-          
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -72,10 +77,13 @@ class BienesNCodigoBienSearch extends BienesNCodigoBien
             'identificacion' => $this->identificacion,
             'valor_unidad' => $this->valor_unidad,
             'justiprecio' => $this->justiprecio,
-            'ano_adquisicion' => $this->ano_adquisicion,
+       
+    
         ]);
+       
 
         $query->andFilterWhere(['like', 'descripcion', $this->descripcion])
+         ->andFilterWhere(['like', 'TEXT(ano_adquisicion)', $this->ano_adquisicion])
             ->andFilterWhere(['like', 'ubicacion', $this->ubicacion])
             ->andFilterWhere(['like', 'tipo_adquisicion', $this->tipo_adquisicion])
             ->andFilterWhere(['like', 'n_documento', $this->n_documento]);

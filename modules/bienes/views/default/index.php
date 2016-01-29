@@ -1,28 +1,41 @@
-<?php  
+<?php
 
 use yii\helpers\Html;
-
+use yii\helpers\Url;
+use yii\bootstrap\Modal;
 $this->title = 'SISTEMA DE BIENES';
-
+$ad = !\Yii::$app->user->isGuest && Yii::$app->user->identity->isAdmin();
+$idusuario = \yii::$app->user->Identity->id_usuario;
 ?>
 
 
 
-   <h2 align="center"> <label>Registro de bienes</label></h2> <br>
+   <h2 align="center"><label>Registro de Bienes</label><a href="http://siap.anz/OpenSiap/"</a></h2> <br>
 
-     <div class="container" >
+     
       <div class="main row" style="text-align:center;">
    <div class="col-md-3 column">
-<h3 ><a href="?r=bienes/bienes"class ="CrearButton"><br>Crear</a></h3>
+     <h3><a href="?r=bienes/bienes"class ="CrearButton"><br>Crear</a></h3>
+   </div>
+ <div class="col-md-3 column" id="ocultar">
+  <h3 ><?= Html::a("<br>Reportes", '#', [
+            'id' => 'reportico_popup',
+      
+            'class' => 'myReport',
+            'data-url' => Url::toRoute(['/reportico/mode/prepare',
+                            'project' => 'bienes', 
+                            'project_password' => '123321',  // Only necessary for password protected projects
+                            'new_reportico_window' => 1,
+                            'report' => 'bienes.xml'])
 
- 
-    </div></div></div>
+        ]); ?></h3>
+          </div>
+</div>  
 
-
-         
-<h2 align="center"><label>Configuracion de bienes</label></h2> <br> <br>
+   <br>
+<h2 align="center"><label>Configuración de Bienes</label></h2>
 <br>
-    <div class="container">
+
         <div class="main row" style="text-align:center;">
 <div class="col-md-3 column">
    <h3><a href="?r=bienes/categoria"class ="myMod"><br>Categoria</a></h3>
@@ -40,19 +53,80 @@ $this->title = 'SISTEMA DE BIENES';
  <h3><a href="?r=bienes/sede"class ="myMod"><br>Sede</a></h3>
 
  </div>
+            <div class="col-md-3 column"><br>
+ <h3><a href="?r=bienes/marcas"class="myMar"><br>Marcas</a></h3>
+
+ </div>
+            <div class="col-md-3 column"><br>
+ <h3><a href="?r=bienes/modelos"class="myMar"><br>Modelos</a></h3>
+
+ </div>
  </div><!--main row-->
- </div> <!--fin de container-->
-  
+ 
+
 
 <!--<div class="col-md-3 column">
 <?= Html::a(Yii::t('app', 'Tipo de Pago'), '#', ['class' => 'myMod']) ?>
 </div>-->
+<?php
+Modal::begin([
+            'id' => 'myModal',
+            'header' => 'MENU DE REPORTES',
+            'size' => 'modal-lg'
+        ]);
+?> 
+        <div id='modalcontent'></div>
+<?php 
+    Modal::end();
+?>
 
+<?php
+$this->registerJs(
+"
+$(document).on('click', '#reportico_popup', function(event)
+{ 
+    $('#myModal').modal('show') ;
+    $('#modalcontent').html('Espere..');
+    jQuery.ajax({
+    type: 'GET',
+    url: jQuery(this).data('url')
+    }).
+    done(function(html_form) {
+        $('#modalcontent').html(html_form);
+        reportico_initialise_page();
+    });
+    return false;
+});");
+?>
+<!--BLOQUEAR LOGO REPORTES-->
+        
+        <script>
+       var add= "<?php echo json_encode($ad); ?>";
+       var usuario="<?php echo json_encode($idusuario);?>";
 
+   $(document).ready( function()
+           
+    { 
+        if (add==="true" || usuario==="47")
+        {
+      $("#ocultar").show(); 
+        }
+                    else
+            {
+      $("#ocultar").hide();
+  
+                     }
+  
+  
+    }
+            
+            
+            );
+       
 
+        </script>
 
-
- <style type="text/css">
+<style type="text/css">
 
 
 .CrearButton::before {
@@ -61,15 +135,15 @@ $this->title = 'SISTEMA DE BIENES';
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    
+
 
     color: #5A5A5B;
     font-size: 50px;
     padding-right: 0;
-    
+
 
 }
-.CrearButton ,.myMod{
+.CrearButton ,.myMod,.myReport,.myMar{
 
 	color: #5A5A5B;
 
@@ -80,15 +154,41 @@ $this->title = 'SISTEMA DE BIENES';
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    
+
 
     color: #5A5A5B;
     font-size: 50px;
     padding-right: 0;
-    
-    
+
+
 }
- 
+.myReport::before {
+	/*--ajuste de icono de configuracion--*/
+   content: "\f0f6";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+
+
+    color: #5A5A5B;
+    font-size: 50px;
+    padding-right: 0;
+
+
+}
+.myMar::before {
+	/*--ajuste de icono de configuracion--*/
+   content: "\f1b2";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+
+
+    color: #5A5A5B;
+    font-size: 50px;
+    padding-right: 0;
+
+
 
 
 
