@@ -9,13 +9,7 @@ $this->params['breadcrumbs'][] = $this->title;
       <div class="main row" style="text-align:center;">
           <h1><strong>SISTEMA INTEGRAL DE ADMINISTRACIÓN PÚBLICA</strong></h1>
           <br><br>
-   <div class="col-md-4 column">
-       
-<h3><a href="http://siap.anz/OpenSiap/" class="myMod"><br>REQUISICIONES</a> </h3> 
-</div>
-   <div class="col-md-4 column">
-<h3><a href="?r=siap%2Ftesoreria%2Fpago-proveedores" class="myDolar"><br>TESORERIA</a></h3>
- </div>
+
 <div class="col-md-3 column">
 <h3><a href="?r=bienes" class="CrearButton"><br>BIENES</a> </h3>
 </div>

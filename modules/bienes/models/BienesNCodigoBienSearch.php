@@ -74,7 +74,7 @@ else
         $query->andFilterWhere([
 
             'id_codigo' => $this->id_codigo,
-            'identificacion' => $this->identificacion,
+           // 'identificacion' => $this->identificacion,
             'valor_unidad' => $this->valor_unidad,
             'justiprecio' => $this->justiprecio,
        
@@ -84,6 +84,7 @@ else
 
         $query->andFilterWhere(['like', 'descripcion', $this->descripcion])
          ->andFilterWhere(['like', 'TEXT(ano_adquisicion)', $this->ano_adquisicion])
+       ->andFilterWhere(['like', 'TEXT(identificacion)', $this->identificacion])
             ->andFilterWhere(['like', 'ubicacion', $this->ubicacion])
             ->andFilterWhere(['like', 'tipo_adquisicion', $this->tipo_adquisicion])
             ->andFilterWhere(['like', 'n_documento', $this->n_documento]);

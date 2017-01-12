@@ -19,9 +19,17 @@ use yii\helpers\ArrayHelper;
     'enableClientScript' => true,
     'enableClientValidation' => true,
 ]); ?>
+  <?php 
 
-    <?= $form->field($model, 'codigo_localidad')->textInput() ?>
 
+   $sed = Yii::$app->db->createCommand('SELECT codigo_localidad FROM bienes.localidad '
+ . ' WHERE 1=1 ORDER BY codigo_localidad DESC LIMIT 1')->queryAll();
+     $a=$sed[0]['codigo_localidad'];
+   $suma= $a+1;
+  
+?>
+
+ <?= $form->field($model, 'codigo_localidad')->hiddenInput(['value'=>$suma])->label(false); ?>
     <?= $form->field($model, 'nombre')->textInput() ?>
 
     <?php //echo $form->field($model, 'padre')->textInput() ?>

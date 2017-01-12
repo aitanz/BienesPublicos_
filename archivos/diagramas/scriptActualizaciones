@@ -10,6 +10,8 @@ CREATE TABLE bienes.adquisicion
 WITH (
   OIDS=FALSE
 );
+ALTER TABLE bienes.adquisicion
+  OWNER TO jboss;
 
 CREATE TABLE bienes.categoriau
 (
@@ -20,6 +22,8 @@ CREATE TABLE bienes.categoriau
 WITH (
   OIDS=FALSE
 );
+ALTER TABLE bienes.categoriau
+  OWNER TO jboss;
 
 CREATE TABLE bienes.color
 (
@@ -30,6 +34,9 @@ CREATE TABLE bienes.color
 WITH (
   OIDS=FALSE
 );
+ALTER TABLE  bienes.color
+  OWNER TO jboss;
+
 
 CREATE TABLE bienes.estado_bien
 (
@@ -40,7 +47,8 @@ CREATE TABLE bienes.estado_bien
 WITH (
   OIDS=FALSE
 );
-
+ALTER TABLE  bienes.estado_bien
+  OWNER TO jboss;
 
 CREATE TABLE bienes.marcas
 (
@@ -52,7 +60,8 @@ CREATE TABLE bienes.marcas
 WITH (
   OIDS=FALSE
 );
-
+ALTER TABLE  bienes.marcas
+  OWNER TO jboss;
 
 CREATE TABLE bienes.modelos
 (
@@ -67,7 +76,8 @@ CREATE TABLE bienes.modelos
 WITH (
   OIDS=FALSE
 );
-
+ALTER TABLE  bienes.modelos
+  OWNER TO jboss;
 
 CREATE TABLE bienes.seguros
 (
@@ -78,7 +88,8 @@ CREATE TABLE bienes.seguros
 WITH (
   OIDS=FALSE
 );
-
+ALTER TABLE  bienes.seguros
+  OWNER TO jboss;
 
 CREATE TABLE bienes.uso
 (
@@ -89,6 +100,8 @@ CREATE TABLE bienes.uso
 WITH (
   OIDS=FALSE
 );
+ALTER TABLE  bienes.uso
+  OWNER TO jboss;
 
 
 ALTER TABLE bienes.n_codigo_bien ADD COLUMN id_uadministrativa integer;
@@ -168,6 +181,9 @@ CREATE TABLE organizacion.organizacion
 WITH (
   OIDS=FALSE
 );
+ALTER TABLE  organizacion.organizacion
+  OWNER TO jboss;
+
 
 CREATE TABLE organizacion.uadministrativa
 (
@@ -187,3 +203,139 @@ CREATE TABLE organizacion.uadministrativa
 WITH (
   OIDS=FALSE
 );
+ALTER TABLE  organizacion.uadministrativa
+  OWNER TO jboss;
+
+INSERT INTO bienes.marcas(id_marca,marca,fabricante) values(99,'DESCONOCIDA','DESCONOCIDO');
+INSERT INTO bienes.modelos(id_modelo,descripcion,id_marca) values(99,'DESCONOCIDO',99);
+
+INSERT INTO bienes.uso(id_uso,descripcion) values(1,'En uso');
+INSERT INTO bienes.uso(id_uso,descripcion) values(2,'En comodato');
+INSERT INTO bienes.uso(id_uso,descripcion) values(3,'En arrendamiento');
+INSERT INTO bienes.uso(id_uso,descripcion) values(4,'En mantenimiento');
+INSERT INTO bienes.uso(id_uso,descripcion) values(5,'En reparación');
+INSERT INTO bienes.uso(id_uso,descripcion) values(6,'En proceso de disposición');
+INSERT INTO bienes.uso(id_uso,descripcion) values(7,'En desuso por obsolescencia');
+INSERT INTO bienes.uso(id_uso,descripcion) values(8,'En desuso por inservibilidad');
+INSERT INTO bienes.uso(id_uso,descripcion) values(9,'En desuso por obsolescencia e inservibilidad');
+INSERT INTO bienes.uso(id_uso,descripcion) values(10,'En Almacén o Depósito para su asignación');
+INSERT INTO bienes.uso(id_uso,descripcion) values(11,'Otro uso');
+
+INSERT INTO bienes.estado_bien(id_estado_bien,descripcion) values(1,'Óptimo');
+INSERT INTO bienes.estado_bien(id_estado_bien,descripcion) values(2,'Regular');
+INSERT INTO bienes.estado_bien(id_estado_bien,descripcion) values(3,'Deteriorado');
+INSERT INTO bienes.estado_bien(id_estado_bien,descripcion) values(4,'Averiado');
+INSERT INTO bienes.estado_bien(id_estado_bien,descripcion) values(5,'Chatarra');
+INSERT INTO bienes.estado_bien(id_estado_bien,descripcion) values(6,'No operativo');
+INSERT INTO bienes.estado_bien(id_estado_bien,descripcion) values(7,'Otra condición física');
+
+
+INSERT INTO bienes.color(id_color,descripcion) values(1,'NEGRO');
+INSERT INTO bienes.color(id_color,descripcion) values(2,'AZUL');
+INSERT INTO bienes.color(id_color,descripcion) values(3,'PALO ROSA');
+INSERT INTO bienes.color(id_color,descripcion) values(4,'NARANJA');
+INSERT INTO bienes.color(id_color,descripcion) values(5,'VERDE');
+INSERT INTO bienes.color(id_color,descripcion) values(6,'BEIGE');
+INSERT INTO bienes.color(id_color,descripcion) values(7,'CROMÁTICO');
+INSERT INTO bienes.color(id_color,descripcion) values(8,'VINOTINTO');
+INSERT INTO bienes.color(id_color,descripcion) values(9,'GRIS/NEGRO');
+INSERT INTO bienes.color(id_color,descripcion) values(10,'PLATEADO');
+INSERT INTO bienes.color(id_color,descripcion) values(11,'BEIGE AUSTRALIA');
+INSERT INTO bienes.color(id_color,descripcion) values(12,'PLATEADO FERROSO');
+INSERT INTO bienes.color(id_color,descripcion) values(13,'PERLA');
+INSERT INTO bienes.color(id_color,descripcion) values(14,'BEIGE OLIMPICO');
+INSERT INTO bienes.color(id_color,descripcion) values(15,'ARENA METALIZADO');
+INSERT INTO bienes.color(id_color,descripcion) values(16,'PLATA');
+INSERT INTO bienes.color(id_color,descripcion) values(17,'ROJO');
+INSERT INTO bienes.color(id_color,descripcion) values(18,'AMARILLO');
+INSERT INTO bienes.color(id_color,descripcion) values(19,'BEIGE DUNA');
+INSERT INTO bienes.color(id_color,descripcion) values(20,'MARRÓN/NEGRO');
+INSERT INTO bienes.color(id_color,descripcion) values(21,'AZUL/BEIGE');
+INSERT INTO bienes.color(id_color,descripcion) values(22,'MARRÓN/BEIGE');
+INSERT INTO bienes.color(id_color,descripcion) values(23,'VERDE ESMERALDA');
+INSERT INTO bienes.color(id_color,descripcion) values(25,'PLATEADO BRILLANTE');
+INSERT INTO bienes.color(id_color,descripcion) values(26,'MARRÓN PARDILLO BICAPA');
+INSERT INTO bienes.color(id_color,descripcion) values(27,'GRIS PALMERA');
+INSERT INTO bienes.color(id_color,descripcion) values(28,'DORADO');
+INSERT INTO bienes.color(id_color,descripcion) values(29,'MADERA NATURAL');
+INSERT INTO bienes.color(id_color,descripcion) values(30,'NEGRO/AMARILLO MOSTAZA');
+INSERT INTO bienes.color(id_color,descripcion) values(31,'MARRON');
+INSERT INTO bienes.color(id_color,descripcion) values(32,'BLANCO');
+INSERT INTO bienes.color(id_color,descripcion) values(33,'GRIS');
+INSERT INTO bienes.color(id_color,descripcion) values(34,'AZUL/GRIS');
+INSERT INTO bienes.color(id_color,descripcion) values(35,'AZUL/NEGRO');
+INSERT INTO bienes.color(id_color,descripcion) values(36,'ACERO');
+INSERT INTO bienes.color(id_color,descripcion) values(37,'OTRO COLOR');
+
+
+
+
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(1,'"C.A. de Seguros Avila');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(2,'C.N.A. de Seguros La Previsora');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(3,'Mapfre La Seguridad C.A. de Seguros');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(4,'Seguros Caracas de Liberty Mutual, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(5,'Estar Seguros, S.A. (Antes Royal & Sun Alliance Seguros (Venezuela) S.A.)');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(6,'Seguros Venezuela C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(7,'Seguros Provincial C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(8,'Adriática de Seguros, C.A');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(9,'Seguros Carabobo, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(10,'La Venezolana de Seguros y de Vida, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(11,'Seguros Los Andes, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(12,'Seguros Nuevo Mundo S.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(13,'Seguros Horizonte, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(14,'C.A. de Seguros La Occidental');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(15,'C.A. Seguros Catatumbo');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(16,'Seguros La Fe C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(17,'C.A. de Seguros American International');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(18,'Seguros Virgen del Valle, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(19,'Seguros Federal, C.A. (Antes Seguros Federación C.A.).');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(20,'La Mundial C.A. Venezolana de Seguros de Crédito');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(21,'Mercantil Seguros , C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(22,'C.A. Seguros Guayana');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(23,'La Oriental de Seguros C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(24,'Seguros Pirámide C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(25,'Seguros Universitas, C.A. (Antes Universitas de Seguros C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(26,'Interbank Seguros S.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(27,'La Regional C.A. de Seguros');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(28,'Multinacional de Seguros C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(29,'Zuma Seguros, C.A. (Antes Seguros Bancentro S.A.)');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(30,'Seguros Constitución C.A. (Antes Seguros Sofitasa)');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(31,'Seguros Comerciales Bolívar S.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(32,'C.A. de Seguros La Internacional');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(33,'Seguros Premier, C.A (antes Chubb de Venezuela). 1/');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(34,'Seguros Comerciales Bolívar S.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(35,'C.A. de Seguros La Internacional');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(36,'Seguros Premier, C.A (antes Chubb de Venezuela). 1/');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(37,'Seguros Corporativos C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(38,'Seguros Banvalor C.A');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(39,'Proseguros, S.A. (antes Rescarven)');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(40,'Seguros Altamira C.A');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(41,'Seguros Canarias de Venezuela C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(42,'Banesco Seguros C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(43,'Seguros Caroní C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(44,'Universal de Seguros C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(45,'Aseguradora Nacional Unida Uniseguros, S.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(46,'Hispana de Seguros C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(47,'Primus Seguros, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(48,'Oceánica de Seguros, C.A (Antes Grupo Asegurador Previsional (Grasp), C.A.)');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(49,'Seguros Qualitas C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(50,'Seguros La Vitalicia, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(51,'Iberoamericana de Seguros, C.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(52,'ZURICH SEGUROS S.A.');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(53,'Estar Seguros, S.A. (Antes Royal & Sun Alliance Seguros (Venezuela) S.A.)');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(54,'Otra Compañía de Seguro');
+INSERT INTO bienes.seguros(id_seguro,denominacion) values(99,'Desconoce');
+
+
+
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(1,'Compra Directa');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(2,'Permuta');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(3,'Dación en Pago');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(4,'Donación');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(5,'Transferencia');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(6,'Expropiación');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(7,'Confiscación');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(8,'Compra por Concurso Abierto');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(9,'Compra por Concurso Cerrado');
+INSERT INTO bienes.adquisicion(id_adquisicion,descripcion) values(10,'Adjudicación');
+

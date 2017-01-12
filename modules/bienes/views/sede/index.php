@@ -14,6 +14,7 @@ use yii\bootstrap\Modal;
 $this->title = Yii::t('app', 'SISTEMA DE BIENES');
 $this->params['breadcrumbs'][] = 'Sede de los Bienes';
 ?>
+
 <div class="bienes-sede-index">
 
     <h1><?= Html::encode('Sede de los Bienes') ?></h1>
@@ -47,7 +48,7 @@ $this->params['breadcrumbs'][] = 'Sede de los Bienes';
               $Localidad = BienesLocalidad::findOne($BienesLocalidad->id_localidad);
               return $Localidad->nombre;
             },
-
+                        'filter'=>false,
             ],
 
        [

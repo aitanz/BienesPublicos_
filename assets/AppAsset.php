@@ -48,7 +48,7 @@ class AppAsset extends AssetBundle
 		*/
 	];
     public $js = [
-		'plugins/jQuery/jQuery-2.1.4.min.js',
+		'plugins/jQuery/jquery-2.2.3.min.js',
 		'bootstrap/js/bootstrap.min.js',
 		'dist/js/app.min.js',
 		'plugins/slimScroll/jquery.slimscroll.min.js',

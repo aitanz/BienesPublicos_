@@ -1,11 +1,4 @@
-/*!
- * Bootstrap's Gruntfile
- * http://getbootstrap.com
- * Copyright 2013-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-
+// AdminLTE Gruntfile
 module.exports = function (grunt) {
 
   'use strict';
@@ -28,6 +21,12 @@ module.exports = function (grunt) {
         files: {
           // compilation.css  :  source.less
           "dist/css/AdminLTE.css": "build/less/AdminLTE.less",
+          // AdminLTE without plugins
+          "dist/css/alt/AdminLTE-without-plugins.css": "build/less/AdminLTE-without-plugins.less",
+          // Separate plugins
+          "dist/css/alt/AdminLTE-select2.css": "build/less/select2.less",
+          "dist/css/alt/AdminLTE-fullcalendar.css": "build/less/fullcalendar.less",
+          "dist/css/alt/AdminLTE-bootstrap-social.css": "build/less/bootstrap-social.less",
           //Non minified skin files
           "dist/css/skins/skin-blue.css": "build/less/skins/skin-blue.less",
           "dist/css/skins/skin-black.css": "build/less/skins/skin-black.less",
@@ -53,6 +52,12 @@ module.exports = function (grunt) {
         files: {
           // compilation.css  :  source.less
           "dist/css/AdminLTE.min.css": "build/less/AdminLTE.less",
+          // AdminLTE without plugins
+          "dist/css/alt/AdminLTE-without-plugins.min.css": "build/less/AdminLTE-without-plugins.less",
+          // Separate plugins
+          "dist/css/alt/AdminLTE-select2.min.css": "build/less/select2.less",
+          "dist/css/alt/AdminLTE-fullcalendar.min.css": "build/less/fullcalendar.less",
+          "dist/css/alt/AdminLTE-bootstrap-social.min.css": "build/less/bootstrap-social.less",
           // Skins minified
           "dist/css/skins/skin-blue.min.css": "build/less/skins/skin-blue.less",
           "dist/css/skins/skin-black.min.css": "build/less/skins/skin-black.less",
@@ -124,13 +129,22 @@ module.exports = function (grunt) {
       }
     },
 
+    // Validate CSS files
     csslint: {
       options: {
         csslintrc: 'build/less/.csslintrc'
       },
       dist: [
-        'dist/css/AdminLTE.css',
+        'dist/css/AdminLTE.css'
       ]
+    },
+
+    // Validate Bootstrap HTML
+    bootlint: {
+      options: {
+        relaxerror: ['W005']
+      },
+      files: ['pages/**/*.html', '*.html']
     },
 
     // Delete images in build directory
@@ -159,6 +173,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   // Lint CSS
   grunt.loadNpmTasks('grunt-contrib-csslint');
+  // Lint Bootstrap
+  grunt.loadNpmTasks('grunt-bootlint');
+
+  // Linting task
+  grunt.registerTask('lint', ['jshint', 'csslint', 'bootlint']);
 
   // The default task (running "grunt" in console) is "watch"
   grunt.registerTask('default', ['watch']);

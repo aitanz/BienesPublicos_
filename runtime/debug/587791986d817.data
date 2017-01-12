@@ -1,0 +1,1082 @@
+a:9:{s:6:"config";a:5:{s:10:"phpVersion";s:30:"5.6.29-1+deb.sury.org~xenial+1";s:10:"yiiVersion";s:6:"2.0.10";s:11:"application";a:5:{s:3:"yii";s:6:"2.0.10";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:30:"5.6.29-1+deb.sury.org~xenial+1";s:6:"xdebug";b:1;s:3:"apc";b:1;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:33:{s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:55:"/var/www/html/BienesPublicos_/vendor/yiisoft/yii2-faker";}}s:30:"kartik-v/yii2-widget-typeahead";a:3:{s:4:"name";s:30:"kartik-v/yii2-widget-typeahead";s:7:"version";s:7:"1.0.1.0";s:5:"alias";a:1:{s:17:"@kartik/typeahead";s:67:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-typeahead";}}s:28:"kartik-v/yii2-widget-spinner";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-spinner";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:15:"@kartik/spinner";s:65:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-spinner";}}s:28:"kartik-v/yii2-widget-sidenav";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-sidenav";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:15:"@kartik/sidenav";s:65:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-sidenav";}}s:26:"kartik-v/yii2-widget-growl";a:3:{s:4:"name";s:26:"kartik-v/yii2-widget-growl";s:7:"version";s:7:"1.1.1.0";s:5:"alias";a:1:{s:13:"@kartik/growl";s:63:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-growl";}}s:26:"kartik-v/yii2-widget-alert";a:3:{s:4:"name";s:26:"kartik-v/yii2-widget-alert";s:7:"version";s:7:"1.1.0.0";s:5:"alias";a:1:{s:13:"@kartik/alert";s:63:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-alert";}}s:26:"kartik-v/yii2-widget-affix";a:3:{s:4:"name";s:26:"kartik-v/yii2-widget-affix";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:13:"@kartik/affix";s:63:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-affix";}}s:21:"kartik-v/yii2-widgets";a:3:{s:4:"name";s:21:"kartik-v/yii2-widgets";s:7:"version";s:7:"3.4.0.0";s:5:"alias";a:1:{s:15:"@kartik/widgets";s:58:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widgets";}}s:18:"kartik-v/yii2-mpdf";a:3:{s:4:"name";s:18:"kartik-v/yii2-mpdf";s:7:"version";s:7:"1.0.0.0";s:5:"alias";a:1:{s:12:"@kartik/mpdf";s:55:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-mpdf";}}s:24:"reportico/yii2-reportico";a:3:{s:4:"name";s:24:"reportico/yii2-reportico";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:20:"@reportico/reportico";s:61:"/var/www/html/BienesPublicos_/vendor/reportico/yii2-reportico";}}s:31:"kartik-v/yii2-widget-rangeinput";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-rangeinput";s:7:"version";s:7:"1.0.1.0";s:5:"alias";a:1:{s:13:"@kartik/range";s:68:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-rangeinput";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:61:"/var/www/html/BienesPublicos_/vendor/yiisoft/yii2-swiftmailer";}}s:16:"yiisoft/yii2-jui";a:3:{s:4:"name";s:16:"yiisoft/yii2-jui";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:8:"@yii/jui";s:53:"/var/www/html/BienesPublicos_/vendor/yiisoft/yii2-jui";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:59:"/var/www/html/BienesPublicos_/vendor/yiisoft/yii2-bootstrap";}}s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"1.8.7.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:62:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-krajee-base";}}s:28:"kartik-v/yii2-widget-depdrop";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-depdrop";s:7:"version";s:7:"1.0.4.0";s:5:"alias";a:1:{s:15:"@kartik/depdrop";s:65:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-depdrop";}}s:24:"yiisoft/yii2-codeception";a:3:{s:4:"name";s:24:"yiisoft/yii2-codeception";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:16:"@yii/codeception";s:61:"/var/www/html/BienesPublicos_/vendor/yiisoft/yii2-codeception";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:55:"/var/www/html/BienesPublicos_/vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:53:"/var/www/html/BienesPublicos_/vendor/yiisoft/yii2-gii";}}s:31:"kartik-v/yii2-widget-activeform";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-activeform";s:7:"version";s:7:"1.4.8.0";s:5:"alias";a:1:{s:12:"@kartik/form";s:68:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-activeform";}}s:31:"kartik-v/yii2-widget-colorinput";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-colorinput";s:7:"version";s:7:"1.0.3.0";s:5:"alias";a:1:{s:13:"@kartik/color";s:68:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-colorinput";}}s:31:"kartik-v/yii2-widget-datepicker";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-datepicker";s:7:"version";s:7:"1.4.2.0";s:5:"alias";a:1:{s:12:"@kartik/date";s:68:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-datepicker";}}s:35:"kartik-v/yii2-widget-datetimepicker";a:3:{s:4:"name";s:35:"kartik-v/yii2-widget-datetimepicker";s:7:"version";s:7:"1.4.2.0";s:5:"alias";a:1:{s:16:"@kartik/datetime";s:72:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-datetimepicker";}}s:30:"kartik-v/yii2-widget-fileinput";a:3:{s:4:"name";s:30:"kartik-v/yii2-widget-fileinput";s:7:"version";s:7:"1.0.5.0";s:5:"alias";a:1:{s:12:"@kartik/file";s:67:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-fileinput";}}s:27:"kartik-v/yii2-widget-rating";a:3:{s:4:"name";s:27:"kartik-v/yii2-widget-rating";s:7:"version";s:7:"1.0.2.0";s:5:"alias";a:1:{s:14:"@kartik/rating";s:64:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-rating";}}s:28:"kartik-v/yii2-widget-select2";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-select2";s:7:"version";s:7:"2.0.8.0";s:5:"alias";a:1:{s:15:"@kartik/select2";s:65:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-select2";}}s:32:"kartik-v/yii2-widget-switchinput";a:3:{s:4:"name";s:32:"kartik-v/yii2-widget-switchinput";s:7:"version";s:7:"1.3.1.0";s:5:"alias";a:1:{s:19:"@kartik/switchinput";s:69:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-switchinput";}}s:31:"kartik-v/yii2-widget-timepicker";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-timepicker";s:7:"version";s:7:"1.0.3.0";s:5:"alias";a:1:{s:12:"@kartik/time";s:68:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-timepicker";}}s:30:"kartik-v/yii2-widget-touchspin";a:3:{s:4:"name";s:30:"kartik-v/yii2-widget-touchspin";s:7:"version";s:7:"1.2.1.0";s:5:"alias";a:1:{s:17:"@kartik/touchspin";s:67:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-widget-touchspin";}}s:23:"kartik-v/yii2-popover-x";a:3:{s:4:"name";s:23:"kartik-v/yii2-popover-x";s:7:"version";s:7:"1.3.3.0";s:5:"alias";a:1:{s:15:"@kartik/popover";s:60:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-popover-x";}}s:20:"kartik-v/yii2-dialog";a:3:{s:4:"name";s:20:"kartik-v/yii2-dialog";s:7:"version";s:7:"1.0.1.0";s:5:"alias";a:1:{s:14:"@kartik/dialog";s:57:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-dialog";}}s:22:"kartik-v/yii2-editable";a:3:{s:4:"name";s:22:"kartik-v/yii2-editable";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:16:"@kartik/editable";s:59:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-editable";}}s:18:"kartik-v/yii2-grid";a:3:{s:4:"name";s:18:"kartik-v/yii2-grid";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:12:"@kartik/grid";s:55:"/var/www/html/BienesPublicos_/vendor/kartik-v/yii2-grid";}}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:8:{s:4:"host";s:9:"localhost";s:10:"connection";s:10:"keep-alive";s:10:"user-agent";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36";s:6:"accept";s:3:"*/*";s:7:"referer";s:55:"http://localhost/BienesPublicos_/web/index.php?r=bienes";s:15:"accept-encoding";s:23:"gzip, deflate, sdch, br";s:15:"accept-language";s:14:"es-ES,es;q=0.8";s:6:"cookie";s:385:"_csrf=d049b70dcf78f0de8f1dcd78d5098ef4e3a149bd2dae9b7708c077eaa91bbeaca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yCPjNlED8vKxe0RPb2o5waBZ68fIXT9l%22%3B%7D; PHPSESSID=idpi7p52i4bsa834bf57ju32e6; _identity=7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B48%2Cnull%2C2592000%5D%22%3B%7D";}s:15:"responseHeaders";a:5:{s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:62:"no-store, no-cache, must-revalidate, post-check=0, pre-check=0";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";s:10:"Set-Cookie";s:247:"_identity=7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B48%2Cnull%2C2592000%5D%22%3B%7D; expires=Sat, 11-Feb-2017 14:24:24 GMT; Max-Age=2592000; path=/; httponly";}s:5:"route";s:20:"bienes/default/index";s:6:"action";s:63:"app\modules\bienes\controllers\DefaultController::actionIndex()";s:12:"actionParams";a:0:{}s:11:"requestBody";a:0:{}s:6:"SERVER";a:31:{s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:15:"HTTP_USER_AGENT";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36";s:11:"HTTP_ACCEPT";s:3:"*/*";s:12:"HTTP_REFERER";s:55:"http://localhost/BienesPublicos_/web/index.php?r=bienes";s:20:"HTTP_ACCEPT_ENCODING";s:23:"gzip, deflate, sdch, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"es-ES,es;q=0.8";s:11:"HTTP_COOKIE";s:385:"_csrf=d049b70dcf78f0de8f1dcd78d5098ef4e3a149bd2dae9b7708c077eaa91bbeaca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yCPjNlED8vKxe0RPb2o5waBZ68fIXT9l%22%3B%7D; PHPSESSID=idpi7p52i4bsa834bf57ju32e6; _identity=7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B48%2Cnull%2C2592000%5D%22%3B%7D";s:4:"PATH";s:60:"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin";s:16:"SERVER_SIGNATURE";s:70:"<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:22:"Apache/2.4.18 (Ubuntu)";s:11:"SERVER_NAME";s:9:"localhost";s:11:"SERVER_ADDR";s:9:"127.0.0.1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:13:"DOCUMENT_ROOT";s:14:"/var/www/html/";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:14:"/var/www/html/";s:12:"SERVER_ADMIN";s:19:"webmaster@localhost";s:15:"SCRIPT_FILENAME";s:43:"/var/www/html/BienesPublicos_/web/index.php";s:11:"REMOTE_PORT";s:5:"46130";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:8:"r=bienes";s:11:"REQUEST_URI";s:39:"/BienesPublicos_/web/index.php?r=bienes";s:11:"SCRIPT_NAME";s:30:"/BienesPublicos_/web/index.php";s:8:"PHP_SELF";s:30:"/BienesPublicos_/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1484231064.4449999;s:12:"REQUEST_TIME";i:1484231064;}s:3:"GET";a:1:{s:1:"r";s:6:"bienes";}s:4:"POST";a:0:{}s:6:"COOKIE";a:3:{s:5:"_csrf";s:130:"d049b70dcf78f0de8f1dcd78d5098ef4e3a149bd2dae9b7708c077eaa91bbeaca:2:{i:0;s:5:"_csrf";i:1;s:32:"yCPjNlED8vKxe0RPb2o5waBZ68fIXT9l";}";s:9:"PHPSESSID";s:26:"idpi7p52i4bsa834bf57ju32e6";s:9:"_identity";s:119:"7b9cf3a09bcdaed75f8f5ef01b93f6bf4282d5e476ce710ce2a370041aa416afa:2:{i:0;s:9:"_identity";i:1;s:17:"[48,null,2592000]";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:3:{s:7:"__flash";a:0:{}s:4:"__id";i:48;s:9:"reportico";a:55:{s:25:"awaiting_initial_defaults";b:0;s:11:"firsttimeIn";b:1;s:12:"execute_mode";s:7:"PREPARE";s:7:"project";s:6:"bienes";s:11:"target_menu";b:0;s:12:"project_path";s:97:"/var/www/html/BienesPublicos_/vendor/reportico/yii2-reportico/../../../components/reportes/bienes";s:18:"reportico_language";s:5:"es_es";s:13:"external_user";i:129;s:15:"external_param1";b:0;s:15:"external_param2";b:0;s:15:"external_param3";b:0;s:15:"user_parameters";a:0:{}s:13:"dropdown_menu";b:0;s:11:"static_menu";b:0;s:15:"charting_engine";s:6:"PCHART";s:20:"charting_engine_html";s:4:"NVD3";s:26:"output_template_parameters";a:11:{s:25:"show_hide_navigation_menu";s:4:"show";s:23:"show_hide_dropdown_menu";s:4:"show";s:29:"show_hide_report_output_title";s:4:"show";s:31:"show_hide_prepare_section_boxes";s:4:"hide";s:28:"show_hide_prepare_pdf_button";s:4:"show";s:29:"show_hide_prepare_html_button";s:4:"hide";s:35:"show_hide_prepare_print_html_button";s:4:"show";s:28:"show_hide_prepare_csv_button";s:4:"show";s:28:"show_hide_prepare_page_style";s:4:"hide";s:31:"show_hide_prepare_reset_buttons";s:4:"hide";s:28:"show_hide_prepare_go_buttons";s:4:"hide";}s:13:"dynamic_grids";b:0;s:22:"dynamic_grids_sortable";b:1;s:24:"dynamic_grids_searchable";b:1;s:20:"dynamic_grids_paging";b:0;s:23:"dynamic_grids_page_size";i:10;s:16:"framework_parent";s:3:"yii";s:11:"access_mode";s:10:"ONEPROJECT";s:13:"progress_text";s:5:"Ready";s:15:"progress_status";s:5:"READY";s:11:"firstTimeIn";b:0;s:13:"target_format";s:4:"HTML";s:13:"latestRequest";s:0:"";s:12:"reporticourl";s:45:"../vendor/reportico/yii2-reportico/components";s:25:"reportico_ajax_script_url";s:30:"/BienesPublicos_/web/index.php";s:26:"forward_url_get_parameters";s:26:"r=reportico/reportico/ajax";s:32:"forward_url_get_parameters_graph";s:15:"reportico/graph";s:34:"forward_url_get_parameters_dbimage";s:17:"reportico/dbimage";s:16:"bootstrap_styles";s:1:"3";s:30:"force_reportico_mini_maintains";b:0;s:18:"url_path_to_assets";s:36:"/BienesPublicos_/web/assets/3800c3dd";s:16:"jquery_preloaded";b:0;s:19:"bootstrap_preloaded";b:0;s:8:"loggedin";b:1;s:8:"database";N;s:8:"hostname";N;s:6:"driver";s:5:"mysql";s:6:"server";N;s:8:"protocol";N;s:5:"xmlin";s:10:"bienes.xml";s:6:"xmlout";s:10:"bienes.xml";s:18:"reportico_template";b:0;s:17:"show_print_button";b:1;s:18:"target_show_detail";s:1:"1";s:17:"target_show_graph";s:1:"1";s:25:"target_show_group_headers";s:1:"1";s:26:"target_show_group_trailers";s:1:"1";s:20:"target_show_criteria";s:1:"1";s:12:"target_style";s:5:"TABLE";}}}s:3:"log";a:1:{s:8:"messages";a:33:{i:0;a:5:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1484231064.4475851;i:4;a:0:{}}i:1;a:5:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1484231064.447623;i:4;a:0:{}}i:2;a:5:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1484231064.4484119;i:4;a:0:{}}i:3;a:5:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1484231064.448622;i:4;a:0:{}}i:4;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1484231064.4487281;i:4;a:0:{}}i:5;a:5:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1484231064.448961;i:4;a:0:{}}i:6;a:5:{i:0;s:25:"Route requested: 'bienes'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1484231064.4489951;i:4;a:0:{}}i:7;a:5:{i:0;s:22:"Loading module: bienes";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1484231064.4490211;i:4;a:0:{}}i:8;a:5:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1484231064.4493599;i:4;a:1:{i:0;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:9;a:5:{i:0;s:68:"Opening DB connection: pgsql:host=localhost;port=5432;dbname=bienes_";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1484231064.4500639;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:12;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.455529;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:15;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4635611;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:18;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4724181;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:21;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4747729;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:24;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.476521;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:27;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.47753;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:30;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4785891;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:33;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4833879;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:36;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4885621;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:39;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4894769;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:42;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4901741;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:45;a:5:{i:0;s:34:"Route to run: bienes/default/index";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1484231064.4910359;i:4;a:0:{}}i:46;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.491358;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:49;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4923289;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:52;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4931991;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:55;a:5:{i:0;s:79:"Running action: app\modules\bienes\controllers\DefaultController::actionIndex()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1484231064.4939079;i:4;a:0:{}}i:56;a:5:{i:0;s:89:"Rendering view file: /var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1484231064.494072;i:4;a:1:{i:0;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:57;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.494415;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:60;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.495276;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:63;a:5:{i:0;s:73:"Rendering view file: /var/www/html/BienesPublicos_/views/layouts/main.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1484231064.4977429;i:4;a:1:{i:0;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:64;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4985449;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:67;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4997671;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:70;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.5035009;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:9:"profiling";a:3:{s:6:"memory";i:3785280;s:4:"time";d:0.063969135284423828;s:8:"messages";a:40:{i:10;a:5:{i:0;s:68:"Opening DB connection: pgsql:host=localhost;port=5432;dbname=bienes_";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1484231064.450134;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:11;a:5:{i:0;s:68:"Opening DB connection: pgsql:host=localhost;port=5432;dbname=bienes_";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1484231064.455163;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:13;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4556241;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.462801;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4636669;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.471797;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4725101;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4730999;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4749429;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:23;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.475714;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:25;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4766121;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:26;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4771931;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:28;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4775929;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:29;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.478164;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:31;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.478708;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:32;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4828489;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:34;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4835579;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:35;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4879019;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:37;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.488641;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:38;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4890161;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:40;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4895511;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:41;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.489862;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:43;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4902339;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:44;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.490453;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:47;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4914169;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:48;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4917729;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:50;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.492394;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:51;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.492815;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:53;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.493252;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:54;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4936571;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:58;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4945149;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:59;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.49493;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:61;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4953401;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:62;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4957409;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:65;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4986329;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:66;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4993401;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:68;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.499891;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:69;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.5029299;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:71;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.5035789;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:72;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.506423;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:2:"db";a:1:{s:8:"messages";a:38:{i:13;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4556241;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:1957:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'usuarios'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.462801;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4636669;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:879:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='usuarios'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.471797;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4725101;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4730999;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:112;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:5:"__get";s:5:"class";s:18:"yii\base\Component";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4749429;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:23;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.475714;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:25;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4766121;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:26;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4771931;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:28;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4775929;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:29;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.478164;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:31;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.478708;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:32;a:5:{i:0;s:1954:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'grupo'
+    and d.nspname = 'seguridad'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4828489;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:34;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4835579;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:35;a:5:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='grupo'
+    and ns.nspname='seguridad'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4879019;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:22;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:37;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.488641;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:38;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4890161;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:40;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4895511;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:41;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.489862;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:43;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4902339;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:44;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.490453;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:55:"/var/www/html/BienesPublicos_/modules/bienes/Bienes.php";s:4:"line";i:28;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:47;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4914169;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:48;a:5:{i:0;s:58:"SELECT * FROM "seguridad"."usuarios" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4917729;i:4;a:2:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:218;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:50;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.492394;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:51;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.492815;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:53;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.493252;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:54;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4936571;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:222;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:58:"/var/www/html/BienesPublicos_/components/AitController.php";s:4:"line";i:17;s:8:"function";s:9:"hasAccess";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"::";}}}i:58;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4945149;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:59;a:5:{i:0;s:63:"SELECT * FROM "seguridad"."usuario_grupo" WHERE "id_usuario"=48";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.49493;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:61;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4953401;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:62;a:5:{i:0;s:52:"SELECT * FROM "seguridad"."grupo" WHERE "id_grupo"=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4957409;i:4;a:3:{i:0;a:5:{s:4:"file";s:72:"/var/www/html/BienesPublicos_/modules/admin/models/SeguridadUsuarios.php";s:4:"line";i:293;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:68:"/var/www/html/BienesPublicos_/modules/bienes/views/default/index.php";s:4:"line";i:7;s:8:"function";s:7:"isAdmin";s:5:"class";s:42:"app\modules\admin\models\SeguridadUsuarios";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:65;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4986329;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:66;a:5:{i:0;s:40:"SELECT * FROM "persona" WHERE "cedula"=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.4993401;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:68;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.499891;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:69;a:5:{i:0;s:1953:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'persona'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.5029299;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:71;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.5035789;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:72;a:5:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='persona'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1484231064.506423;i:4;a:2:{i:0;a:5:{s:4:"file";s:52:"/var/www/html/BienesPublicos_/views/layouts/main.php";s:4:"line";i:100;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:78:"/var/www/html/BienesPublicos_/modules/bienes/controllers/DefaultController.php";s:4:"line";i:12;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:6:"assets";a:4:{s:19:"yii\web\JqueryAsset";a:9:{s:10:"sourcePath";s:54:"/var/www/html/BienesPublicos_/vendor/bower/jquery/dist";s:2:"js";a:0:{}s:8:"basePath";s:49:"/var/www/html/BienesPublicos_/web/assets/a3107ad0";s:7:"baseUrl";s:36:"/BienesPublicos_/web/assets/a3107ad0";s:7:"depends";a:0:{}s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:34:"yii\bootstrap\BootstrapPluginAsset";a:9:{s:10:"sourcePath";s:57:"/var/www/html/BienesPublicos_/vendor/bower/bootstrap/dist";s:2:"js";a:0:{}s:7:"depends";a:2:{i:0;s:19:"yii\web\JqueryAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";}s:8:"basePath";s:49:"/var/www/html/BienesPublicos_/web/assets/f1d8f097";s:7:"baseUrl";s:36:"/BienesPublicos_/web/assets/f1d8f097";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:28:"yii\bootstrap\BootstrapAsset";a:9:{s:10:"sourcePath";s:57:"/var/www/html/BienesPublicos_/vendor/bower/bootstrap/dist";s:3:"css";a:0:{}s:8:"basePath";s:49:"/var/www/html/BienesPublicos_/web/assets/f1d8f097";s:7:"baseUrl";s:36:"/BienesPublicos_/web/assets/f1d8f097";s:7:"depends";a:0:{}s:2:"js";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:19:"app\assets\AppAsset";a:9:{s:10:"sourcePath";s:52:"/var/www/html/BienesPublicos_/vendor/bower/admin-lte";s:3:"css";a:5:{i:0;s:27:"bootstrap/css/bootstrap.css";i:1;s:75:"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";i:2;s:67:"https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";i:3;s:21:"dist/css/AdminLTE.css";i:4;s:29:"dist/css/skins/_all-skins.css";}s:2:"js";a:4:{i:0;s:34:"plugins/jQuery/jquery-2.2.3.min.js";i:1;s:29:"bootstrap/js/bootstrap.min.js";i:2;s:18:"dist/js/app.min.js";i:3;s:43:"plugins/slimScroll/jquery.slimscroll.min.js";}s:7:"depends";a:0:{}s:8:"basePath";s:49:"/var/www/html/BienesPublicos_/web/assets/aa048c0c";s:7:"baseUrl";s:36:"/BienesPublicos_/web/assets/aa048c0c";s:9:"jsOptions";a:1:{s:8:"position";i:1;}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}s:4:"mail";a:0:{}s:8:"timeline";a:2:{s:5:"start";d:1484231064.4460909;s:3:"end";d:1484231064.5101659;}s:7:"summary";a:9:{s:3:"tag";s:13:"587791986d817";s:3:"url";s:55:"http://localhost/BienesPublicos_/web/index.php?r=bienes";s:4:"ajax";i:0;s:6:"method";s:3:"GET";s:2:"ip";s:9:"127.0.0.1";s:4:"time";i:1484231064;s:10:"statusCode";i:200;s:8:"sqlCount";i:19;s:9:"mailCount";i:0;}}

@@ -131,11 +131,8 @@ class BienesController extends AitController
     }
 
 
-    public function actionReportes()
-    {
-     
-      return $this->render('reportes');
-
+  public function actionReportes() {
+        return $this->render('reportes');
     }
 
     /**

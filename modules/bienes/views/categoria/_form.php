@@ -17,8 +17,17 @@ use yii\widgets\ActiveForm;
     'enableClientValidation' => true,
 ]); ?>
 
+    <?php 
 
-    <?= $form->field($model, 'id_categoria')->textInput(array()) ?>
+
+   $sed = Yii::$app->db->createCommand('SELECT id_categoria FROM bienes.categoria '
+ . ' WHERE 1=1 ORDER BY id_categoria DESC LIMIT 1')->queryAll();
+     $a=$sed[0]['id_categoria'];
+   $suma= $a+1;
+?>
+
+    <?= $form->field($model, 'id_categoria')->hiddenInput(['value'=>$suma])->label(false); ?>
+
 
     <?= $form->field($model, 'descripcion')->textInput() ?>
 

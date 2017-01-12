@@ -8,7 +8,7 @@ $ad = !\Yii::$app->user->isGuest && Yii::$app->user->identity->isAdmin();
 $idusuario = \yii::$app->user->Identity->id_usuario;
 ?>
 
-
+ 
 
    <h2 align="center"><label>Registro de Bienes</label><a href="http://siap.anz/OpenSiap/"</a></h2> <br>
 
@@ -20,7 +20,6 @@ $idusuario = \yii::$app->user->Identity->id_usuario;
  <div class="col-md-3 column" id="ocultar">
   <h3 ><?= Html::a("<br>Reportes", '#', [
             'id' => 'reportico_popup',
-      
             'class' => 'myReport',
             'data-url' => Url::toRoute(['/reportico/mode/prepare',
                             'project' => 'bienes', 
@@ -29,6 +28,11 @@ $idusuario = \yii::$app->user->Identity->id_usuario;
                             'report' => 'bienes.xml'])
 
         ]); ?></h3>
+                
+          </div>
+           <div class="col-md-3 column" >
+  <h3><a href="?r=bienes/txt"class ="myReport"><br>TXT</a></h3>
+                
           </div>
 </div>  
 
@@ -38,7 +42,7 @@ $idusuario = \yii::$app->user->Identity->id_usuario;
 
         <div class="main row" style="text-align:center;">
 <div class="col-md-3 column">
-   <h3><a href="?r=bienes/categoria"class ="myMod"><br>Categoria</a></h3>
+   <h3><a href="?r=bienes/categoria" class ="myMod"><br>Categoria</a></h3>
 
  </div>
 <div class="col-md-3 column">
@@ -87,9 +91,9 @@ $(document).on('click', '#reportico_popup', function(event)
 { 
     $('#myModal').modal('show') ;
     $('#modalcontent').html('Espere..');
-    jQuery.ajax({
+    $.ajax({
     type: 'GET',
-    url: jQuery(this).data('url')
+    url: $(this).data('url')
     }).
     done(function(html_form) {
         $('#modalcontent').html(html_form);

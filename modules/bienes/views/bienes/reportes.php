@@ -1,6 +1,10 @@
-
   <div class="reportes_form">
 
+      <?php
 
-
-  </div>
+echo "";
+          ?> 
+      
+ 
+      
+</div>

@@ -68,7 +68,10 @@ class SedeController extends AitController
    public function actionCreate($submit= false)
     {
         $model = new BienesSede();
-
+         $model->codigo_pais=230;
+         $model->otro_pais='XXX';
+         $model->tipo_sede_esp='noaplica';
+   
        if (Yii::$app->request->isAjax && $model->load(Yii::$app->request->post()) && $submit == false) {
         Yii::$app->response->format = Response::FORMAT_JSON;
         return ActiveForm::validate($model);

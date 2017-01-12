@@ -29,7 +29,7 @@ class BienesModelos extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_modelo'], 'required'],
+            [['id_modelo','descripcion','id_marca'], 'required'],
             [['id_modelo', 'id_marca'], 'integer'],
             [['descripcion'], 'string'],
              [['id_modelo'], 'unique','message'=>'Ya Existe un Registro con este Id'],

@@ -1,11 +1,12 @@
 <?php
 
 namespace app\modules\bienes\controllers;
+use Yii;
+use app\components\AitController;
 
-use yii\web\Controller;
-
-class DefaultController extends Controller
+class DefaultController extends AitController
 {
+	
     public function actionIndex()
     {
         return $this->render('index');

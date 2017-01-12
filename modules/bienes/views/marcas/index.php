@@ -15,6 +15,7 @@ use yii\widgets\Pjax;
 $this->title = Yii::t('app', 'Bienes Marcas');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="bienes-marcas-index">
 
     <h1><?= Html::encode($this->title) ?></h1>

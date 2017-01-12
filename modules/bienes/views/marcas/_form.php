@@ -16,8 +16,23 @@ use yii\widgets\ActiveForm;
     'enableClientScript' => true,
     'enableClientValidation' => true,
 ]); ?>
+  <?php 
 
-    <?= $form->field($model, 'id_marca')->textInput() ?>
+
+   $sed = Yii::$app->db->createCommand('SELECT id_marca FROM bienes.marcas '
+ . ' WHERE 1=1 ORDER BY id_marca DESC LIMIT 1')->queryAll();
+   if($sed)
+   {
+      $a=$sed[0]['id_marca'];
+   }
+   else
+    {
+        $a=0;
+    }
+    
+   $suma= $a+1;
+?>
+    <?= $form->field($model, 'id_marca')->hiddenInput(['value'=>$suma])->label(false); ?>
 
     <?= $form->field($model, 'marca')->textInput(['maxlength' => true]) ?>
 

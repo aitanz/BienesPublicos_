@@ -19,12 +19,13 @@ class Bienes extends \yii\base\Module
           
             [
                 'label' => 'Bienes', 'url' => ['/bienes'],
+                'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->hasAccess("bienes"),
                 'icon' => 'table',
             ],
              
                 [
                 'label' => 'Siap', 'url' => ['/siap'],
-                'visible' => Yii::$app->user->identity->hasAccess("siap"),
+                'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->hasAccess("siap"),
                 'icon' => 'table',
             ],
              

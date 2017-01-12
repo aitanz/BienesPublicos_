@@ -11,10 +11,14 @@
             "homepage": "http://www.krajee.com/"
         }
     ],
-	"minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "kartik\\plugins\\popover\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.4.x-dev"
         }
     }
 }
